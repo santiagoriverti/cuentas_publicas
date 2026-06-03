@@ -1,3 +1,9 @@
+# Datos crudos - no versionar
+data/raw/
+*.zip
+*.xls
+*.xlsx
+
 __pycache__/
 *.py[cod]
 .env
