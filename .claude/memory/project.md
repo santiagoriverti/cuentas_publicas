@@ -5,7 +5,7 @@ Consolidar datos del Sector Público Nacional argentino (Hacienda) en un dataset
 
 ## Fuente de datos
 - URL: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
-- Archivo original: sector_publico.zip.zip (C:\Users\sriverti\Downloads\deficit\)
+- Archivo original: sector_publico.zip.zip → movido a data/raw/sector_publico.zip.zip (dentro del repo)
 - 75 archivos Excel (xls/xlsx), 2020-2026
 - DOS tipos de informes por archivo: AIF + IMIG
 
@@ -71,6 +71,12 @@ Consolidar datos del Sector Público Nacional argentino (Hacienda) en un dataset
 ## Repositorio GitHub
 - URL: https://github.com/sriverti/cuentas_publicas
 - Link Colab: https://colab.research.google.com/github/sriverti/cuentas_publicas/blob/main/notebooks/01_analisis_fiscal.ipynb
+
+## Estado al 2026-06-03 (fin de sesión)
+- Repositorio creado y pusheado a GitHub
+- Dataset AIF y IMIG generados y commiteados en output/
+- ZIP de datos movido a data/raw/ (ignorado por git)
+- Para retomar: `python src/consolidate.py` ya funciona sin parámetros
 
 ## Pendiente / Próximas sesiones
 - [ ] Agregar deflactor (IPC o IPM) para series en pesos constantes
