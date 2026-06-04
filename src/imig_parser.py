@@ -112,8 +112,17 @@ def _is_stop(cell_text: str) -> bool:
 
 CONCEPTO_IMIG_NORMALIZE = {
     r"INGRESOS TOTALES": "INGRESOS_TOTALES",
+    # ── Conceptos con prioridad ALTA (mas especificos primero) ──────────
+    # Jubilaciones debe ir ANTES de IVA porque "CONTRIBUTIVAS" contiene "IVA"
+    r"JUBILACIONES Y PENSIONES": "Jubilaciones_pensiones",
+    r"PENSIONES NO CONTRIBUTIVAS": "Pensiones_no_contributivas",
+    r"ASIGNACI.N UNIVERSAL|ASIGNACION UNIVERSAL": "AUH",
+    r"ASIGNACIONES FAMILIARES": "Asignaciones_familiares",
+    r"INSSJP|PRESTACIONES DEL INSSJP": "INSSJP_PAMI",
+    r"OTROS PROGRAMAS SOCIALES|OTRAS PROGRAMOS": "Otros_prog_sociales",
+    # ── Ingresos tributarios ────────────────────────────────────────────
     r"TRIBUTARIOS": "Tributarios",
-    r"IVA": "IVA_neto_reintegros",
+    r"\bIVA\b|IVA NETO": "IVA_neto_reintegros",   # \b = word boundary, evita "CONTRIBUTIVAS"
     r"GANANCIAS": "Ganancias",
     r"APORTES.*SEGURI": "Aportes_contrib_seg_social",
     r"D.BITOS Y CR.DITOS|DEBITOS Y CREDITOS": "Debitos_creditos",
@@ -127,15 +136,10 @@ CONCEPTO_IMIG_NORMALIZE = {
     r"OTROS INGRESOS CORRIENTES": "Otros_ingresos_corrientes",
     r"INGRESOS NO TRIBUTARIOS|INGRESOS NO IMPOSITIVOS": "Ingresos_no_tributarios",
     r"INGRESOS DE CAPITAL": "Ingresos_capital",
+    # ── Gastos ──────────────────────────────────────────────────────────
     r"GASTOS PRIMARIOS": "GASTOS_PRIMARIOS",
     r"GASTOS CORRIENTES PRIMARIOS": "Gastos_corrientes_primarios",
     r"PRESTACIONES SOCIALES": "Prestaciones_sociales",
-    r"JUBILACIONES Y PENSIONES": "Jubilaciones_pensiones",
-    r"ASIGNACION UNIVERSAL": "AUH",
-    r"ASIGNACIONES FAMILIARES": "Asignaciones_familiares",
-    r"PENSIONES NO CONTRIBUTIVAS": "Pensiones_no_contributivas",
-    r"INSSJP|PAMI": "INSSJP_PAMI",
-    r"OTROS PROGRAMAS SOCIALES|OTRAS PROGRAMOS": "Otros_prog_sociales",
     r"SUBSIDIOS ECON": "Subsidios_economicos",
     r"ENERG.A|ENERGIA": "Subsidios_energia",
     r"TRANSPORTE": "Subsidios_transporte",
