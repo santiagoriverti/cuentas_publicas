@@ -8021,6 +8021,363 @@
 2021-10-01,2021,10,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,870613.2999999999,resultado_fiscal_octubre_2021.xlsx
 2021-10-01,2021,10,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,total_adm_nacional,-339752.69999999995,resultado_fiscal_octubre_2021.xlsx
 2021-10-01,2021,10,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,323872.49999999994,resultado_fiscal_octubre_2021.xlsx
+2021-11-01,2021,11,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,ex_cajas_prov,3674.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS,. Otras,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. RESTO,. Resto,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,.. OTRAS,.. Otras,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,ex_cajas_prov,5899.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,ex_cajas_prov,9574.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,ex_cajas_prov,-3674.7000000000007,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,ex_cajas_prov,9574.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,ex_cajas_prov,3674.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,ex_cajas_prov,5899.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,ex_cajas_prov,-3674.7000000000007,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,ex_cajas_prov,9574.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,ex_cajas_prov,5899.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,9574.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,9574.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,9574.599999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,ex_cajas_prov,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,17455.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,inst_seg_social,116325.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS,. Otras,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,inst_seg_social,119314.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,inst_seg_social,183065.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,inst_seg_social,57.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,6949.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,5493.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,inst_seg_social,4235.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,inst_seg_social,1257.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,inst_seg_social,301341.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,inst_seg_social,62612.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,inst_seg_social,6932.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,inst_seg_social,6932.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,inst_seg_social,-66993.39999999997,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,inst_seg_social,376380.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,inst_seg_social,1.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,inst_seg_social,133780.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,inst_seg_social,309386.80000000005,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,inst_seg_social,59.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,inst_seg_social,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,inst_seg_social,-67051.19999999995,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,inst_seg_social,376439.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,inst_seg_social,309388.10000000003,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,inst_seg_social,59.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,inst_seg_social,428566.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,inst_seg_social,428566.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,inst_seg_social,14602.500000000058,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,443168.60000000003,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,inst_seg_social,14602.500000000058,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,52126.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,23598.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,0.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,org_descentralizados,758.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,org_descentralizados,43190.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,org_descentralizados,707.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS,. Otras,subdetalle,org_descentralizados,591.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,org_descentralizados,3.200000000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,org_descentralizados,0.20000000000000018,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,92.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,79.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,org_descentralizados,6764.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,org_descentralizados,1510.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,org_descentralizados,3903.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,211.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,18811.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,org_descentralizados,13945.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,org_descentralizados,4865.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,org_descentralizados,133.29999999999998,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,org_descentralizados,22730.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,org_descentralizados,12.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,org_descentralizados,8590.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,org_descentralizados,104.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,org_descentralizados,2.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,org_descentralizados,186.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,org_descentralizados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,org_descentralizados,-37397.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,org_descentralizados,50507.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,org_descentralizados,5.700000000000003,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,org_descentralizados,67548.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,org_descentralizados,13109.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,org_descentralizados,13516.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,org_descentralizados,6324.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,org_descentralizados,5733.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,org_descentralizados,92.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,org_descentralizados,-57325.99999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,org_descentralizados,70440.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,org_descentralizados,13114.900000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,org_descentralizados,19933.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,org_descentralizados,70577.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,org_descentralizados,70447.29999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,org_descentralizados,10215.900000000023,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,80663.20000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,org_descentralizados,10085.800000000017,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,136.49999999999997,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,11073.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,40.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,pami_fdos_otros,5477.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,pami_fdos_otros,90728.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,pami_fdos_otros,4555.299999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,pami_fdos_otros,3.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS,. Otras,subdetalle,pami_fdos_otros,1757.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,pami_fdos_otros,116.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,25.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,pami_fdos_otros,31017.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,pami_fdos_otros,29813.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,pami_fdos_otros,10691.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,12594.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,24794.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,pami_fdos_otros,16367.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,pami_fdos_otros,8311.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,pami_fdos_otros,762.0999999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,pami_fdos_otros,3429.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,pami_fdos_otros,51722.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,pami_fdos_otros,3303.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,pami_fdos_otros,3328.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,pami_fdos_otros,27601.399999999994,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,pami_fdos_otros,-18143.799999999974,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,pami_fdos_otros,110244.99999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,pami_fdos_otros,7383.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,pami_fdos_otros,107319.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,pami_fdos_otros,92101.20000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,pami_fdos_otros,14656.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,pami_fdos_otros,3106.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,pami_fdos_otros,1349.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,pami_fdos_otros,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,pami_fdos_otros,-28522.599999999977,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,pami_fdos_otros,128007.59999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,pami_fdos_otros,99485.00000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,pami_fdos_otros,17762.600000000002,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,128766.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,128004.29999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,pami_fdos_otros,78799.80000000005,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,206804.10000000003,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,pami_fdos_otros,78037.70000000004,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,758.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,92.89999999999998,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,rec_afectados,1089.1000000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,rec_afectados,693.1999999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,rec_afectados,1093.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS,. Otras,subdetalle,rec_afectados,716.5000000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,rec_afectados,0.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,rec_afectados,15.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. RESTO,. Resto,subdetalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,719.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,rec_afectados,22803.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,rec_afectados,22.299999999999997,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,rec_afectados,11640.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,7.800000000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,22016.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,rec_afectados,11203.400000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,rec_afectados,10798.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,rec_afectados,0.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,rec_afectados,29.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,rec_afectados,11099.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,rec_afectados,9085.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,rec_afectados,30.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,rec_afectados,9834.599999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,rec_afectados,-8909.399999999994,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,rec_afectados,44076.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,rec_afectados,37.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,rec_afectados,1182.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,rec_afectados,35166.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,rec_afectados,9850.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,rec_afectados,2817.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,rec_afectados,2101.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,rec_afectados,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,rec_afectados,-21540.09999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,rec_afectados,56743.899999999994,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,rec_afectados,35203.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,rec_afectados,12667.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,rec_afectados,63310.49999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,rec_afectados,63310.49999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,rec_afectados,-26924.69999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,36385.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,rec_afectados,-26924.69999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,6566.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,3.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,tesoro_nacional,2174.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS,. Otras,subdetalle,tesoro_nacional,6089.100000000002,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,80.10000000000036,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,2223.7000000000003,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,tesoro_nacional,291401.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,tesoro_nacional,1360.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,37132.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,69693.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,tesoro_nacional,55713.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,tesoro_nacional,13979.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,tesoro_nacional,106544.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,tesoro_nacional,100.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,tesoro_nacional,131515.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,tesoro_nacional,30890.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,tesoro_nacional,28380.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,tesoro_nacional,61494.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,tesoro_nacional,-41440.399999999965,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,tesoro_nacional,371435.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,tesoro_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,tesoro_nacional,3.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,tesoro_nacional,329994.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,tesoro_nacional,3755.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,tesoro_nacional,18698.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,tesoro_nacional,12609.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,tesoro_nacional,80.10000000000036,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,tesoro_nacional,-63974.59999999998,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,tesoro_nacional,393969.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,tesoro_nacional,329994.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,tesoro_nacional,22534.200000000004,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,tesoro_nacional,647888.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,tesoro_nacional,541344.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,tesoro_nacional,-211346.39999999997,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,329997.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,tesoro_nacional,-317890.49999999994,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,253918.90000000002,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,total_adm_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,41053.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,96.49999999999997,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_adm_nacional,758.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_adm_nacional,1089.1000000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_adm_nacional,163190.80000000002,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_adm_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,total_adm_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_adm_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,total_adm_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_adm_nacional,1400.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_adm_nacional,3268.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS,. Otras,subdetalle,total_adm_nacional,7396.900000000002,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_adm_nacional,3.4000000000000012,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,total_adm_nacional,15.600000000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,172.80000000000035,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,3022.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,total_adm_nacional,440284.30000000005,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_adm_nacional,190498.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,total_adm_nacional,16961.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,44301.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,116015.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_adm_nacional,85098.40000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_adm_nacional,30901.200000000004,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_adm_nacional,106677.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_adm_nacional,333677.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_adm_nacional,112.19999999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_adm_nacional,213817.2,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_adm_nacional,47012.69999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_adm_nacional,28412.7,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_adm_nacional,78447.40000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,total_adm_nacional,0.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_adm_nacional,-158415.69999999995,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_adm_nacional,851973.1,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,total_adm_nacional,44.0,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_adm_nacional,206188.5,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_adm_nacional,693557.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_adm_nacional,27181.799999999996,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_adm_nacional,27840.3,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_adm_nacional,20443.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_adm_nacional,172.80000000000035,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_adm_nacional,-213566.59999999992,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_adm_nacional,907167.9999999999,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_adm_nacional,693601.4,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_adm_nacional,55194.90000000001,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1219916.8,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1113242.6,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,total_adm_nacional,-213452.69999999987,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,899789.9,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,total_adm_nacional,-320126.89999999985,resultado_fiscal_noviembre_2021.xls
+2021-11-01,2021,11,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,312748.80000000005,resultado_fiscal_noviembre_2021.xls
 2021-12-01,2021,12,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,resultado_fiscal_diciembre_2021-1.xlsx
 2021-12-01,2021,12,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,resultado_fiscal_diciembre_2021-1.xlsx
 2021-12-01,2021,12,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,resultado_fiscal_diciembre_2021-1.xlsx
@@ -11241,6 +11598,363 @@
 2022-08-01,2022,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1308658.6,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,total_adm_nacional,-305009.99999999953,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,326461.4,resultado-fiscal_agosto-2022.xlsx
+2022-09-01,2022,9,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,ex_cajas_prov,11539.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS,. Otras,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. RESTO,. Resto,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,.. OTRAS,.. Otras,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,ex_cajas_prov,5911.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,ex_cajas_prov,17450.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,ex_cajas_prov,-11539.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,ex_cajas_prov,17450.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,ex_cajas_prov,11539.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,ex_cajas_prov,5911.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,ex_cajas_prov,-11539.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,ex_cajas_prov,17450.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,ex_cajas_prov,5911.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,17450.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,17450.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,17450.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,ex_cajas_prov,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,19972.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,inst_seg_social,178460.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS,. Otras,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,inst_seg_social,221536.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,inst_seg_social,320840.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,inst_seg_social,355.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,21955.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,9097.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,inst_seg_social,7331.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,inst_seg_social,1766.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,inst_seg_social,499143.20000000007,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,inst_seg_social,125637.49999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,inst_seg_social,6371.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,inst_seg_social,6371.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,inst_seg_social,-75561.70000000007,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,inst_seg_social,640249.7000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,inst_seg_social,198433.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,inst_seg_social,564688.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,inst_seg_social,230.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,inst_seg_social,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,inst_seg_social,-75792.00000000012,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,inst_seg_social,640480.0000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,inst_seg_social,564688.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,inst_seg_social,230.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,inst_seg_social,724226.4000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,inst_seg_social,724226.4000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,inst_seg_social,38894.59999999986,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,763121.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,inst_seg_social,38894.59999999986,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,83746.40000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,org_descentralizados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,44695.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,0.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,org_descentralizados,14442.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,org_descentralizados,4716.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,org_descentralizados,37697.19999999998,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,org_descentralizados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,org_descentralizados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,org_descentralizados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,org_descentralizados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,org_descentralizados,1408.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,org_descentralizados,31.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS,. Otras,subdetalle,org_descentralizados,492.1999999999998,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,org_descentralizados,9.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,org_descentralizados,0.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,146.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,org_descentralizados,11598.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,org_descentralizados,4565.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,org_descentralizados,11091.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,520.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,32755.299999999996,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,org_descentralizados,24467.399999999998,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,org_descentralizados,8287.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,org_descentralizados,12.899999999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,org_descentralizados,43275.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,org_descentralizados,48.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,org_descentralizados,9758.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,org_descentralizados,276.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,org_descentralizados,23.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,org_descentralizados,299.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,org_descentralizados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,org_descentralizados,-56905.49999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,org_descentralizados,86139.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,org_descentralizados,6.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,org_descentralizados,101550.79999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,org_descentralizados,29233.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,org_descentralizados,30134.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,org_descentralizados,8436.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,org_descentralizados,7943.799999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,org_descentralizados,146.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,org_descentralizados,-95615.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,org_descentralizados,124856.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,org_descentralizados,29240.800000000003,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,org_descentralizados,38717.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,org_descentralizados,126323.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,org_descentralizados,126319.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,org_descentralizados,4471.799999999988,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,130791.59999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,org_descentralizados,4468.099999999991,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,1467.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,18879.100000000002,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,41.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,pami_fdos_otros,3541.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,pami_fdos_otros,74531.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,pami_fdos_otros,7180.099999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,pami_fdos_otros,16.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS,. Otras,subdetalle,pami_fdos_otros,10471.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,pami_fdos_otros,364.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,6286.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,pami_fdos_otros,60007.600000000006,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,pami_fdos_otros,50614.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,pami_fdos_otros,17640.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,23131.800000000003,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,44890.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,pami_fdos_otros,30518.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,pami_fdos_otros,14007.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,pami_fdos_otros,675.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,pami_fdos_otros,15733.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,pami_fdos_otros,91464.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,pami_fdos_otros,6397.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,pami_fdos_otros,12683.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,pami_fdos_otros,41178.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,pami_fdos_otros,-18944.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,pami_fdos_otros,193252.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,pami_fdos_otros,3055.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,pami_fdos_otros,96993.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,pami_fdos_otros,174308.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,pami_fdos_otros,32943.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,pami_fdos_otros,38939.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,pami_fdos_otros,28468.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,pami_fdos_otros,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,pami_fdos_otros,-87771.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,pami_fdos_otros,265135.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,pami_fdos_otros,177363.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,pami_fdos_otros,71883.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,279578.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,278903.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,pami_fdos_otros,-4545.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,274357.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,pami_fdos_otros,-5220.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,14442.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,200.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,rec_afectados,383.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,rec_afectados,1185.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,rec_afectados,733.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS,. Otras,subdetalle,rec_afectados,944.3000000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,rec_afectados,0.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,rec_afectados,0.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. RESTO,. Resto,subdetalle,rec_afectados,390.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,59.999999999999886,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,rec_afectados,52015.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,rec_afectados,75.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,rec_afectados,11460.199999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,26530.900000000005,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,rec_afectados,21421.800000000003,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,rec_afectados,5108.700000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,rec_afectados,0.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,rec_afectados,19.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,rec_afectados,367.59999999999997,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,rec_afectados,2605.6000000000004,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,rec_afectados,4890.599999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,rec_afectados,67.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,rec_afectados,5017.599999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,rec_afectados,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,rec_afectados,30196.399999999987,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,rec_afectados,34907.50000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,rec_afectados,49.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,rec_afectados,583.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,rec_afectados,65103.899999999994,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,rec_afectados,10723.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,rec_afectados,4886.400000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,rec_afectados,3942.1000000000004,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,rec_afectados,390.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,rec_afectados,14245.499999999993,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,rec_afectados,50908.200000000004,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,rec_afectados,65153.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,rec_afectados,16000.699999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,rec_afectados,59548.90000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,rec_afectados,59548.90000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,rec_afectados,6187.999999999985,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,65736.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,rec_afectados,6187.999999999985,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,8640.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,1425.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,tesoro_nacional,0.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,tesoro_nacional,539.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS,. Otras,subdetalle,tesoro_nacional,3593.2999999999993,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,2042.6999999999998,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,1893.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,tesoro_nacional,717487.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,tesoro_nacional,5746.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,76923.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,121485.59999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,tesoro_nacional,93872.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,tesoro_nacional,27613.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,tesoro_nacional,84389.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,tesoro_nacional,299.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,tesoro_nacional,228659.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,tesoro_nacional,42302.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,tesoro_nacional,45164.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,tesoro_nacional,89361.00000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,tesoro_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,tesoro_nacional,275994.1000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,tesoro_nacional,524463.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,tesoro_nacional,4.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,tesoro_nacional,1425.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,tesoro_nacional,800457.6000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,tesoro_nacional,6069.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,tesoro_nacional,15857.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,tesoro_nacional,12264.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,tesoro_nacional,2042.6999999999998,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,tesoro_nacional,252029.00000000012,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,tesoro_nacional,548433.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,tesoro_nacional,800462.5000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,tesoro_nacional,23970.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,tesoro_nacional,850661.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,tesoro_nacional,766272.1000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,tesoro_nacional,35615.40000000002,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,801887.5000000001,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,tesoro_nacional,-48774.29999999993,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,302228.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,total_adm_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,64867.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,1425.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_adm_nacional,14442.5,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_adm_nacional,5099.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_adm_nacional,227697.19999999998,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_adm_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,total_adm_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_adm_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB.,- SUPERAVIT OPERATIVO EMPRESAS PUB.,detalle,total_adm_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_adm_nacional,2594.8,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_adm_nacional,1303.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS,. Otras,subdetalle,total_adm_nacional,5029.799999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_adm_nacional,9.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,total_adm_nacional,0.9,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,2579.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,1953.7999999999997,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,total_adm_nacional,1002637.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_adm_nacional,331393.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,total_adm_nacional,28653.899999999998,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,99399.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,189869.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_adm_nacional,147093.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_adm_nacional,42775.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_adm_nacional,84402.99999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_adm_nacional,559889.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_adm_nacional,715.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_adm_nacional,366660.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_adm_nacional,53840.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_adm_nacional,45255.1,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_adm_nacional,101049.30000000002,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB.,detalle,total_adm_nacional,0.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_adm_nacional,162184.0,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_adm_nacional,1303210.7000000002,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL,principal,total_adm_nacional,61.599999999999994,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_adm_nacional,313531.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_adm_nacional,1465394.7000000002,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_adm_nacional,47158.200000000004,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_adm_nacional,29180.2,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_adm_nacional,24150.4,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_adm_nacional,2579.7,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_adm_nacional,83327.49999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_adm_nacional,1382128.8000000003,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_adm_nacional,1465456.3,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_adm_nacional,78918.09999999999,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1778211.2000000002,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1693817.8000000003,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) SUPERAVIT PRIMARIO (XI-XII),principal,total_adm_nacional,85169.79999999986,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1778987.6,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,total_adm_nacional,776.3999999999069,resultado-fiscal_septiembre-2022.xlsx
+2022-09-01,2022,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,396082.4,resultado-fiscal_septiembre-2022.xlsx
 2022-10-01,2022,10,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,resultado-fiscal_octubre-2022.xlsx
 2022-10-01,2022,10,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,resultado-fiscal_octubre-2022.xlsx
 2022-10-01,2022,10,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,resultado-fiscal_octubre-2022.xlsx
