@@ -67,7 +67,7 @@ def detect_value_columns(rows: list[list]) -> list[tuple[int, int, int]]:
             parsed = _extract_date_from_cell(cell)
             if parsed:
                 yr, mo = parsed
-                if 2019 <= yr <= 2030:
+                if 2018 <= yr <= 2026:
                     results.append((j, yr, mo))
     # Remove duplicates preserving order
     seen = set()
@@ -144,8 +144,8 @@ def normalize_concepto_imig(raw: str) -> str:
     return raw.strip()[:80]
 
 
-def _find_concepto_col(rows: list[list]) -> int:
-    """Busca la columna donde está el concepto (la que contiene 'INGRESOS TOTALES')."""
+def _find_base_col(rows: list[list]) -> int:
+    """Busca la columna base del IMIG (donde está 'INGRESOS TOTALES' = nivel 1)."""
     for row in rows:
         for j, cell in enumerate(row):
             if cell and "INGRESOS TOTALES" in str(cell).upper():
@@ -155,11 +155,21 @@ def _find_concepto_col(rows: list[list]) -> int:
 
 def parse_imig_sheet(rows: list[list], year: int, month: int,
                      source: str) -> list[dict]:
-    """Parsea una hoja IMIG y retorna lista de dicts."""
-    val_cols = detect_value_columns(rows)
-    concepto_col = _find_concepto_col(rows)
+    """
+    Parsea una hoja IMIG y retorna lista de dicts.
 
-    # Encontrar fila de "INGRESOS TOTALES" como inicio de datos
+    Estructura jerárquica del IMIG:
+      col base+0: nivel 1 (INGRESOS TOTALES, GASTOS PRIMARIOS, ...)
+      col base+1: nivel 2 (Tributarios, Prestaciones sociales, ...)
+      col base+2: nivel 3 (IVA, Ganancias, Jubilaciones, ...)
+    Los valores están en las últimas 2 columnas con fechas detectadas.
+    """
+    val_cols = detect_value_columns(rows)
+    base_col = _find_base_col(rows)
+    # Columnas de concepto: base, base+1, base+2
+    concepto_cols = [base_col, base_col + 1, base_col + 2]
+
+    # Encontrar fila de inicio (INGRESOS TOTALES)
     start_row = None
     for i, row in enumerate(rows):
         for j, cell in enumerate(row):
@@ -174,16 +184,23 @@ def parse_imig_sheet(rows: list[list], year: int, month: int,
 
     records = []
     for row in rows[start_row:]:
-        concepto_cell = row[concepto_col] if concepto_col < len(row) else None
-        if concepto_cell is None:
-            continue
-        concepto_str = str(concepto_cell).strip()
+        # Buscar el concepto en las columnas jerárquicas (nivel 1 tiene prioridad)
+        concepto_str = ""
+        nivel_col = base_col
+        for col_idx in concepto_cols:
+            if col_idx < len(row) and row[col_idx] is not None:
+                txt = str(row[col_idx]).strip()
+                if txt:
+                    concepto_str = txt
+                    nivel_col = col_idx
+                    break
+
         if not concepto_str:
             continue
         if _is_stop(concepto_str):
             break
 
-        nivel = _indent_level(str(concepto_cell))
+        nivel = nivel_col - base_col  # 0=nivel1, 1=nivel2, 2=nivel3
         concepto_norm = normalize_concepto_imig(concepto_str)
 
         for (col_idx, col_yr, col_mo) in val_cols:

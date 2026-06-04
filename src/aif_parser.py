@@ -227,14 +227,17 @@ def _is_data_row(row: list) -> tuple[bool, str, str]:
     raw = str(row[1] if len(row) > 1 and row[1] else row[0]).strip() if row else ""
 
     # Columna B (índice 1) como principal portadora del concepto
-    col_b = str(row[1]).strip() if len(row) > 1 and row[1] is not None else ""
+    # IMPORTANTE: leer el raw SIN strip para conservar espacios de sangría
+    col_b_raw = str(row[1]) if len(row) > 1 and row[1] is not None else ""
+    col_b = col_b_raw.strip()
     col_a = str(row[0]).strip() if row[0] is not None else ""
 
     if col_a and ROMAN_RE.match(col_a):
         return True, f"{col_a} {col_b}".strip(), "principal"
 
     if col_b:
-        leading_spaces = len(col_b) - len(col_b.lstrip())
+        # Contar espacios en el valor RAW (antes del strip)
+        leading_spaces = len(col_b_raw) - len(col_b_raw.lstrip())
         if leading_spaces == 0 and not ROMAN_RE.match(col_b):
             return False, "", ""
         if leading_spaces <= 5:
@@ -243,7 +246,7 @@ def _is_data_row(row: list) -> tuple[bool, str, str]:
             nivel = "subdetalle"
         else:
             nivel = "micro"
-        return True, col_b.strip(), nivel
+        return True, col_b, nivel
 
     return False, "", ""
 
