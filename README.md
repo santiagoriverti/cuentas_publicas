@@ -9,55 +9,51 @@ Datos fiscales del Sector Publico Nacional (Secretaria de Hacienda) consolidados
 | Notebook | Descripcion | Link |
 |---|---|---|
 | **01 - Consolidacion** | Carga los datos desde GitHub y exporta un Excel unificado descargable | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb) |
-| **02 - Analisis Fiscal** | Graficos de resultado primario, gasto, intereses, transferencias a provincias | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb) |
-
----
-
-## Como agregar nuevos meses
-
-Cuando Hacienda publique nuevos datos mensuales, seguir estos pasos:
-
-### Paso 1 — Descargar el archivo Excel nuevo
-Ir a: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica  
-Descargar el archivo del mes correspondiente (ej. `sector_publico_base_caja_mayo_2026.xlsx`).
-
-### Paso 2 — Copiar el archivo a la carpeta de datos crudos
-```
-C:\Users\sriverti\Desktop\INECO\Repositorios\cuentas_publicas\data\raw\
-```
-> Esta carpeta esta ignorada por git (los Excel no se suben a GitHub), pero el script la lee automaticamente.  
-> El ZIP original `sector_publico.zip.zip` ya esta en esa carpeta con todos los meses anteriores.
-
-### Paso 3 — Regenerar los datasets
-Abrir una terminal en la carpeta del proyecto y ejecutar:
-```bash
-python src/consolidate.py
-```
-El script detecta automaticamente todos los archivos `.xls` y `.xlsx` en `data/raw/`,
-los parsea y regenera `output/aif_consolidado.csv` e `output/imig_consolidado.csv`.
-
-### Paso 4 — Publicar los datos actualizados en GitHub
-```bash
-git add output/aif_consolidado.csv output/imig_consolidado.csv
-git commit -m "datos: agregar mes YYYY-MM"
-git push
-```
-
-### Paso 5 — Abrir el Notebook 01 en Colab
-El notebook lee los CSVs directamente desde GitHub, por lo que al ejecutarlo
-ya incluye los nuevos datos sin ninguna configuracion adicional.
+| **02 - Analisis Fiscal** | Graficos en pesos constantes + Excel y ZIP descargables | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb) |
 
 ---
 
 ## Fuente de datos
 
-**Secretaria de Hacienda - Ministerio de Economia**  
+**Secretaria de Hacienda - Ministerio de Economia**
 https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
 
 - **AIF** - Sector Publico Base Caja (Esquema Ahorro-Inversion-Financiamiento)
 - **IMIG** - Informe Mensual de Ingresos y Gastos
 
-Cobertura actual: **enero 2020 - abril 2026** (75 archivos Excel)
+Cobertura actual: **enero 2020 - abril 2026** (78 archivos Excel procesados)
+
+---
+
+## Como agregar nuevos meses
+
+Cuando Hacienda publique nuevos datos mensuales:
+
+### Paso 1 — Descargar el nuevo Excel
+Ir a: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
+Descargar el archivo del mes (ej. `sector_publico_base_caja_mayo_2026.xlsx`).
+
+### Paso 2 — Copiarlo a la carpeta de datos
+```
+C:\...\cuentas_publicas\data\raw\
+```
+El script detecta automaticamente archivos Excel sueltos en esa carpeta, ademas del ZIP original.
+
+### Paso 3 — Regenerar los datasets
+```bash
+python src/consolidate.py
+```
+El script muestra al final los meses faltantes detectados automaticamente.
+
+### Paso 4 — Publicar en GitHub
+```bash
+git add output/aif_consolidado.csv output/imig_consolidado.csv
+git commit -m "datos: YYYY-MM"
+git push
+```
+
+### Paso 5 — Ejecutar en Colab
+Los notebooks leen los CSVs directamente de GitHub — no requieren subir archivos.
 
 ---
 
@@ -65,18 +61,11 @@ Cobertura actual: **enero 2020 - abril 2026** (75 archivos Excel)
 
 | Archivo | Descripcion | Registros |
 |---|---|---|
-| `output/aif_consolidado.csv` | AIF mensual/acumulado por subsector institucional | ~26.700 |
-| `output/imig_consolidado.csv` | IMIG - detalle funcional de ingresos y gastos | ~6.800 |
+| `output/aif_consolidado.csv` | AIF mensual/acumulado por subsector institucional | 27.964 |
+| `output/imig_consolidado.csv` | IMIG - detalle funcional de ingresos y gastos | 7.950 |
+| `data/reference/IPC.xlsx` | IPC Nivel General INDEC (ene-2017 a abr-2026) | - |
 
-### Hojas del Excel exportado por el Notebook 01
-
-| Hoja | Descripcion |
-|---|---|
-| `AIF_mensual` | Todos los conceptos x subsector, periodicidad mensual |
-| `AIF_acumulado` | Idem, acumulado anual |
-| `Resultado_pivot` | KPIs en columnas: ingresos, gastos, intereses, resultado primario y financiero |
-| `Transferencias_provincias` | Transferencias corrientes Y de capital a Provincias/CABA por subsector |
-| `IMIG` | Detalle funcional: prestaciones sociales, subsidios, salarios, etc. |
+**Unico mes sin datos AIF mensual:** Jun-2022 (Hacienda solo publico el acumulado del I Semestre).
 
 ### Columnas de aif_consolidado.csv
 
@@ -107,8 +96,6 @@ Cobertura actual: **enero 2020 - abril 2026** (75 archivos Excel)
 | Codigo | Descripcion |
 |---|---|
 | `I_INGRESOS_CORRIENTES` | Ingresos corrientes totales |
-| `I1_INGRESOS_TRIBUTARIOS` | Ingresos tributarios |
-| `I2_APORTES_SEG_SOCIAL` | Aportes y contribuciones a la seguridad social |
 | `II_GASTOS_CORRIENTES` | Gastos corrientes totales |
 | `II2_INTERESES` | Intereses de deuda |
 | `II3_PRESTACIONES_SEG_SOCIAL` | Jubilaciones, pensiones y prestaciones |
@@ -127,14 +114,11 @@ import pandas as pd
 REPO = 'https://raw.githubusercontent.com/santiagoriverti/cuentas_publicas/main'
 df = pd.read_csv(f'{REPO}/output/aif_consolidado.csv', parse_dates=['fecha'])
 
-# Resultado primario mensual - Total Administracion Nacional
-resultado = df[
-    (df['concepto_codigo'] == 'XIV_RESULTADO_PRIMARIO') &
-    (df['subsector'] == 'total_adm_nacional') &
-    (df['periodo'] == 'mensual')
-].set_index('fecha')['valor_millones_pesos']
-
-print(resultado.tail(12))
+# Resultado primario mensual - Sector Publico Total
+for ss in ['total_adm_nacional', 'pami_fdos_otros']:
+    s = df[(df['concepto_codigo']=='XIV_RESULTADO_PRIMARIO') &
+           (df['subsector']==ss) & (df['periodo']=='mensual')]
+    # sumar ambos subsectores para obtener el total del sector publico
 ```
 
 ---
@@ -144,18 +128,20 @@ print(resultado.tail(12))
 ```
 cuentas_publicas/
 ├── data/
-│   └── raw/                       <- AGREGAR AQUI los nuevos Excel de Hacienda
-│       └── sector_publico.zip.zip    (ZIP con todos los meses 2020-abr2026)
+│   ├── raw/           <- Agregar nuevos Excel de Hacienda aqui (gitignored)
+│   │   └── sector_publico.zip.zip   (ZIP con todos los meses 2020-abr2026)
+│   └── reference/
+│       └── IPC.xlsx   <- IPC INDEC (commiteado)
 ├── output/
-│   ├── aif_consolidado.csv        <- Dataset AIF (se regenera con consolidate.py)
-│   └── imig_consolidado.csv       <- Dataset IMIG (se regenera con consolidate.py)
+│   ├── aif_consolidado.csv     <- Se regenera con consolidate.py
+│   └── imig_consolidado.csv
 ├── src/
-│   ├── aif_parser.py              <- Parser AIF (deteccion automatica de formato)
-│   ├── imig_parser.py             <- Parser IMIG
-│   └── consolidate.py             <- Script principal: lee data/raw/ -> output/
+│   ├── aif_parser.py       <- Parser AIF (deteccion automatica de formato por año)
+│   ├── imig_parser.py      <- Parser IMIG (incluye formato multi-columna semestral)
+│   └── consolidate.py      <- Lee ZIP + archivos sueltos en data/raw/ -> output/
 ├── notebooks/
-│   ├── 01_consolidar.ipynb        <- Exporta Excel unificado desde GitHub
-│   └── 02_analisis_fiscal.ipynb   <- Visualizaciones y analisis
+│   ├── 01_consolidar.ipynb     <- Exporta Excel unificado
+│   └── 02_analisis_fiscal.ipynb <- Graficos pesos constantes + ZIP descargable
 └── requirements.txt
 ```
 
@@ -164,9 +150,11 @@ cuentas_publicas/
 ## Notas metodologicas
 
 - Todos los valores en **millones de ARS corrientes** (no ajustados por inflacion)
-- Los datos son "ejecucion provisoria" de Hacienda; pueden diferir de publicaciones definitivas
-- Desde 2026 los archivos AIF eliminan la columna EX-CAJAS PROVINCIALES; para series largas usar `subsector = total_adm_nacional`
-- El script `consolidate.py` es idempotente: puede ejecutarse multiples veces, siempre sobreescribe los CSVs con los datos mas actualizados
+- Deflactor para series reales: IPC Nivel General INDEC, base abril 2026
+- Los titulares usan *Sector Publico Total* = Adm. Nacional + PAMI + Fondos Fiduciarios
+- Desde 2026 los archivos AIF eliminan la columna EX-CAJAS; usar `total_adm_nacional` para series largas
+- Los datos son "ejecucion provisoria"; pueden diferir levemente de publicaciones definitivas
+- **Validado contra Hacienda oficial:** 2024 y 2025 con 0% de diferencia en resultado primario y financiero
 
 ---
 
