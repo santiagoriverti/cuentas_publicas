@@ -85,8 +85,45 @@ queda inflado por transferencias intra-sector. Esto afecta el % provincias/ajust
   Transf. provincias: -5.0 B (-10.2%) | Universidades: -2.5 B (-5.2%)
 - Transferencias a provincias: 4.0% del gasto en 2023 -> 1.7% en 2025
 
+## Bug IMIG corregido (2026-06-04)
+El patron r"IVA" en el normalizador matcheaba la subcadena "IVA" en "CONTRIBUTIVAS".
+Esto causaba que Jubilaciones_pensiones y Pensiones_no_contributivas fueran normalizadas
+incorrectamente como IVA_neto_reintegros.
+Fix: mover jubilaciones/pensiones ANTES de IVA en el dict, usar r"\bIVA\b".
+IMIG regenerado: 8.421 registros (era 7.950).
+
+## Notebook 02 - Estado actual (post 2026-06-04)
+Graficos (600 DPI, sin gap Jun-2022, etiquetas cada 3 meses en español):
+  01_resultado_primario_financiero.png
+  02_ajuste_componentes_2023_2025.png  (barras horizontales con valores)
+  03_transferencias_provincias.png
+  04_composicion_gasto_corriente.png
+  05_composicion_ingresos.png
+  06_torta_recorte_gasto.png          (PIE CHART: % por rubro)
+Intereses deuda y subsectores: eliminados por solicitud.
+
+Celdas de analisis completo (Celda 9):
+  Tabla 1: Resultado fiscal anual 2020-2026 con % del PIB
+  Tabla 2: Cuantificacion ajuste Milei 2023->2024/2025
+  Tabla 3: Desglose funcional por rubro (IMIG):
+    Obra publica, Subsidios, Transf.Provincias, Salarios,
+    Jubilaciones, Universidades, Pensiones NC, PAMI, AUH
+
+Excel 5 hojas: Serie_mensual | Resumen_anual | Transferencias_prov |
+               Ajuste_AIF | Ajuste_IMIG_funcional
+
+## Hallazgos IMIG (pesos constantes abr-2026, 2023->2025):
+- AUH: 3.9 B -> 7.5 B = +3.6 B (+92%) - UNICA partida con gran aumento real
+- Obra publica: 16.8 -> 3.8 = -13.0 B (-77%)
+- Subsidios: 22.3 -> 10.6 = -11.7 B (-52%)
+- Otros prog sociales: 21.5 -> 11.2 = -10.3 B (-48%)
+- Salarios: 26.4 -> 20.7 = -5.7 B (-22%)
+- Transf. provincias: 7.2 -> 3.0 = -4.2 B (-58%)
+- Universidades: 7.2 -> 5.1 = -2.1 B (-29%)
+- Jubilaciones: 64.0 -> 66.0 = +2.0 B (+3%) - leve aumento en 2025
+- PAMI: 9.3 -> 9.8 = +0.5 B (+5%) - leve aumento
+
 ## Pendiente
-- [ ] Analisis IMIG: AUH, subsidios energia/transporte desagregados
 - [ ] Datos provinciales MECON por jurisdiccion
 - [ ] IPC: actualizar con nuevos meses cuando esten disponibles
 - [ ] Consolidacion intra-sector para % provincias/ajuste mas preciso
