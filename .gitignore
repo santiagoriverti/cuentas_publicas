@@ -1,8 +1,11 @@
-# Datos crudos - no versionar
+# Datos crudos - no versionar (Excel originales de Hacienda)
 data/raw/
 *.zip
 *.xls
+
+# Ignorar xlsx EXCEPTO los de data/reference/ (deflactores, etc.)
 *.xlsx
+!data/reference/*.xlsx
 
 __pycache__/
 *.py[cod]
