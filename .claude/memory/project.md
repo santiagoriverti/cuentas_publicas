@@ -1,114 +1,121 @@
 # Proyecto: cuentas_publicas
 
 ## Objetivo
-Consolidar datos del Sector Público Nacional argentino (Hacienda) en un dataset tidy para análisis macro del ajuste fiscal y superávit primario, con desagregación por subsector institucional y transferencias a provincias.
-
-## Fuente de datos
-- URL: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
-- Archivo original: sector_publico.zip.zip → data/raw/sector_publico.zip.zip (dentro del repo, gitignored)
-- 75 archivos Excel (xls/xlsx), 2020-2026
-- DOS tipos de informes por archivo: AIF + IMIG
+Consolidar datos del Sector Público Nacional argentino (Hacienda) en un dataset tidy para análisis macro del ajuste fiscal y superávit primario, con desagregación por subsector institucional y transferencias a provincias. Expresar valores en pesos constantes via IPC.
 
 ## Repositorio GitHub
 - URL: https://github.com/santiagoriverti/cuentas_publicas (rama: main)
 - Notebook 01 Colab: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb
 - Notebook 02 Colab: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb
 
-## Estructura de los archivos Excel
+## Fuente de datos
+- URL: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
+- ZIP original: data/raw/sector_publico.zip.zip (gitignored)
+- 75 archivos Excel (xls/xlsx), 2020-2026
+- IPC INDEC: data/reference/IPC.xlsx (commiteado, ene-2017 a abr-2026)
 
-### AIF (Esquema Ahorro-Inversión-Financiamiento)
-- Hoja con "ESQUEMA AHORRO" o "SECTOR PUBLICO BASE CAJA" en primeras filas
-- Columnas: TESORO NACIONAL | REC.AFECTADOS | ORG.DESCENTRALIZADOS | INST.SEG.SOCIAL | EX-CAJAS PVCIALES (hasta 2025) | TOTAL | PAMI/FDOS | [TOTAL GRAL desde 2026]
-- Filas: I) INGRESOS CORRIENTES ... XV) RESULTADO FINANCIERO + sub-items con sangría
-- Offset de encabezado varía por año (1-3 filas de headers)
-- 2026: eliminan columna EX-CAJAS, añaden T O T A L (col I)
-- Sub-items clave en los datos:
-  - Corrientes a provincias: `.. Provincias y CABA` → II4b1_TRANSF_PROVINCIAS_CABA
-  - Capital a provincias: `. A Provincias y CABA` → V2a_TRANSF_CAPITAL_PROVINCIAS
-  - Diferencia clave: capital tiene ". A " antes de Provincias, corrientes tiene ".."
+## Estructura de archivos del repo
+```
+data/
+  raw/          <- ZIP + Excel originales (gitignored, agregar nuevos meses aqui)
+  reference/    <- IPC.xlsx y otros datos de referencia (commiteados)
+output/
+  aif_consolidado.csv    (~27.250 registros)
+  imig_consolidado.csv   (~6.830 registros)
+src/
+  aif_parser.py    <- Parser AIF
+  imig_parser.py   <- Parser IMIG
+  consolidate.py   <- Script principal (lee data/raw/ -> output/)
+  deflate.py       <- Modulo deflacion: load_ipc(), deflate_series(), deflate_df()
+notebooks/
+  01_consolidar.ipynb    <- Carga CSVs de GitHub, exporta Excel unificado descargable
+  02_analisis_fiscal.ipynb <- Analisis completo con deflactor, exporta Excel resultados
+```
 
-### IMIG (Informe Mensual de Ingresos y Gastos)
-- Hoja con "INGRESOS TOTALES" como marcador
-- Jerarquía en columnas: col base=nivel1, col base+1=nivel2, col base+2=nivel3
-- Dos columnas de valores: mes actual + mismo mes año anterior
-- La fecha aparece como datetime o Excel serial en el encabezado (rango válido: 2018-2026)
-
-## Datasets actuales
+## Datasets generados
 
 ### output/aif_consolidado.csv
-- ~27.250 filas, columnas: fecha, anio, mes, periodo, concepto_codigo, concepto_descripcion, concepto_nivel, subsector, valor_millones_pesos, fuente_archivo
-- 54 conceptos únicos (15 principales I-XV + ~40 sub-items)
-- XIV_RESULTADO_PRIMARIO y XV_RESULTADO_FINANCIERO son los KPIs clave
-- Para series largas: usar subsector=total_adm_nacional, periodo=mensual
+- 27.250 filas | fecha, anio, mes, periodo, concepto_codigo, concepto_descripcion, concepto_nivel, subsector, valor_millones_pesos, fuente_archivo
+- 54 conceptos únicos (15 principales I-XV + ~40 sub-items con sangría)
+- concepto_nivel: principal / detalle / subdetalle / micro
+- Para series largas: subsector=total_adm_nacional, periodo=mensual
 
 ### output/imig_consolidado.csv
-- ~6.830 filas, 52 conceptos en 3 niveles jerárquicos
+- 6.830 filas | 52 conceptos en 3 niveles jerárquicos
 - nivel_jerarquia: 0=principal, 1=detalle, 2=subdetalle
-- Incluye datos del año anterior de cada archivo (columna de comparación)
+- Incluye año anterior como comparación (datos desde 2019)
 
-## Notebooks
+## Notebooks en detalle
 
-### notebooks/01_consolidar.ipynb
-- Lee CSVs desde GitHub (rama main), exporta Excel unificado descargable
-- 5 hojas: AIF_mensual | AIF_acumulado | Resultado_pivot | Transferencias_provincias | IMIG
-- Hoja Resultado_pivot: ingresos, gastos, intereses, prestaciones, resultado primario y financiero
-- Hoja Transferencias_provincias: pivot por subsector, tipo=Corrientes/Capital
+### Notebook 01 - Consolidacion
+Exporta `datos_fiscales_consolidado.xlsx` con 5 hojas:
+- AIF_mensual: todos los conceptos x subsector
+- AIF_acumulado: idem acumulado
+- Resultado_pivot: KPIs en columnas (ingresos, gastos, intereses, prestaciones, resultado)
+- Transferencias_provincias: pivot fecha x tipo (Corrientes/Capital) x subsector
+- IMIG: detalle funcional
 
-### notebooks/02_analisis_fiscal.ipynb
-- Lee CSVs desde GitHub, genera visualizaciones
-- Secciones: resultado primario/financiero, ingresos, gasto, transferencias, subsectores, resumen ajuste
+### Notebook 02 - Analisis Fiscal
+Lee CSVs + IPC desde GitHub. Todo corre en Colab sin subir archivos.
+Base deflación: pesos constantes de abril 2026 (último mes IPC disponible).
+Secciones:
+1. Resultado Primario y Financiero 2020-2026 (nominal + real, lado a lado)
+2. El ajuste 2024-2026: cuánto y de dónde (tabla 2022/2023/2024/2025 + gráfico variación)
+3. Cuánto del ajuste se trasladó a provincias (con % cuantificado)
+4. Composición del gasto apilada (real)
+5. Composición de ingresos (real)
+6. Desagregación por subsector institucional
+7. Exporta `analisis_fiscal_resultados.xlsx` con 4 hojas:
+   - Serie_mensual: KPIs mes a mes, nominal Y real
+   - Resumen_anual: totales anuales
+   - Transferencias_prov: corrientes + capital, Tesoro y total, nominal + real
+   - Ajuste_componentes: tabla del ajuste por componente
 
-## Arquitectura del código
+## Módulo deflate.py
+- load_ipc(): carga IPC local o descarga desde GitHub
+- deflate_series(serie, ipc, base_date): serie nominal -> pesos constantes
+- deflate_df(df, value_col, date_col, ipc, base_date): agrega columna valor_real al df
 
-### src/aif_parser.py
-- parse_filename_date(): extrae (año, mes) del nombre de archivo
-- detect_column_map(): detecta qué columna es cada subsector via regex en headers combinados
-- _is_data_row(): detecta filas de datos por Roman numeral (col A) o sangría en col B RAW (sin strip)
-- normalize_concepto(): mapea descripciones a códigos normalizados (orden importa: capital antes que corrientes)
-- parse_aif_sheet(): parsea una hoja AIF completa
-- parse_file(): entry point, maneja xls y xlsx
+## Arquitectura parsers
 
-### src/imig_parser.py
-- detect_value_columns(): fechas como datetime o serial Excel, rango 2018-2026
-- parse_imig_sheet(): detecta concepto en cols base/base+1/base+2 según nivel
-- parse_file(): entry point, ignora hojas Acumulado/Mensualizacion/Salida
+### src/aif_parser.py - bugs corregidos
+- Sub-items: col_b_raw sin strip() para contar sangría correctamente
+- Capital a provincias: patrón ". A PROVINCIAS Y CABA" con prioridad sobre "PROVINCIAS Y CABA"
+  * Corrientes: `.. Provincias y CABA` → II4b1_TRANSF_PROVINCIAS_CABA
+  * Capital: `. A Provincias y CABA` → V2a_TRANSF_CAPITAL_PROVINCIAS
+
+### src/imig_parser.py - bugs corregidos
+- Jerarquía en cols base/base+1/base+2 (no solo col base)
+- Fechas: rango restringido 2018-2026
 
 ### src/consolidate.py
-- Lee ZIP de data/raw/, parsea todos los archivos, deduplica, guarda CSVs
-- Uso sin parámetros: python src/consolidate.py (busca en data/raw/ por defecto)
+- Uso: python src/consolidate.py (busca data/raw/ por defecto)
+- Idempotente: sobreescribe CSVs con datos más actualizados
 
 ## Flujo para agregar nuevos meses
-1. Descargar Excel de Hacienda → copiar a data/raw/
+1. Descargar Excel de Hacienda -> copiar a data/raw/
 2. python src/consolidate.py
 3. git add output/ && git commit -m "datos: YYYY-MM" && git push
-4. Abrir Notebook 01 en Colab → ya tiene los nuevos datos
-
-## Bugs corregidos (historial)
-- AIF sub-items: .strip() borraba sangría antes de contar nivel → col_b_raw sin strip
-- IMIG jerarquía: solo leía col base, ignoraba cols base+1/base+2
-- IMIG fechas: valores de ingresos confundidos con seriales Excel → restringir 2018-2026
-- V2a capital provincias: patrón CAPITAL.*PROVINCIAS no matcheaba ". A Provincias y CABA"
-  → patrón ". A PROVINCIAS Y CABA" con prioridad sobre "PROVINCIAS Y CABA"
-- Rama master → main (fix Colab 404)
-- Encoding notebooks → reescritos sin caracteres especiales
+4. Notebooks en Colab ya tienen los nuevos datos automáticamente
 
 ## Meses faltantes en datos fuente (no hay Excel en el ZIP)
 - Noviembre 2021
 - Septiembre 2022
 
-## Hallazgos clave (2020-2026)
-- 2020-2023: déficit primario persistente (COVID + gestión Fernández)
-- 2024-2026: superávit primario consistente (gestión Milei)
-  - Excepción: diciembre cada año (aguinaldos + cierre)
-  - Abril 2026: resultado primario +273.621 MM ARS, financiero -88.190 MM ARS
-- Transferencias corrientes Tesoro a Provincias/CABA (mensual, MM ARS):
-  - 2024: caída real vs 2023 (ajuste discrecional)
-  - Abr 2026: corrientes 84.448 MM, capital 470 MM (Tesoro)
-- Intereses deuda: 362.249 MM ARS en abril 2026
+## Hallazgos clave (2020-2026, en pesos corrientes)
+- 2020-2023: déficit primario persistente
+  - Pico: 2023 = -6.22 billones ARS nominales
+- 2024-2026: superávit primario sostenido
+  - 2024: +7.69 B | 2025: +7.89 B | 2026 (4 meses): +5.36 B
+  - Excepción: diciembre cada año (aguinaldos)
+- Intereses deuda: crecen de 1.3 B (2022) a 10.3 B (2025)
+- Transferencias corrientes Tesoro -> Provincias/CABA:
+  - 2023: 1.124 B | 2024: 1.324 B | 2025: 2.028 B
+  - Capital 2023: 273 MM | 2024: 35 MM (caída -87% real) | 2025: 111 MM
 
 ## Pendiente / Próximas sesiones
-- [ ] Deflactor IPC/IPM para series en pesos constantes
-- [ ] Notebook 02: mejorar visualizaciones con datos IMIG (subsidios, prestaciones)
+- [ ] Ver resultados del Notebook 02 con deflactor y cuantificación del ajuste
+- [ ] Deflactor IPC: actualizar cuando salgan nuevos meses
 - [ ] Datos MECON de finanzas provinciales desagregadas por jurisdicción
-- [ ] Análisis subsidios energéticos y transporte (disponible en IMIG)
+- [ ] Análisis IMIG: subsidios energía/transporte, prestaciones por tipo
 - [ ] Exportar a Parquet para queries más rápidas
