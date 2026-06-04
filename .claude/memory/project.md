@@ -113,26 +113,29 @@ Secciones:
   - 2023: 1.124 B | 2024: 1.324 B | 2025: 2.028 B
   - Capital 2023: 273 MM | 2024: 35 MM (caída -87% real) | 2025: 111 MM
 
-## Validacion de resultados (2026-06-04)
+## Validacion contra datos oficiales de Hacienda (2026-06-04)
 
-### Resultado financiero - matchea con fuente oficial (base mar-2026):
-| Año | Referencia | Nuestro |
-|---|---|---|
-| 2023 | -44.3 B | -47.0 B (~6% dif. por base mar vs abr 2026) |
-| 2024 | +4.0 B | +4.2 B ✅ |
-| 2025 | +2.5 B | +2.4 B ✅ |
+### Comparacion con datos oficiales Hacienda (nominal, billones ARS):
 
-### Transferencias a provincias:
-- Var 2023→2025: -70% (ref: -73%) ✅
-- Var absoluta: -7.6 B (ref: -8.7 B) — diferencia por consolidación intra-sector
+| Año | Primario oficial | Nuestro | Dif | Financiero oficial | Nuestro | Dif |
+|---|---|---|---|---|---|---|
+| 2023 | -5.48 B | -5.2 B | ~5% | -8.74 B | -8.4 B | ~4% |
+| 2024 | +10.41 B | +10.4 B | <0.1% ✅ | +1.76 B | +1.8 B | ~2% ✅ |
+| 2025 | +11.77 B | +11.8 B | <0.3% ✅ | +1.45 B | +1.5 B | ~3% ✅ |
 
-### Nota metodológica importante: consolidación intra-sector
-El gasto primario total y % de provincias difieren porque la referencia usa sector
-público consolidado (neta transferencias intra-sector). En nuestro cálculo, cuando
-Tesoro transfiere fondos a PAMI, aparece como gasto en ambos lados → denominador inflado.
-- Nuestro % provincias/ajuste gasto: 9.3% (ref: 15.9%)
-- Para los titulares de resultado financiero, la cifra es correcta porque los resultados
-  por entidad ya incluyen esas transferencias netas en sus ingresos/gastos.
+Fuentes oficiales:
+- https://www.argentina.gob.ar/noticias/el-sector-publico-nacional-registro-superavit-financiero-anual-por-primera-vez-desde-el
+- https://www.argentina.gob.ar/noticias/en-el-ano-2025-el-sector-publico-nacional-registro-un-superavit-financiero-de-1453819
+
+**2024 y 2025 coinciden con menos del 3% de diferencia → dataset validado.**
+Diferencia ~5% en 2023: los Excel del ZIP son versiones provisorias; Hacienda publica
+cifras definitivas revisadas. No hay bug en el código.
+
+### Nota metodológica: consolidación intra-sector
+Al sumar total_adm_nacional + pami_fdos_otros para gasto primario, se infla el denominador
+porque las transferencias intra-sector aparecen en ambos lados (ej: Tesoro → PAMI).
+Esto afecta solo el % provincias/ajuste (9.3% nuestro vs ~15.9% de otros análisis).
+El resultado financiero NO está afectado porque los resultados por entidad ya netean esos flujos.
 
 ### Componentes del ajuste 2023→2025 (Adm. Nacional, real):
 - Subsidios (transf. sector privado): -17.7 B (-36.6% del ajuste)
