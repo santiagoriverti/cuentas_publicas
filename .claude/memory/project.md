@@ -147,11 +147,21 @@ El resultado financiero NO está afectado porque los resultados por entidad ya n
 - Prestaciones Seg. Social: -3.4 B (-7.0%)
 - UNICA partida que CRECIÓ: no capturada aún a nivel sub-item (AUH está en IMIG)
 
+## Notebook 02 - Graficos (estado 2026-06-04)
+- Todos en pesos constantes abr-2026. Sin titulos principales.
+- Eje X: todos los meses, rotados 45 grados. Exportados a 600 DPI.
+- Descarga final: analisis_fiscal.zip con Excel + 7 PNGs separados:
+  01_resultado_primario_financiero.png
+  02_ajuste_componentes_2023_2025.png
+  03_transferencias_provincias.png
+  04_composicion_gasto_corriente.png
+  05_composicion_ingresos.png
+  06_resultado_por_subsector.png
+  07_intereses_deuda.png
+
 ## Pendiente / Próximas sesiones
-- [ ] Consolidación real: usar total_general (disponible desde 2026) como benchmark
-      para entender cuánto del gap en gasto primario es por doble-conteo intra-sector
 - [ ] Análisis IMIG: AUH (+71% real), subsidios energía/transporte desagregados
 - [ ] Deflactor IPC: actualizar cuando salgan nuevos meses (mayo 2026+)
 - [ ] Datos MECON de finanzas provinciales desagregadas por jurisdicción
 - [ ] Exportar a Parquet para queries más rápidas
-- [ ] Mejorar formato Excel: columnas reales en billones (no MM ARS) para legibilidad
+- [ ] Consolidación intra-sector para % provincias/ajuste más preciso
