@@ -113,9 +113,42 @@ Secciones:
   - 2023: 1.124 B | 2024: 1.324 B | 2025: 2.028 B
   - Capital 2023: 273 MM | 2024: 35 MM (caída -87% real) | 2025: 111 MM
 
+## Validacion de resultados (2026-06-04)
+
+### Resultado financiero - matchea con fuente oficial (base mar-2026):
+| Año | Referencia | Nuestro |
+|---|---|---|
+| 2023 | -44.3 B | -47.0 B (~6% dif. por base mar vs abr 2026) |
+| 2024 | +4.0 B | +4.2 B ✅ |
+| 2025 | +2.5 B | +2.4 B ✅ |
+
+### Transferencias a provincias:
+- Var 2023→2025: -70% (ref: -73%) ✅
+- Var absoluta: -7.6 B (ref: -8.7 B) — diferencia por consolidación intra-sector
+
+### Nota metodológica importante: consolidación intra-sector
+El gasto primario total y % de provincias difieren porque la referencia usa sector
+público consolidado (neta transferencias intra-sector). En nuestro cálculo, cuando
+Tesoro transfiere fondos a PAMI, aparece como gasto en ambos lados → denominador inflado.
+- Nuestro % provincias/ajuste gasto: 9.3% (ref: 15.9%)
+- Para los titulares de resultado financiero, la cifra es correcta porque los resultados
+  por entidad ya incluyen esas transferencias netas en sus ingresos/gastos.
+
+### Componentes del ajuste 2023→2025 (Adm. Nacional, real):
+- Subsidios (transf. sector privado): -17.7 B (-36.6% del ajuste)
+- Gastos corrientes totales: -42.3 B
+- Gastos de capital: -6.0 B
+- Transferencias a provincias/CABA: -5.0 B (-10.2% del ajuste)
+- Remuneraciones: -6.2 B (-12.9%)
+- Universidades: -2.5 B (-5.2%)
+- Prestaciones Seg. Social: -3.4 B (-7.0%)
+- UNICA partida que CRECIÓ: no capturada aún a nivel sub-item (AUH está en IMIG)
+
 ## Pendiente / Próximas sesiones
-- [ ] Ver resultados del Notebook 02 con deflactor y cuantificación del ajuste
-- [ ] Deflactor IPC: actualizar cuando salgan nuevos meses
+- [ ] Consolidación real: usar total_general (disponible desde 2026) como benchmark
+      para entender cuánto del gap en gasto primario es por doble-conteo intra-sector
+- [ ] Análisis IMIG: AUH (+71% real), subsidios energía/transporte desagregados
+- [ ] Deflactor IPC: actualizar cuando salgan nuevos meses (mayo 2026+)
 - [ ] Datos MECON de finanzas provinciales desagregadas por jurisdicción
-- [ ] Análisis IMIG: subsidios energía/transporte, prestaciones por tipo
 - [ ] Exportar a Parquet para queries más rápidas
+- [ ] Mejorar formato Excel: columnas reales en billones (no MM ARS) para legibilidad
