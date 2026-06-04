@@ -123,6 +123,18 @@ Excel 5 hojas: Serie_mensual | Resumen_anual | Transferencias_prov |
 - Jubilaciones: 64.0 -> 66.0 = +2.0 B (+3%) - leve aumento en 2025
 - PAMI: 9.3 -> 9.8 = +0.5 B (+5%) - leve aumento
 
+## Fix adicional (post-verificacion 2026-06-04)
+- rubros_tabla usaba texto completo con acento para AUH ('Asignación Universal para 
+  Protección Social') en lugar del codigo normalizado 'AUH'. Fix: usar 'AUH'.
+- Agregado 'Otros_prog_sociales' a rubros_tabla (-10.3 B, 12.6% del ajuste).
+- La torta ahora incluye 'Otros prog. sociales' y 'AUH' correctamente.
+
+## Verificacion final de datos (2026-06-04):
+- NB01 IMIG: 8.421 filas ✅ (datos correctos con jubilaciones y pensiones)
+- NB02 Transferencias_prov: 300 filas ✅ (+8 respecto a antes por Nov-2021 y Sep-2022)
+- NB02 Resultado_pivot 2024/2025: 0% diferencia con Hacienda ✅
+- NB02 tabla rubros: 10 items incluyendo AUH y Otros_prog_sociales ✅
+
 ## Pendiente
 - [ ] Datos provinciales MECON por jurisdiccion
 - [ ] IPC: actualizar con nuevos meses cuando esten disponibles
