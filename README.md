@@ -2,7 +2,14 @@
 
 Datos fiscales del Sector Publico Nacional (Secretaria de Hacienda) consolidados en un unico dataset tidy.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_analisis_fiscal.ipynb)
+---
+
+## Abrir en Google Colab
+
+| Notebook | Descripcion | Link |
+|---|---|---|
+| **01 - Consolidacion** | Carga los datos desde GitHub y exporta un Excel unificado | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb) |
+| **02 - Analisis Fiscal** | Visualizaciones del resultado primario, gasto, transferencias a provincias | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb) |
 
 ---
 
@@ -11,36 +18,31 @@ Datos fiscales del Sector Publico Nacional (Secretaria de Hacienda) consolidados
 **Secretaria de Hacienda - Ministerio de Economia**  
 https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
 
-Archivos incluidos:
 - **AIF** - Sector Publico Base Caja (Esquema Ahorro-Inversion-Financiamiento)
 - **IMIG** - Informe Mensual de Ingresos y Gastos
 
-Cobertura: **enero 2020 - abril 2026** (75 archivos Excel, ~8.000 registros AIF)
+Cobertura: **enero 2020 - abril 2026** (75 archivos Excel)
 
 ---
 
-## Datasets generados
+## Datasets en este repositorio
 
-| Archivo | Descripcion | Filas |
+| Archivo | Descripcion | Registros |
 |---|---|---|
-| `output/aif_consolidado.csv` | AIF mensual/acumulado por subsector | ~8.000 |
-| `output/imig_consolidado.csv` | IMIG funcional de ingresos y gastos | ~650 |
+| `output/aif_consolidado.csv` | AIF mensual/acumulado por subsector institucional | ~8.000 |
+| `output/imig_consolidado.csv` | IMIG - detalle funcional de ingresos y gastos | ~650 |
 
-### Estructura AIF (`aif_consolidado.csv`)
+### Columnas de aif_consolidado.csv
 
 | Columna | Descripcion |
 |---|---|
 | `fecha` | Primer dia del mes (YYYY-MM-DD) |
-| `anio` / `mes` | Año y mes numerico |
 | `periodo` | `mensual` o `acumulado` |
 | `concepto_codigo` | Codigo normalizado (ej. `XIV_RESULTADO_PRIMARIO`) |
-| `concepto_descripcion` | Texto original del Excel |
-| `concepto_nivel` | `principal` / `detalle` / `subdetalle` |
-| `subsector` | Subsector institucional (ver abajo) |
+| `subsector` | Subsector institucional (ver tabla abajo) |
 | `valor_millones_pesos` | En millones de ARS corrientes |
-| `fuente_archivo` | Nombre del archivo Excel de origen |
 
-**Subsectores:**
+### Subsectores disponibles
 
 | Codigo | Descripcion |
 |---|---|
@@ -53,7 +55,7 @@ Cobertura: **enero 2020 - abril 2026** (75 archivos Excel, ~8.000 registros AIF)
 | `pami_fdos_otros` | PAMI + Fondos Fiduciarios y Otros |
 | `total_general` | Total Sector Publico (desde 2026) |
 
-**Principales conceptos normalizados:**
+### Principales conceptos normalizados
 
 | Codigo | Descripcion |
 |---|---|
@@ -63,8 +65,8 @@ Cobertura: **enero 2020 - abril 2026** (75 archivos Excel, ~8.000 registros AIF)
 | `II3_PRESTACIONES_SEG_SOCIAL` | Jubilaciones, pensiones y otros |
 | `II4b1_TRANSF_PROVINCIAS_CABA` | Transferencias corrientes a provincias |
 | `V2a_TRANSF_CAPITAL_PROVINCIAS` | Transferencias de capital a provincias |
-| `XIV_RESULTADO_PRIMARIO` | Resultado primario (antes de intereses) |
-| `XV_RESULTADO_FINANCIERO` | Resultado financiero (despues de intereses) |
+| `XIV_RESULTADO_PRIMARIO` | Resultado primario (excluye intereses) |
+| `XV_RESULTADO_FINANCIERO` | Resultado financiero (incluye intereses) |
 
 ---
 
@@ -73,7 +75,8 @@ Cobertura: **enero 2020 - abril 2026** (75 archivos Excel, ~8.000 registros AIF)
 ```python
 import pandas as pd
 
-df = pd.read_csv('output/aif_consolidado.csv', parse_dates=['fecha'])
+REPO = 'https://raw.githubusercontent.com/santiagoriverti/cuentas_publicas/main'
+df = pd.read_csv(f'{REPO}/output/aif_consolidado.csv', parse_dates=['fecha'])
 
 # Resultado primario mensual - Total Administracion Nacional
 resultado = df[
@@ -87,20 +90,18 @@ print(resultado.tail(12))
 
 ---
 
-## Como reproducir el dataset
+## Como reproducir los datasets localmente
 
 ```bash
 git clone https://github.com/santiagoriverti/cuentas_publicas.git
 cd cuentas_publicas
 pip install -r requirements.txt
 
-# Copiar el ZIP original a data/raw/
+# Copiar el ZIP de Hacienda a data/raw/
 # cp /ruta/al/sector_publico.zip.zip data/raw/
 
 python src/consolidate.py
 ```
-
-Los CSVs se generan en `output/`.
 
 ---
 
@@ -108,36 +109,29 @@ Los CSVs se generan en `output/`.
 
 ```
 cuentas_publicas/
-├── data/
-│   └── raw/              # Excel originales (no versionados en git)
+├── data/raw/                      # ZIP y Excel originales (gitignored)
 ├── output/
-│   ├── aif_consolidado.csv
-│   └── imig_consolidado.csv
+│   ├── aif_consolidado.csv        # Dataset AIF consolidado
+│   └── imig_consolidado.csv       # Dataset IMIG consolidado
 ├── src/
-│   ├── aif_parser.py     # Parser AIF (Esquema Ahorro-Inversion-Financiamiento)
-│   ├── imig_parser.py    # Parser IMIG (Informe Mensual Ingresos y Gastos)
-│   └── consolidate.py    # Script principal de consolidacion
+│   ├── aif_parser.py              # Parser AIF
+│   ├── imig_parser.py             # Parser IMIG
+│   └── consolidate.py             # Script principal
 ├── notebooks/
-│   └── 01_analisis_fiscal.ipynb
-├── .claude/
-│   └── memory/
-│       └── project.md    # Memoria del proyecto para continuacion
-├── requirements.txt
-└── README.md
+│   ├── 01_consolidar.ipynb        # Carga datos + exporta Excel
+│   └── 02_analisis_fiscal.ipynb   # Visualizaciones y analisis
+├── .claude/memory/project.md      # Memoria del proyecto
+└── requirements.txt
 ```
 
 ---
 
 ## Notas metodologicas
 
-- **Pesos corrientes:** todos los valores en millones de ARS corrientes (no ajustados por inflacion)
-- **Cambio estructural 2026:** desde enero 2026, los archivos AIF eliminan la columna "EX-CAJAS PROVINCIALES" y añaden una columna "T O T A L" que consolida administracion nacional + PAMI/fondos. Para series largas, usar `total_adm_nacional`.
-- **Provisorio vs. definitivo:** los datos de Hacienda son "ejecucion provisoria"; pueden diferir levemente de publicaciones definitivas.
-- **Cobertura geografica:** los datos AIF son nacionales. No incluyen datos provinciales desagregados por jurisdiccion (para eso ver MECON/series provinciales).
+- Todos los valores en **millones de ARS corrientes** (no ajustados por inflacion)
+- Desde 2026 los archivos AIF eliminan la columna EX-CAJAS PROVINCIALES; para series largas usar `total_adm_nacional`
+- Los datos son "ejecucion provisoria" de Hacienda; pueden diferir levemente de publicaciones definitivas
 
 ---
 
-## Licencia
-
-Datos originales: Ministerio de Economia Argentina (dominio publico).  
-Codigo de procesamiento: MIT License.
+Datos originales: Ministerio de Economia Argentina (dominio publico). Codigo: MIT License.
