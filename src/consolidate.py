@@ -92,7 +92,9 @@ def process(zip_path: Path, raw_dir: Path, output_dir: Path):
         df_imig = pd.DataFrame(all_imig)
         df_imig["fecha"] = pd.to_datetime(df_imig["fecha"], format="%Y-%m", errors="coerce")
         df_imig = df_imig.sort_values(["fecha", "concepto_codigo"])
-        df_imig = df_imig.drop_duplicates(subset=["fecha", "concepto_codigo", "fuente_archivo"])
+        df_imig = df_imig.drop_duplicates(
+            subset=["fecha", "concepto_codigo", "nivel_jerarquia", "fuente_archivo"]
+        )
         out = output_dir / "imig_consolidado.csv"
         df_imig.to_csv(out, index=False, encoding="utf-8-sig")
         print(f"  IMIG: {len(df_imig):,} registros -> {out}")
