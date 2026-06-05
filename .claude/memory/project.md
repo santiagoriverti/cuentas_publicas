@@ -73,9 +73,24 @@ Celdas de analisis (Celda 9):
     Cada uno: valor 2023/2024/2025, variacion absoluta, % real, % del ajuste
 
 Excel 5 hojas: Serie_mensual | Resumen_anual | Transferencias_prov |
-               Ajuste_AIF | Ajuste_IMIG_funcional
+               Ajuste_AIF_mensual | Ajuste_IMIG_rubros
 
-Descarga: analisis_fiscal.zip (6 PNG + Excel)
+Descarga: analisis_fiscal.zip (7 PNG + Excel)
+
+Graficos (7 total):
+  01_resultado_primario_financiero.png  <- barras + linea + vline Milei
+  02_composicion_gasto.png
+  03_composicion_ingresos.png
+  04_transferencias_provincias.png
+  05_ajuste_componentes_mensual.png     <- dic-23 → ultimo mes, AIF
+  06_torta_recorte_gasto.png            <- dic-23 → ultimo mes, IMIG
+  07_recorte_por_rubro.png              <- dic-23 → ultimo mes, IMIG
+
+BUGS CORREGIDOS (NotebookEdit corrupciones):
+- NotebookEdit previo sobreescribio celda datos con codigo roto (\n literales)
+- df_anual sin index=idx → RangeIndex.year error
+- Celda grafico-01 duplicada
+- Solucion definitiva: usar Write() para reescribir notebook completo
 
 ## Validacion contra Hacienda oficial (nominal)
 | Año | Primario oficial | Nuestro | Financiero oficial | Nuestro |
