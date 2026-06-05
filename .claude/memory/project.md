@@ -45,20 +45,23 @@ Graficos (7, 600 DPI, etiquetas trimestrales en espanol, linea naranja Milei dic
   02_composicion_gasto.png              <- gasto corriente apilado mensual
   03_composicion_ingresos.png           <- ingresos apilados mensual
   04_transferencias_provincias.png      <- transferencias corrientes + capital Tesoro
-  05_ajuste_componentes_mensual.png     <- barras horiz. variacion dic-23 → abr-26 (AIF)
-  06_torta_recorte_gasto.png            <- % baja por rubro (IMIG, dic-23 → abr-26)
-  07_recorte_por_rubro.png              <- barras horiz. variacion por rubro IMIG
+  05_ajuste_componentes_anual.png       <- barras dobles 2023 vs 2024/2025 (AIF)
+  06_torta_recorte_gasto.png            <- % por rubro (IMIG, 2023 vs 2025 anual)
+  07_recorte_por_rubro.png              <- barras dobles por rubro IMIG (2023 vs 2024/2025)
 
 Excel (5 hojas): Serie_mensual | Resumen_anual | Transferencias_prov |
-                 Ajuste_AIF_mensual | Ajuste_IMIG_rubros
+                 Ajuste_AIF_anual | Ajuste_IMIG_rubros
 
 Descarga: analisis_fiscal.zip (7 PNG + Excel)
 
+Comparacion del ajuste: ANUAL 2023 vs 2024/2025 (anos completos, robusta)
+NO usar comparacion mensual dic-23: sesgo alto por estacionalidad de diciembre
+
 Celda 9 - Resumen completo (4 secciones):
   1. Resultado fiscal anual 2020-2026 con % PIB
-  2. Magnitud del ajuste (años completos 2023→2024/2025)
-  3. Variacion mensual dic-2023 → abr-2026 (AIF, Adm. Nacional)
-  4. Desglose funcional IMIG por rubro
+  2. Magnitud del ajuste (anos completos 2023 vs 2024 y 2025)
+  3. Desglose por componente AIF (2023 vs 2024/2025)
+  4. Desglose funcional IMIG por rubro (2023 vs 2025)
 
 ## Validacion vs Hacienda oficial (nominal, sin diferencia)
 | Año | Primario | Financiero |
