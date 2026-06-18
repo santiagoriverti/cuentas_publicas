@@ -21,7 +21,7 @@ https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
 - **AIF** - Sector Publico Base Caja (Esquema Ahorro-Inversion-Financiamiento)
 - **IMIG** - Informe Mensual de Ingresos y Gastos
 
-Cobertura actual: **enero 2020 - abril 2026** (78 archivos Excel procesados)
+Cobertura actual: **enero 2020 - mayo 2026** (80 archivos Excel procesados)
 
 ---
 
@@ -61,9 +61,9 @@ Los notebooks leen los CSVs directamente de GitHub — no requieren subir archiv
 
 | Archivo | Descripcion | Registros |
 |---|---|---|
-| `output/aif_consolidado.csv` | AIF mensual/acumulado por subsector institucional | 27.964 |
-| `output/imig_consolidado.csv` | IMIG - detalle funcional de ingresos y gastos | 7.950 |
-| `data/reference/IPC.xlsx` | IPC Nivel General INDEC (ene-2017 a abr-2026) | - |
+| `output/aif_consolidado.csv` | AIF mensual/acumulado por subsector institucional | 28.664 |
+| `output/imig_consolidado.csv` | IMIG - detalle funcional de ingresos y gastos | 8.529 |
+| `data/reference/IPC.xlsx` | IPC Nivel General INDEC (ene-2017 a may-2026) | - |
 
 **Unico mes sin datos AIF mensual:** Jun-2022 (Hacienda solo publico el acumulado del I Semestre).
 

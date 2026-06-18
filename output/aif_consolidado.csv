@@ -27963,3 +27963,703 @@
 2026-04-01,2026,4,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_general,15615309.900000002,Abril 26.xlsx
 2026-04-01,2026,4,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_general,268102.90000000026,Abril 26.xlsx
 2026-04-01,2026,4,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_general,2203522.6,Abril 26.xlsx
+2026-05-01,2026,5,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,1371662.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,inst_seg_social,3700000.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS,. Otras,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,inst_seg_social,10662571.399999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,inst_seg_social,20848117.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,inst_seg_social,35478.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,547709.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,436265.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,inst_seg_social,364722.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,inst_seg_social,71543.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,inst_seg_social,25368063.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,inst_seg_social,6354356.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,inst_seg_social,115166.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,inst_seg_social,115166.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,inst_seg_social,-179975.90000000224,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,inst_seg_social,32273852.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,inst_seg_social,5071662.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,inst_seg_social,32093876.999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,inst_seg_social,1554.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,inst_seg_social,-181530.70000000298,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,inst_seg_social,32275407.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,inst_seg_social,32093876.999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,inst_seg_social,1554.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,inst_seg_social,36537827.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,inst_seg_social,36537827.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,inst_seg_social,627712.3999999985,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,37165539.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,inst_seg_social,627712.3999999985,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,4262419.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,46.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,org_descentralizados,80449.90000000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,org_descentralizados,13222.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,org_descentralizados,1106258.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,org_descentralizados,61243.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,org_descentralizados,4890.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS,. Otras,subdetalle,org_descentralizados,2604.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,org_descentralizados,1084.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,org_descentralizados,41.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. RESTO,. Resto,subdetalle,org_descentralizados,1741.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,org_descentralizados,517378.80000000005,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,org_descentralizados,35748.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,org_descentralizados,673131.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,4353.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,1394020.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,org_descentralizados,1072984.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,org_descentralizados,320994.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,org_descentralizados,2103.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,org_descentralizados,244.70000000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,org_descentralizados,67860.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,org_descentralizados,15704.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,org_descentralizados,9.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,org_descentralizados,15714.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,org_descentralizados,-193317.00000000023,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,org_descentralizados,1485416.9000000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,org_descentralizados,464.99999999999545,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,org_descentralizados,1199977.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,org_descentralizados,1292099.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,org_descentralizados,184711.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,org_descentralizados,5556.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,org_descentralizados,2951.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,org_descentralizados,1741.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,org_descentralizados,-384861.3000000003,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,org_descentralizados,1677426.2000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,org_descentralizados,1292564.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,org_descentralizados,192009.30000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,org_descentralizados,1721600.2000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,org_descentralizados,1720581.7000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,org_descentralizados,771960.3999999994,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,2492542.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,org_descentralizados,770941.8999999994,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,44174.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,951803.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,pami_fdos_otros,16454.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,pami_fdos_otros,60856.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,pami_fdos_otros,2005351.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,pami_fdos_otros,98000.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,711456.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,pami_fdos_otros,496.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS,. Otras,subdetalle,pami_fdos_otros,105798.29999999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,pami_fdos_otros,6436.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,pami_fdos_otros,4236.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,1254.6000000000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,pami_fdos_otros,2041515.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,pami_fdos_otros,3134879.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,pami_fdos_otros,478062.19999999995,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,675680.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,1984248.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,pami_fdos_otros,1244816.2000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,pami_fdos_otros,735196.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,pami_fdos_otros,25062.699999999997,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,pami_fdos_otros,9216.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,pami_fdos_otros,4761281.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,pami_fdos_otros,132735.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,pami_fdos_otros,133990.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,1166174.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,pami_fdos_otros,-999688.4000000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,pami_fdos_otros,8148498.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,pami_fdos_otros,4802.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,pami_fdos_otros,3034466.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,pami_fdos_otros,7148810.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,pami_fdos_otros,535433.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,pami_fdos_otros,167491.09999999998,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,pami_fdos_otros,61692.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,pami_fdos_otros,-1697810.6000000006,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,pami_fdos_otros,8851423.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,pami_fdos_otros,7153613.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,pami_fdos_otros,702925.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,8948328.700000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,8929702.600000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,pami_fdos_otros,1258377.1999999993,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,10188079.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,pami_fdos_otros,1239751.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,96904.80000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,1938953.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,377.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,rec_afectados,5220.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,rec_afectados,55601.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,rec_afectados,36956.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS,. Otras,subdetalle,rec_afectados,364.3000000000018,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,rec_afectados,458.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,rec_afectados,6.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. RESTO,. Resto,subdetalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,.. OTRAS,.. Otras,subdetalle,rec_afectados,5240.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,rec_afectados,1616690.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,rec_afectados,2427.3999999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,rec_afectados,628802.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,1613.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,1163322.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,rec_afectados,1005456.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,rec_afectados,157859.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,rec_afectados,458.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,rec_afectados,1482278.2999999998,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,rec_afectados,42.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,rec_afectados,518219.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,rec_afectados,127171.59999999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,rec_afectados,132412.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,rec_afectados,-1028780.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,rec_afectados,3333958.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,rec_afectados,2247.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,rec_afectados,1944551.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,rec_afectados,2305178.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,rec_afectados,43619.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,rec_afectados,23441.800000000003,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,rec_afectados,23077.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,rec_afectados,-1093593.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,rec_afectados,3401018.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,rec_afectados,2307425.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,rec_afectados,67060.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,rec_afectados,3492818.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,rec_afectados,3492818.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,rec_afectados,759158.9000000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,4251977.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,rec_afectados,759158.9000000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,91799.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,43750.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,tesoro_nacional,12500.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,tesoro_nacional,9.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,tesoro_nacional,2590.8999999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS,. Otras,subdetalle,tesoro_nacional,5194.299999999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,tesoro_nacional,646.9000000000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,tesoro_nacional,53.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. RESTO,. Resto,subdetalle,tesoro_nacional,105700.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,318637.60000000015,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,tesoro_nacional,21394530.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,tesoro_nacional,103796.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,571422.8999999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,4852697.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,tesoro_nacional,4056805.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,tesoro_nacional,795838.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,tesoro_nacional,5523788.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,tesoro_nacional,24827.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,tesoro_nacional,3645123.5000000005,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,tesoro_nacional,513582.70000000007,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,tesoro_nacional,2350061.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,tesoro_nacional,3182281.8000000003,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,tesoro_nacional,4885905.700000003,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,tesoro_nacional,17208680.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,tesoro_nacional,1153013.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,tesoro_nacional,56250.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,tesoro_nacional,22094586.200000003,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,tesoro_nacional,73298.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,tesoro_nacional,21038.399999999998,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,tesoro_nacional,15844.099999999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,tesoro_nacional,105700.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,tesoro_nacional,5838881.200000003,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,tesoro_nacional,17408718.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,tesoro_nacional,23247599.500000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,tesoro_nacional,200037.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,tesoro_nacional,24220328.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,tesoro_nacional,18697186.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,tesoro_nacional,4606663.200000003,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,23303849.500000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,tesoro_nacional,-916478.799999997,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,6811610.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,3310616.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,44174.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_adm_nacional,80449.90000000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_adm_nacional,30942.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_adm_nacional,4806258.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_adm_nacional,116853.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_adm_nacional,44437.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS,. Otras,subdetalle,total_adm_nacional,8163.200000000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_adm_nacional,2189.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,total_adm_nacional,100.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. RESTO,. Resto,subdetalle,total_adm_nacional,107442.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,323878.40000000014,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_adm_nacional,34191171.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_adm_nacional,20886294.099999998,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_adm_nacional,1441207.7999999998,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,1125099.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,7846306.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_adm_nacional,6499969.100000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_adm_nacional,1346236.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_adm_nacional,5526350.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_adm_nacional,26850342.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_adm_nacional,25114.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_adm_nacional,10585560.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_adm_nacional,771625.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_adm_nacional,2350071.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_adm_nacional,3445575.4000000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_adm_nacional,3483832.8000000007,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_adm_nacional,54301908.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_adm_nacional,1155726.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_adm_nacional,8272441.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_adm_nacional,57785741.099999994,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_adm_nacional,303184.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_adm_nacional,50036.399999999994,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_adm_nacional,41873.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_adm_nacional,107442.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_adm_nacional,4178896.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_adm_nacional,54762571.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_adm_nacional,58941467.099999994,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_adm_nacional,460662.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_adm_nacional,65972574.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_adm_nacional,60448413.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_adm_nacional,6765494.900000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,67213908.4,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_adm_nacional,1241334.4000000013,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,11210003.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_general,4262419.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_general,44174.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_general,96904.80000000002,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_general,91799.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_general,6811610.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_general,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,total_general,0.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_general,98000.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,711456.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_general,116853.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_general,44933.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS,. Otras,subdetalle,total_general,113961.49999999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_general,8626.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,total_general,4337.099999999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,. RESTO,. Resto,subdetalle,total_general,107442.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,.. OTRAS,.. Otras,subdetalle,total_general,325133.0000000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_general,36232686.6,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_general,24021173.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_general,1919269.9999999998,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_general,1800779.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_general,9830554.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_general,7744785.300000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_general,2081432.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_general,5551413.100000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_general,26850342.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_general,34330.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_general,15346841.5,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_general,904361.3,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_general,2350071.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_general,3579565.4000000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,1166174.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_general,2484144.4000000004,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_general,62450407.199999996,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_general,1160528.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_general,11306907.8,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_general,64934551.599999994,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_general,838618.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_general,217527.49999999997,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_general,103566.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_general,107442.0,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_general,2481085.499999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_general,63613994.9,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_general,66095080.39999999,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_general,1163587.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_general,74920902.7,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_general,69378116.1,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_general,8023872.100000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_general,77401988.2,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_general,2481085.500000001,mayo_26.xlsx
+2026-05-01,2026,5,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_general,11306907.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,282111.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,inst_seg_social,1100000.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS,. Otras,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,inst_seg_social,2189075.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,inst_seg_social,4118282.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,inst_seg_social,6809.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,160498.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,100742.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,inst_seg_social,89576.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,inst_seg_social,11166.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,inst_seg_social,5364134.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,inst_seg_social,1219515.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,inst_seg_social,47166.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,inst_seg_social,47166.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,inst_seg_social,-256894.09999999963,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,inst_seg_social,6731559.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,inst_seg_social,1382111.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,inst_seg_social,6474665.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,inst_seg_social,-256894.09999999963,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,inst_seg_social,6731559.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,inst_seg_social,6474665.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,inst_seg_social,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,inst_seg_social,7620212.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,inst_seg_social,7620212.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,inst_seg_social,236564.40000000037,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,7856776.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,inst_seg_social,236564.40000000037,mayo_26.xlsx
+2026-05-01,2026,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,888653.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,org_descentralizados,3756.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,org_descentralizados,2961.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,org_descentralizados,349007.3000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,org_descentralizados,12618.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,org_descentralizados,437.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS,. Otras,subdetalle,org_descentralizados,1006.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,org_descentralizados,507.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,190.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,org_descentralizados,113969.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,org_descentralizados,8078.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,org_descentralizados,115198.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,60.599999999999994,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,328548.69999999995,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,org_descentralizados,262179.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,org_descentralizados,66369.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,org_descentralizados,519.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,org_descentralizados,172.70000000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,org_descentralizados,10175.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,org_descentralizados,5523.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,org_descentralizados,1.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,org_descentralizados,5524.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,org_descentralizados,-95195.19999999992,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,org_descentralizados,345292.89999999997,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,org_descentralizados,315.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,org_descentralizados,355724.8000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,org_descentralizados,250097.70000000004,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,org_descentralizados,20007.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,org_descentralizados,1085.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,org_descentralizados,78.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,org_descentralizados,190.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,org_descentralizados,-116162.7999999999,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,org_descentralizados,366575.99999999994,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,org_descentralizados,250413.20000000004,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,org_descentralizados,21283.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,org_descentralizados,366740.99999999994,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,org_descentralizados,366728.99999999994,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,org_descentralizados,239409.0000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,606138.0000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,org_descentralizados,239397.0000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,165.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,199778.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,pami_fdos_otros,10038.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,pami_fdos_otros,19732.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,pami_fdos_otros,526834.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,pami_fdos_otros,19760.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,111810.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,pami_fdos_otros,90.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS,. Otras,subdetalle,pami_fdos_otros,18809.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,pami_fdos_otros,502.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,pami_fdos_otros,767.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,233.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,pami_fdos_otros,485633.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,pami_fdos_otros,609394.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,pami_fdos_otros,117452.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,144743.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,339455.6000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,pami_fdos_otros,204915.90000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,pami_fdos_otros,133771.80000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,pami_fdos_otros,9788.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,pami_fdos_otros,1044828.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,pami_fdos_otros,52572.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,pami_fdos_otros,52805.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,148097.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,pami_fdos_otros,-116602.10000000033,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,pami_fdos_otros,1605397.5000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,pami_fdos_otros,64.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,pami_fdos_otros,756384.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,pami_fdos_otros,1488795.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,pami_fdos_otros,87581.90000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,pami_fdos_otros,31708.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,pami_fdos_otros,12899.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,pami_fdos_otros,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,pami_fdos_otros,-235828.40000000037,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,pami_fdos_otros,1724687.8000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,pami_fdos_otros,1488859.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,pami_fdos_otros,119290.30000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,1738482.3000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,1729196.5000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,pami_fdos_otros,516046.99999999977,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,2245243.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,pami_fdos_otros,506761.1999999997,mayo_26.xlsx
+2026-05-01,2026,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,13794.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,406763.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,165.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,rec_afectados,1988.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,rec_afectados,13010.800000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS,. Otras,subdetalle,rec_afectados,16.700000000000728,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,rec_afectados,36.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,rec_afectados,1.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. RESTO,. Resto,subdetalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,678.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,rec_afectados,383656.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,rec_afectados,436.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,rec_afectados,100900.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,538.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,210359.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,rec_afectados,180152.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,rec_afectados,30206.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,rec_afectados,36.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,rec_afectados,313415.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,rec_afectados,108735.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,rec_afectados,1928.6000000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,rec_afectados,2606.7000000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,rec_afectados,-136611.20000000007,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,rec_afectados,635153.2000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,rec_afectados,2247.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,rec_afectados,408916.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,rec_afectados,498542.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,rec_afectados,7132.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,rec_afectados,4038.3000000000006,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,rec_afectados,4021.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,rec_afectados,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,rec_afectados,-145534.60000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,rec_afectados,646324.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,rec_afectados,500789.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,rec_afectados,11171.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,rec_afectados,671006.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,rec_afectados,671006.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,rec_afectados,238699.3999999999,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,909706.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,rec_afectados,238699.3999999999,mayo_26.xlsx
+2026-05-01,2026,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,24682.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,tesoro_nacional,0.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,tesoro_nacional,946.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS,. Otras,subdetalle,tesoro_nacional,1367.2999999999993,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,tesoro_nacional,10.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,80711.50000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,tesoro_nacional,5626255.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,tesoro_nacional,40440.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,129699.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,1111941.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,tesoro_nacional,881373.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,tesoro_nacional,230558.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,tesoro_nacional,1436455.9000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,tesoro_nacional,9342.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,tesoro_nacional,1032797.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,tesoro_nacional,108557.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,tesoro_nacional,779998.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,tesoro_nacional,969267.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,tesoro_nacional,1253614.5999999996,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,tesoro_nacional,4552122.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,tesoro_nacional,11193.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,tesoro_nacional,5805736.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,tesoro_nacional,26744.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,tesoro_nacional,5029.599999999999,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,tesoro_nacional,3662.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,tesoro_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,tesoro_nacional,1233033.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,tesoro_nacional,4583896.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,tesoro_nacional,5816929.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,tesoro_nacional,31774.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,tesoro_nacional,6559738.600000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,tesoro_nacional,5123282.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,tesoro_nacional,693647.0999999996,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,5816929.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,tesoro_nacional,-742808.8000000007,mayo_26.xlsx
+2026-05-01,2026,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,1975841.9000000004,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,688875.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,165.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_adm_nacional,3756.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_adm_nacional,4949.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_adm_nacional,1449007.3000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_adm_nacional,25629.800000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_adm_nacional,1383.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS,. Otras,subdetalle,total_adm_nacional,2390.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_adm_nacional,543.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,total_adm_nacional,11.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,190.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,81389.60000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_adm_nacional,8312956.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_adm_nacional,4126796.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_adm_nacional,263347.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,290796.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,1751592.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_adm_nacional,1413281.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_adm_nacional,338299.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_adm_nacional,1437011.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_adm_nacional,5677550.100000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_adm_nacional,9514.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_adm_nacional,2371223.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_adm_nacional,163175.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_adm_nacional,780000.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_adm_nacional,1024564.8999999999,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_adm_nacional,764914.0999999999,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_adm_nacional,12264127.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_adm_nacional,13756.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_adm_nacional,2146753.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_adm_nacional,13029041.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_adm_nacional,53884.90000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_adm_nacional,10153.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_adm_nacional,7762.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_adm_nacional,190.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_adm_nacional,714441.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_adm_nacional,12328356.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_adm_nacional,13042797.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_adm_nacional,64228.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_adm_nacional,15217698.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_adm_nacional,13781231.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_adm_nacional,1408319.9000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,15189550.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_adm_nacional,-28148.000000000175,mayo_26.xlsx
+2026-05-01,2026,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,2889342.8000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_general,888653.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_general,165.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_general,13794.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_general,24682.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_general,1975841.9000000004,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_general,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,total_general,0.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_general,19760.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,111810.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_general,25629.800000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_general,1473.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS,. Otras,subdetalle,total_general,21199.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_general,1046.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,total_general,779.3,mayo_26.xlsx
+2026-05-01,2026,5,mensual,. RESTO,. Resto,subdetalle,total_general,190.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,.. OTRAS,.. Otras,subdetalle,total_general,81622.90000000004,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_general,8798589.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_general,4736191.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_general,380800.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_general,435539.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_general,2091047.7000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_general,1618197.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_general,472071.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_general,1446799.9000000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_general,5677550.100000001,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_general,9514.7,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_general,3416051.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_general,215747.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_general,780000.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_general,1077370.2999999998,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,148097.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_general,648311.9999999995,mayo_26.xlsx
+2026-05-01,2026,5,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_general,13869524.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_general,13820.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_general,2903137.3000000003,mayo_26.xlsx
+2026-05-01,2026,5,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_general,14517836.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_general,141466.80000000002,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_general,41861.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_general,20661.6,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_general,190.8,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_general,478613.1999999996,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_general,14053043.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_general,14531657.1,mayo_26.xlsx
+2026-05-01,2026,5,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_general,183519.0,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_general,16956181.2,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_general,15510427.5,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_general,1924366.9,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_general,17434794.4,mayo_26.xlsx
+2026-05-01,2026,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_general,478613.19999999955,mayo_26.xlsx
+2026-05-01,2026,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_general,2903137.3000000003,mayo_26.xlsx

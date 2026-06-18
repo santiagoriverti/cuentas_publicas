@@ -11,16 +11,21 @@ Consolidar datos del Sector Publico Nacional argentino (Hacienda) en un dataset 
 
 ## Fuente de datos
 - URL: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
-- ZIP: data/raw/sector_publico.zip.zip (gitignored)
+- ZIP: data/raw/sector_publico.zip (gitignored). OJO: el default de consolidate.py es
+  "sector_publico.zip.zip"; el archivo real ahora es "sector_publico.zip" -> correr con
+  `python src/consolidate.py --zip data/raw/sector_publico.zip`
 - Archivos sueltos en data/raw/ (gitignored): Nov-2021, Sep-2022, Jun-2022
-- IPC INDEC: data/reference/IPC.xlsx (commiteado, ene-2017 a abr-2026)
-- 78 archivos Excel, cobertura ene-2020 a abr-2026
+- IPC INDEC: data/reference/IPC.xlsx (commiteado, ene-2017 a may-2026)
+- 80 archivos Excel, cobertura ene-2020 a may-2026
 - Gap unico AIF mensual: Jun-2022 (solo existe acumulado I Semestre)
+- En Windows correr con PYTHONUTF8=1 (los prints usan flecha unicode -> crash cp1252)
 
 ## Datasets
-- output/aif_consolidado.csv: 27.964 registros
-- output/imig_consolidado.csv: 8.421 registros (4.706 tras dedup en runtime)
+- output/aif_consolidado.csv: 28.664 registros (incluye may-2026)
+- output/imig_consolidado.csv: 8.529 registros (incluye may-2026)
 - Validado vs Hacienda: 2024 y 2025 con 0.00% diferencia en primario y financiero
+- Deflactor base = ultimo mes IPC (auto). Tras agregar may-2026, base = may-2026
+  (antes abr-2026): los hallazgos en B mas abajo estan en base abr-2026, reescalan ~+2.1%
 
 ## Estructura de codigo
 ```
@@ -134,5 +139,6 @@ ATENCION: dic-2023 es mes de alto gasto estacional (aguinaldo), caidas % magnifi
 
 ## Pendiente
 - [ ] Datos provinciales MECON por jurisdiccion
-- [ ] IPC: actualizar cuando salgan nuevos meses (mayo 2026+)
+- [x] IPC actualizado a may-2026 (2026-06-18)
+- [ ] IPC: actualizar cuando salgan nuevos meses (junio 2026+)
 - [ ] Consolidacion intra-sector para % provincias/ajuste mas preciso
