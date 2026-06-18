@@ -9,6 +9,36 @@ Consolidar datos del Sector Publico Nacional argentino (Hacienda) en un dataset 
 - Notebook 01 Colab: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb
 - Notebook 02 Colab: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb
 
+## HANDOFF — estado al 2026-06-18 (para retomar en otro chat)
+ESTADO: todo commiteado y pusheado a main (ultimo commit 5465e2a). Arbol git limpio.
+Datos hasta MAYO 2026. Deflactor base = ultimo mes IPC = may-2026 (automatico).
+Ambos notebooks ejecutan end-to-end sin errores y estan validados vs Hacienda y vs fuente cruda.
+
+HECHO ESTE CICLO (jun-2026):
+- Incorporado mayo 2026 (IPC + AIF + IMIG), re-consolidado, validado.
+- Fix parser AIF: I2_APORTES_SEG_SOCIAL en formato viejo ("Contribuciones a la Seg.Social").
+- consolidate.py: autodetecta ZIP (corre con `python src/consolidate.py`) + reporta huecos IMIG.
+- NB02: agregadas 4 hojas nuevas al Excel -> Informe_tabla1, Informe_provincias,
+  Informe_valores (tabla larga con TODO valor del informe), Tablas_LaTeX (5 bloques .tex).
+  El ZIP ahora trae tambien 5 archivos .tex (filas de datos de cada tabla del informe).
+- Mapeo completo de reemplazos base-abril -> base-may del documento LaTeX entregado en chat.
+
+PROXIMO PASO ABIERTO (lo que quedo pendiente de hacer):
+- Aplicar sobre el documento LaTeX del usuario (informe de prensa INECO) los reemplazos a
+  base may-2026: rebasear todos los $billones (~+2.1%), cambiar "abril 2026"->"mayo 2026",
+  cobertura a mayo, columna 2026 parcial (5 meses), %/pp del PIB NO cambian.
+  Fuente de verdad = hojas Informe_valores y Tablas_LaTeX del Excel del NB02.
+  El usuario tiene el .tex en su chat (no esta en el repo). Pedirselo de nuevo para editarlo.
+- Decision pendiente del usuario: en el titulo, ajuste gasto primario 2023->2024 da -87,1 B
+  por la regla sin-redondear; si prefiere que el lector lo verifique como 280,6-193,4 usar -87,2.
+
+GAPS CONOCIDOS (no son bugs): AIF mensual falta jun-2022 (Hacienda solo publico acumulado);
+IMIG falta mar-2026 (Hacienda no publico IMIG ese mes; permanente; no afecta graficos).
+
+SEGURIDAD: el token del remote estaba vencido; los push de este ciclo se hicieron con un PAT
+nuevo pasado por chat (one-time URL, sin guardarlo). Conviene rotar ese token y limpiar el
+remote para que use Git Credential Manager.
+
 ## Fuente de datos
 - URL: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
 - ZIP: data/raw/sector_publico.zip (gitignored). consolidate.py AUTODETECTA
@@ -182,7 +212,10 @@ OJO endpoint: may-2026 es mes de CUPON de deuda (intereses altos) → intereses 
 4. Notebooks en Colab se actualizan automaticamente
 
 ## Pendiente
+- [ ] PRINCIPAL: aplicar reemplazos base may-2026 al documento LaTeX del informe INECO
+      (ver seccion HANDOFF; pedir el .tex al usuario). Fuente: hojas Informe_valores / Tablas_LaTeX.
 - [ ] Datos provinciales MECON por jurisdiccion
 - [x] IPC actualizado a may-2026 (2026-06-18)
 - [ ] IPC: actualizar cuando salgan nuevos meses (junio 2026+)
 - [ ] Consolidacion intra-sector para % provincias/ajuste mas preciso
+- [ ] Seguridad: rotar PAT expuesto en chat + limpiar token del remote (usar GCM)
