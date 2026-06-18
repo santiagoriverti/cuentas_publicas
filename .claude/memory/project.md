@@ -11,13 +11,18 @@ Consolidar datos del Sector Publico Nacional argentino (Hacienda) en un dataset 
 
 ## Fuente de datos
 - URL: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
-- ZIP: data/raw/sector_publico.zip (gitignored). OJO: el default de consolidate.py es
-  "sector_publico.zip.zip"; el archivo real ahora es "sector_publico.zip" -> correr con
-  `python src/consolidate.py --zip data/raw/sector_publico.zip`
+- ZIP: data/raw/sector_publico.zip (gitignored). consolidate.py AUTODETECTA
+  data/raw/sector_publico*.zip -> ya NO hace falta pasar --zip. Correr:
+  `python src/consolidate.py`
 - Archivos sueltos en data/raw/ (gitignored): Nov-2021, Sep-2022, Jun-2022
 - IPC INDEC: data/reference/IPC.xlsx (commiteado, ene-2017 a may-2026)
 - 80 archivos Excel, cobertura ene-2020 a may-2026
 - Gap unico AIF mensual: Jun-2022 (solo existe acumulado I Semestre)
+- Gap unico IMIG: 2026-03 (FALTA el archivo IMIG de marzo 2026 en origen; marzo_26.xlsx
+  es AIF puro, sin hoja IMIG). No afecta graficos (IMIG solo usa 2023-2025 anual).
+  Para completarlo: descargar IMIG marzo 2026 de Hacienda -> data/raw/ -> reconsolidar
+- IMIG 2026 viene en archivos separados por mes: ene/feb en sector_publico_base_caja_*_2026
+  (hoja IMIG), abril=IMIG Abril 2026.xlsx, mayo=imig_mayo_2026.xlsx, MARZO=ausente
 - En Windows correr con PYTHONUTF8=1 (los prints usan flecha unicode -> crash cp1252)
 
 ## Datasets
@@ -32,11 +37,23 @@ Consolidar datos del Sector Publico Nacional argentino (Hacienda) en un dataset 
 src/
   aif_parser.py    <- Parser AIF. Bugs corregidos: sangria, patrones IVA/CONTRIBUTIVAS
   imig_parser.py   <- Parser IMIG. Jerarquia multi-columna, fechas "ene-22", \bIVA\b
-  consolidate.py   <- iter_sources(): ZIP + archivos sueltos en data/raw/
-  deflate.py       <- Utilidades de deflacion IPC
+  consolidate.py   <- iter_sources(): ZIP + archivos sueltos. Autodetecta ZIP +
+                      reporta huecos mensuales AIF e IMIG en el resumen
+  deflate.py       <- Utilidades de deflacion IPC (helper standalone, no usado por NB)
 data/reference/
-  IPC.xlsx         <- IPC Nivel General INDEC ene-2017 a abr-2026 (commiteado)
+  IPC.xlsx         <- IPC Nivel General INDEC ene-2017 a may-2026 (commiteado)
 ```
+
+## Auditoria exhaustiva fuentes (2026-06-18)
+- 80 archivos fuente revisados. 34 conceptos AIF normalizados cubren los 76 meses en
+  total_adm_nacional SIN huecos (tras fix I2). Subsectores clave (tesoro, pami) OK.
+- 0 nulos en AIF/IMIG. Validacion Hacienda 2024/2025 intacta (primario/financiero <0.3%).
+- Ambos notebooks ejecutados celda-por-celda end-to-end: 0 errores, 7 PNG + Excel + ZIP.
+- Fragmentacion cosmetica (NO afecta nada): filas detalle/subdetalle con notas al pie
+  "(2)/(3)" quedan como texto crudo separado (ej. SUPERAVIT OP. EMPRESAS PUB / ...(3),
+  . INTERESES (2), XVI INGRESOS EXTRAORDINARIOS (3)). Los principales se leen directo
+  del Excel, NO se suman de detalles -> totales correctos. Dejado asi a proposito.
+- Pendiente de datos (no de codigo): conseguir IMIG marzo 2026.
 
 ## Notebook 01 - Consolidacion
 Exporta datos_fiscales_consolidado.xlsx (5 hojas):

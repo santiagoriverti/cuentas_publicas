@@ -131,26 +131,48 @@ def _print_summary(df_aif, df_imig):
         print(f"  Rango : {df_imig['fecha'].min().strftime('%Y-%m')} - {df_imig['fecha'].max().strftime('%Y-%m')}")
         print(f"  Registros: {len(df_imig):,}")
         print(f"  Conceptos unicos: {df_imig['concepto_codigo'].nunique()}")
+        # Meses faltantes IMIG (el IMIG suele venir en archivo/hoja aparte del AIF;
+        # un hueco aqui = falta el Excel IMIG de ese mes, no es bug de parseo)
+        if len(df_imig) > 0:
+            todas = pd.date_range(df_imig["fecha"].min(), df_imig["fecha"].max(), freq="MS")
+            cubiertas = set(df_imig["fecha"].dt.to_period("M").unique())
+            faltantes = [d for d in todas if d.to_period("M") not in cubiertas]
+            if faltantes:
+                print(f"  Meses SIN datos IMIG: {[d.strftime('%Y-%m') for d in faltantes]}")
+                print(f"    (falta el archivo/hoja IMIG de ese mes en data/raw/)")
+            else:
+                print(f"  Cobertura mensual IMIG: completa")
 
     print("=" * 60)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Consolida datos del Sector Publico - Hacienda AR")
-    parser.add_argument("--zip", default="data/raw/sector_publico.zip.zip",
-                        help="Ruta al ZIP con los Excel originales")
+    parser.add_argument("--zip", default=None,
+                        help="Ruta al ZIP con los Excel originales "
+                             "(por defecto autodetecta data/raw/sector_publico*.zip)")
     parser.add_argument("--output", default="output",
                         help="Carpeta de salida para los CSV")
     args = parser.parse_args()
 
     root = Path(__file__).parent.parent
-    zip_path = Path(args.zip) if Path(args.zip).is_absolute() else root / args.zip
     raw_dir  = root / "data" / "raw"
     output_dir = root / args.output
 
+    if args.zip:
+        zip_path = Path(args.zip) if Path(args.zip).is_absolute() else root / args.zip
+    else:
+        # Autodeteccion: acepta sector_publico.zip o sector_publico.zip.zip
+        # (toma el mas grande si hay varios). Evita tener que pasar --zip a mano.
+        candidatos = sorted(raw_dir.glob("sector_publico*.zip"),
+                            key=lambda p: p.stat().st_size, reverse=True)
+        zip_path = candidatos[0] if candidatos else raw_dir / "sector_publico.zip"
+        if candidatos:
+            print(f"  [info] ZIP autodetectado: {zip_path.name}")
+
     if not zip_path.exists():
         print(f"ERROR: No se encontro el ZIP en {zip_path}")
-        print("Copia el ZIP a data/raw/sector_publico.zip.zip o pasa la ruta con --zip")
+        print("Copia el ZIP a data/raw/ (sector_publico.zip) o pasa la ruta con --zip")
         sys.exit(1)
 
     process(zip_path, raw_dir, output_dir)

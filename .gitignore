@@ -7,6 +7,9 @@ data/raw/
 *.xlsx
 !data/reference/*.xlsx
 
+# Graficos generados por los notebooks (se regeneran en Colab/local)
+*.png
+
 __pycache__/
 *.py[cod]
 .env
