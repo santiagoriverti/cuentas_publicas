@@ -82,7 +82,17 @@ Excel (7 hojas): Serie_mensual | Resumen_anual | Transferencias_prov |
   + primario_pct_PIB + financiero_pct_PIB. Construida en celda 9, exportada en celda 10.
 - Informe_provincias (2026-06-18): transf. a prov subsector total_adm_nacional, real, B,
   corrientes/capital/total + pct_gasto_primario (vs Gasto_real Sector Publico Total).
+  REGLA: total y pct se calculan desde valores SIN redondear (suma cruda -> 2024=2,7/1,4%,
+  no 2,6/1,3%). Misma regla en Informe_valores y Tablas_LaTeX.
+- Informe_valores (2026-06-18): tabla larga (seccion/clave/descripcion/valor_num/valor_fmt/
+  unidad) con TODOS los valores citados en el informe LaTeX. unidad in {B,%,pp_PIB,meses,texto}.
+- Tablas_LaTeX (2026-06-18): columna 'latex' con los 5 bloques de filas de datos de las tablas
+  del informe (tab:01, composicion_gasto, ing_gasto_anual, prov, imig), encabezados "% === label ===".
+  Tambien escribe 5 .tex en disco -> al ZIP. Ahora ZIP = Excel + 7 PNG + 5 .tex (13 archivos).
+- *.tex y *.png en .gitignore (generados).
 - Edicion de celdas 9/10 se hizo via JSON con Python (splitlines keepends), NO NotebookEdit.
+- OJO base may-2026 + regla sin-redondear: gp_ajuste 2023->2024 = -87,1 B (doc decia -87,2 por
+  restar redondeados); torta salarios 12,0 / transf 8,9 / otros 21,7 (doc 12,1/8,7/21,8). Correcto.
 
 Descarga: analisis_fiscal.zip (7 PNG + Excel)
 

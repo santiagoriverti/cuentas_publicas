@@ -7,8 +7,9 @@ data/raw/
 *.xlsx
 !data/reference/*.xlsx
 
-# Graficos generados por los notebooks (se regeneran en Colab/local)
+# Graficos y tablas generados por los notebooks (se regeneran en Colab/local)
 *.png
+*.tex
 
 __pycache__/
 *.py[cod]
