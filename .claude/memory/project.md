@@ -74,8 +74,15 @@ Graficos (7, 600 DPI, etiquetas trimestrales en espanol, linea naranja Milei dic
   06_torta_recorte_gasto.png            <- % por rubro (IMIG, 2023 vs 2025 anual)
   07_recorte_por_rubro.png              <- barras dobles por rubro IMIG (2023 vs 2024/2025)
 
-Excel (5 hojas): Serie_mensual | Resumen_anual | Transferencias_prov |
-                 Ajuste_AIF_anual | Ajuste_IMIG_rubros
+Excel (7 hojas): Serie_mensual | Resumen_anual | Transferencias_prov |
+                 Ajuste_AIF_anual | Ajuste_IMIG_rubros |
+                 Informe_tabla1 | Informe_provincias
+- Informe_tabla1 (2026-06-18): tabla macro lista para informe, 1 fila/anio 2020-2026,
+  desde df_macro: ingresos/gasto_primario/intereses_netos/primario/financiero (B, 1 dec)
+  + primario_pct_PIB + financiero_pct_PIB. Construida en celda 9, exportada en celda 10.
+- Informe_provincias (2026-06-18): transf. a prov subsector total_adm_nacional, real, B,
+  corrientes/capital/total + pct_gasto_primario (vs Gasto_real Sector Publico Total).
+- Edicion de celdas 9/10 se hizo via JSON con Python (splitlines keepends), NO NotebookEdit.
 
 Descarga: analisis_fiscal.zip (7 PNG + Excel)
 
