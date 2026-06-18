@@ -5879,7 +5879,6 @@
 2021-04-01,2021,4,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,672576.8,resultado-fiscal-abril21.xls
 2021-04-01,2021,4,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_adm_nacional,-85158.30000000003,resultado-fiscal-abril21.xls
 2021-04-01,2021,4,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,191097.8,resultado-fiscal-abril21.xls
-2021-05-01,2021,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,5661.1,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -5898,6 +5897,7 @@
 2021-05-01,2021,5,mensual,. RESTO,. Resto,subdetalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,.. OTRAS,.. Otras,subdetalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
+2021-05-01,2021,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,5661.1,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -5930,7 +5930,6 @@
 2021-05-01,2021,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,7098.5,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,ex_cajas_prov,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
-2021-05-01,2021,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,144999.8,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,inst_seg_social,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,11610.4,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -5949,6 +5948,7 @@
 2021-05-01,2021,5,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,inst_seg_social,83266.4,sector_publico_base_caja_-_2206mayo_2021.xls
+2021-05-01,2021,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,144999.8,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,inst_seg_social,25.9,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,9495.6,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,3327.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -5981,7 +5981,6 @@
 2021-05-01,2021,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,340960.69999999995,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,inst_seg_social,14884.199999999895,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,39771.9,sector_publico_base_caja_-_2206mayo_2021.xls
-2021-05-01,2021,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,826.6999999999999,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,org_descentralizados,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,19238.2,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6000,6 +5999,7 @@
 2021-05-01,2021,5,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,24.2,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,4.7,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,org_descentralizados,5222.2,sector_publico_base_caja_-_2206mayo_2021.xls
+2021-05-01,2021,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,826.6999999999999,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,org_descentralizados,4057.9000000000005,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,344.4,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,12475.5,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6032,7 +6032,6 @@
 2021-05-01,2021,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,52298.00000000001,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,org_descentralizados,1469.3000000000102,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,30.0,sector_publico_base_caja_-_2206mayo_2021.xls
-2021-05-01,2021,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,24853.1,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,pami_fdos_otros,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,8673.300000000001,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6051,6 +6050,7 @@
 2021-05-01,2021,5,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,pami_fdos_otros,23913.9,sector_publico_base_caja_-_2206mayo_2021.xls
+2021-05-01,2021,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,24853.1,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,pami_fdos_otros,25675.2,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,10120.5,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,18846.6,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6083,7 +6083,6 @@
 2021-05-01,2021,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,182523.3,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,pami_fdos_otros,88445.09999999999,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,102.5,sector_publico_base_caja_-_2206mayo_2021.xls
-2021-05-01,2021,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,12.5,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,rec_afectados,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,250.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,30.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6102,6 +6101,7 @@
 2021-05-01,2021,5,mensual,. RESTO,. Resto,subdetalle,rec_afectados,14.399999999999954,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,13.400000000000091,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,rec_afectados,16490.499999999996,sector_publico_base_caja_-_2206mayo_2021.xls
+2021-05-01,2021,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,12.5,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,rec_afectados,63459.799999999996,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,9.3,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,10239.1,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6134,7 +6134,6 @@
 2021-05-01,2021,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,81255.7,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,rec_afectados,62039.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,3576.0000000000005,sector_publico_base_caja_-_2206mayo_2021.xls
-2021-05-01,2021,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,tesoro_nacional,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6153,6 +6152,7 @@
 2021-05-01,2021,5,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,600.9000000000001,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,195.2,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,tesoro_nacional,264872.6,sector_publico_base_caja_-_2206mayo_2021.xls
+2021-05-01,2021,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,tesoro_nacional,2991.4,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,19770.399999999994,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,51936.4,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6185,7 +6185,6 @@
 2021-05-01,2021,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,287691.7,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,tesoro_nacional,-231455.90000000002,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,197042.7,sector_publico_base_caja_-_2206mayo_2021.xls
-2021-05-01,2021,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,151500.1,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,total_adm_nacional,0.0,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,31098.6,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,30.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6204,6 +6203,7 @@
 2021-05-01,2021,5,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,639.5000000000001,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,213.29999999999353,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,total_adm_nacional,369851.69999999995,sector_publico_base_caja_-_2206mayo_2021.xls
+2021-05-01,2021,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,151500.1,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,total_adm_nacional,70534.99999999999,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,29619.699999999997,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,77978.0,sector_publico_base_caja_-_2206mayo_2021.xls
@@ -6236,7 +6236,6 @@
 2021-05-01,2021,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,769304.6,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,total_adm_nacional,-153063.4000000001,sector_publico_base_caja_-_2206mayo_2021.xls
 2021-05-01,2021,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,240420.6,sector_publico_base_caja_-_2206mayo_2021.xls
-2021-06-01,2021,6,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,2948.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
@@ -6255,6 +6254,7 @@
 2021-06-01,2021,6,mensual,. RESTO,. Resto,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,.. OTRAS,.. Otras,subdetalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
+2021-06-01,2021,6,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,2948.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
@@ -6287,7 +6287,6 @@
 2021-06-01,2021,6,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,10804.6,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,ex_cajas_prov,0.0,resultado_fiscal_junio_2021.xls
-2021-06-01,2021,6,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,146554.6,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,inst_seg_social,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,22156.1,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,resultado_fiscal_junio_2021.xls
@@ -6306,6 +6305,7 @@
 2021-06-01,2021,6,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,inst_seg_social,106141.8,resultado_fiscal_junio_2021.xls
+2021-06-01,2021,6,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,146554.6,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,inst_seg_social,41.1,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,7821.1,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,4341.5,resultado_fiscal_junio_2021.xls
@@ -6338,7 +6338,6 @@
 2021-06-01,2021,6,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,506858.5,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,inst_seg_social,12266.900000000023,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,59165.0,resultado_fiscal_junio_2021.xls
-2021-06-01,2021,6,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,42.6,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,org_descentralizados,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,22757.4,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,1.2,resultado_fiscal_junio_2021.xls
@@ -6357,6 +6356,7 @@
 2021-06-01,2021,6,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,88.5,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,org_descentralizados,6560.7,resultado_fiscal_junio_2021.xls
+2021-06-01,2021,6,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,42.6,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,org_descentralizados,3689.9,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,345.1,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,13775.0,resultado_fiscal_junio_2021.xls
@@ -6389,7 +6389,6 @@
 2021-06-01,2021,6,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,67946.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,org_descentralizados,5845.800000000003,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,953.1,resultado_fiscal_junio_2021.xls
-2021-06-01,2021,6,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,27052.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,pami_fdos_otros,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,14001.5,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,0.0,resultado_fiscal_junio_2021.xls
@@ -6408,6 +6407,7 @@
 2021-06-01,2021,6,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,pami_fdos_otros,25899.4,resultado_fiscal_junio_2021.xls
+2021-06-01,2021,6,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,27052.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,pami_fdos_otros,7387.9,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,10722.7,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,25765.399999999998,resultado_fiscal_junio_2021.xls
@@ -6440,7 +6440,6 @@
 2021-06-01,2021,6,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,193180.5,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,pami_fdos_otros,47564.100000000035,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,3943.8,resultado_fiscal_junio_2021.xls
-2021-06-01,2021,6,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,13.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,rec_afectados,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,250.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,0.1,resultado_fiscal_junio_2021.xls
@@ -6459,6 +6458,7 @@
 2021-06-01,2021,6,mensual,. RESTO,. Resto,subdetalle,rec_afectados,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,551.1000000000001,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,rec_afectados,20827.1,resultado_fiscal_junio_2021.xls
+2021-06-01,2021,6,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,13.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,rec_afectados,90687.3,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,17056.800000000003,resultado_fiscal_junio_2021.xls
@@ -6491,7 +6491,6 @@
 2021-06-01,2021,6,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,112967.79999999999,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,rec_afectados,71115.9,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,5525.900000000001,resultado_fiscal_junio_2021.xls
-2021-06-01,2021,6,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,tesoro_nacional,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,951.8,resultado_fiscal_junio_2021.xls
@@ -6510,6 +6509,7 @@
 2021-06-01,2021,6,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,2938.1000000000004,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,744.6999999999935,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,tesoro_nacional,291768.2,resultado_fiscal_junio_2021.xls
+2021-06-01,2021,6,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,tesoro_nacional,2104.8,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,10561.300000000003,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,54803.8,resultado_fiscal_junio_2021.xls
@@ -6542,7 +6542,6 @@
 2021-06-01,2021,6,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,305572.1,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,tesoro_nacional,-344740.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,361061.7,resultado_fiscal_junio_2021.xls
-2021-06-01,2021,6,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,149558.2,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,total_adm_nacional,0.0,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,45163.5,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,953.1,resultado_fiscal_junio_2021.xls
@@ -6561,6 +6560,7 @@
 2021-06-01,2021,6,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,3026.6000000000004,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,1295.7999999999936,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,total_adm_nacional,425297.8,resultado_fiscal_junio_2021.xls
+2021-06-01,2021,6,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,149558.2,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,total_adm_nacional,96523.1,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,18727.500000000004,resultado_fiscal_junio_2021.xls
 2021-06-01,2021,6,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,89977.1,resultado_fiscal_junio_2021.xls
@@ -10170,7 +10170,6 @@
 2022-04-01,2022,4,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1207270.2,resultado-fiscal_abril-2022.xlsx
 2022-04-01,2022,4,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_adm_nacional,-288121.3000000002,resultado-fiscal_abril-2022.xlsx
 2022-04-01,2022,4,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,450240.89999999997,resultado-fiscal_abril-2022.xlsx
-2022-05-01,2022,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,4960.4,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,may-22.xlsx
@@ -10189,6 +10188,7 @@
 2022-05-01,2022,5,mensual,. RESTO,. Resto,subdetalle,ex_cajas_prov,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,.. OTRAS,.. Otras,subdetalle,ex_cajas_prov,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,ex_cajas_prov,0.0,may-22.xlsx
+2022-05-01,2022,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,4960.4,may-22.xlsx
 2022-05-01,2022,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,ex_cajas_prov,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,ex_cajas_prov,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,ex_cajas_prov,0.0,may-22.xlsx
@@ -10221,7 +10221,6 @@
 2022-05-01,2022,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,11137.599999999999,may-22.xlsx
 2022-05-01,2022,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,ex_cajas_prov,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,ex_cajas_prov,0.0,may-22.xlsx
-2022-05-01,2022,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,259827.6,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,inst_seg_social,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,22035.300000000003,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,may-22.xlsx
@@ -10240,6 +10239,7 @@
 2022-05-01,2022,5,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,inst_seg_social,154893.1,may-22.xlsx
+2022-05-01,2022,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,259827.6,may-22.xlsx
 2022-05-01,2022,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,inst_seg_social,227.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,inst_seg_social,15423.7,may-22.xlsx
 2022-05-01,2022,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,5970.1,may-22.xlsx
@@ -10272,7 +10272,6 @@
 2022-05-01,2022,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,683229.5,may-22.xlsx
 2022-05-01,2022,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,inst_seg_social,23054.900000000023,may-22.xlsx
 2022-05-01,2022,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,67391.6,may-22.xlsx
-2022-05-01,2022,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,4573.2,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,org_descentralizados,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,30542.9,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,0.6,may-22.xlsx
@@ -10291,6 +10290,7 @@
 2022-05-01,2022,5,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,org_descentralizados,10513.0,may-22.xlsx
+2022-05-01,2022,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,4573.2,may-22.xlsx
 2022-05-01,2022,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,org_descentralizados,6180.2,may-22.xlsx
 2022-05-01,2022,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,org_descentralizados,602.0,may-22.xlsx
 2022-05-01,2022,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,21950.3,may-22.xlsx
@@ -10323,7 +10323,6 @@
 2022-05-01,2022,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,98541.30000000005,may-22.xlsx
 2022-05-01,2022,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,org_descentralizados,16164.300000000047,may-22.xlsx
 2022-05-01,2022,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,0.6,may-22.xlsx
-2022-05-01,2022,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,40809.6,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,pami_fdos_otros,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,14357.9,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,0.0,may-22.xlsx
@@ -10342,6 +10341,7 @@
 2022-05-01,2022,5,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,81.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,pami_fdos_otros,44948.0,may-22.xlsx
+2022-05-01,2022,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,40809.6,may-22.xlsx
 2022-05-01,2022,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,pami_fdos_otros,6860.299999999999,may-22.xlsx
 2022-05-01,2022,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,pami_fdos_otros,31023.699999999997,may-22.xlsx
 2022-05-01,2022,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,30874.399999999994,may-22.xlsx
@@ -10374,7 +10374,6 @@
 2022-05-01,2022,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,323709.6,may-22.xlsx
 2022-05-01,2022,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,pami_fdos_otros,66684.09999999998,may-22.xlsx
 2022-05-01,2022,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,885.1,may-22.xlsx
-2022-05-01,2022,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,36.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,rec_afectados,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,455.5,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,0.0,may-22.xlsx
@@ -10393,6 +10392,7 @@
 2022-05-01,2022,5,mensual,. RESTO,. Resto,subdetalle,rec_afectados,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,rec_afectados,34108.0,may-22.xlsx
+2022-05-01,2022,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,36.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,rec_afectados,7416.5,may-22.xlsx
 2022-05-01,2022,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,rec_afectados,11.9,may-22.xlsx
 2022-05-01,2022,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,20531.1,may-22.xlsx
@@ -10425,7 +10425,6 @@
 2022-05-01,2022,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,43607.1,may-22.xlsx
 2022-05-01,2022,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,rec_afectados,3885.2999999999956,may-22.xlsx
 2022-05-01,2022,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,7219.099999999999,may-22.xlsx
-2022-05-01,2022,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,tesoro_nacional,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,0.0,may-22.xlsx
@@ -10444,6 +10443,7 @@
 2022-05-01,2022,5,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,2007.7999999999986,may-22.xlsx
 2022-05-01,2022,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,tesoro_nacional,448839.6,may-22.xlsx
+2022-05-01,2022,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,tesoro_nacional,1393.0,may-22.xlsx
 2022-05-01,2022,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,tesoro_nacional,37576.9,may-22.xlsx
 2022-05-01,2022,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,91537.5,may-22.xlsx
@@ -10476,7 +10476,6 @@
 2022-05-01,2022,5,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,488401.19999999995,may-22.xlsx
 2022-05-01,2022,5,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,tesoro_nacional,-352221.1000000001,may-22.xlsx
 2022-05-01,2022,5,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,444499.60000000003,may-22.xlsx
-2022-05-01,2022,5,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,269397.2,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,total_adm_nacional,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,53033.700000000004,may-22.xlsx
 2022-05-01,2022,5,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,0.6,may-22.xlsx
@@ -10495,6 +10494,7 @@
 2022-05-01,2022,5,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,0.0,may-22.xlsx
 2022-05-01,2022,5,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,2007.7999999999986,may-22.xlsx
 2022-05-01,2022,5,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,total_adm_nacional,648353.7,may-22.xlsx
+2022-05-01,2022,5,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,269397.2,may-22.xlsx
 2022-05-01,2022,5,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,total_adm_nacional,15216.7,may-22.xlsx
 2022-05-01,2022,5,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,total_adm_nacional,53614.5,may-22.xlsx
 2022-05-01,2022,5,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,139989.0,may-22.xlsx
@@ -10884,7 +10884,6 @@
 2022-06-01,2022,6,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,7192938.900000001,resultado-fiscal_junio-2022.xlsx
 2022-06-01,2022,6,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_adm_nacional,-1335761.7999999993,resultado-fiscal_junio-2022.xlsx
 2022-06-01,2022,6,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,2464839.8999999994,resultado-fiscal_junio-2022.xlsx
-2022-07-01,2022,7,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,7270.5,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
@@ -10903,6 +10902,7 @@
 2022-07-01,2022,7,mensual,. RESTO,. Resto,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,.. OTRAS,.. Otras,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
+2022-07-01,2022,7,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,7270.5,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
@@ -10935,7 +10935,6 @@
 2022-07-01,2022,7,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,13319.4,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,ex_cajas_prov,0.0,resultado-fiscal_julio-2022.xlsx
-2022-07-01,2022,7,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,373843.6,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,inst_seg_social,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,25595.9,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,resultado-fiscal_julio-2022.xlsx
@@ -10954,6 +10953,7 @@
 2022-07-01,2022,7,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,inst_seg_social,200704.5,resultado-fiscal_julio-2022.xlsx
+2022-07-01,2022,7,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,373843.6,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,inst_seg_social,272.2,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,inst_seg_social,22750.100000000002,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,9027.8,resultado-fiscal_julio-2022.xlsx
@@ -10986,7 +10986,6 @@
 2022-07-01,2022,7,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,647117.3999999999,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,inst_seg_social,41356.09999999986,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,73558.3,resultado-fiscal_julio-2022.xlsx
-2022-07-01,2022,7,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,3074.7,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,org_descentralizados,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,30778.1,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,1.0,resultado-fiscal_julio-2022.xlsx
@@ -11005,6 +11004,7 @@
 2022-07-01,2022,7,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,60.1,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,org_descentralizados,10753.4,resultado-fiscal_julio-2022.xlsx
+2022-07-01,2022,7,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,3074.7,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,org_descentralizados,11552.300000000001,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,org_descentralizados,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,36470.6,resultado-fiscal_julio-2022.xlsx
@@ -11037,7 +11037,6 @@
 2022-07-01,2022,7,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,93375.59999999999,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,org_descentralizados,7419.1999999999825,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,52.1,resultado-fiscal_julio-2022.xlsx
-2022-07-01,2022,7,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,60990.5,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,pami_fdos_otros,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,16984.3,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,51.1,resultado-fiscal_julio-2022.xlsx
@@ -11056,6 +11055,7 @@
 2022-07-01,2022,7,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,116.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,pami_fdos_otros,50637.5,resultado-fiscal_julio-2022.xlsx
+2022-07-01,2022,7,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,60990.5,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,pami_fdos_otros,13477.399999999998,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,pami_fdos_otros,21773.8,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,44654.0,resultado-fiscal_julio-2022.xlsx
@@ -11088,7 +11088,6 @@
 2022-07-01,2022,7,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,340722.79999999993,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,pami_fdos_otros,30816.599999999977,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,430.1,resultado-fiscal_julio-2022.xlsx
-2022-07-01,2022,7,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,70.8,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,rec_afectados,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,200.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,0.0,resultado-fiscal_julio-2022.xlsx
@@ -11107,6 +11106,7 @@
 2022-07-01,2022,7,mensual,. RESTO,. Resto,subdetalle,rec_afectados,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,0.1,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,rec_afectados,38848.4,resultado-fiscal_julio-2022.xlsx
+2022-07-01,2022,7,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,70.8,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,rec_afectados,14132.4,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,rec_afectados,2.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,30740.9,resultado-fiscal_julio-2022.xlsx
@@ -11139,7 +11139,6 @@
 2022-07-01,2022,7,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,55471.5,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,rec_afectados,7998.299999999996,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,5924.9,resultado-fiscal_julio-2022.xlsx
-2022-07-01,2022,7,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,tesoro_nacional,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,0.0,resultado-fiscal_julio-2022.xlsx
@@ -11158,6 +11157,7 @@
 2022-07-01,2022,7,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,841.3999999999996,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,1504.0999999999942,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,tesoro_nacional,468143.1,resultado-fiscal_julio-2022.xlsx
+2022-07-01,2022,7,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,tesoro_nacional,1663.7,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,tesoro_nacional,75315.7,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,137578.9,resultado-fiscal_julio-2022.xlsx
@@ -11190,7 +11190,6 @@
 2022-07-01,2022,7,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,545162.9,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,tesoro_nacional,-219252.99999999988,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,230278.7,resultado-fiscal_julio-2022.xlsx
-2022-07-01,2022,7,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,384259.6,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,total_adm_nacional,0.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,56574.0,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,1.0,resultado-fiscal_julio-2022.xlsx
@@ -11209,6 +11208,7 @@
 2022-07-01,2022,7,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,901.4999999999997,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,1504.1999999999941,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,total_adm_nacional,718449.4,resultado-fiscal_julio-2022.xlsx
+2022-07-01,2022,7,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,384259.6,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,total_adm_nacional,27620.600000000002,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,total_adm_nacional,98067.8,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,213818.19999999998,resultado-fiscal_julio-2022.xlsx
@@ -11241,7 +11241,6 @@
 2022-07-01,2022,7,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,1354446.7999999998,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,total_adm_nacional,-162479.40000000005,resultado-fiscal_julio-2022.xlsx
 2022-07-01,2022,7,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,309814.0,resultado-fiscal_julio-2022.xlsx
-2022-08-01,2022,8,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,5381.5,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
@@ -11260,6 +11259,7 @@
 2022-08-01,2022,8,mensual,. RESTO,. Resto,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,.. OTRAS,.. Otras,subdetalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
+2022-08-01,2022,8,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,ex_cajas_prov,5381.5,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
@@ -11292,7 +11292,6 @@
 2022-08-01,2022,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,ex_cajas_prov,13535.9,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,ex_cajas_prov,0.0,resultado-fiscal_agosto-2022.xlsx
-2022-08-01,2022,8,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,306462.7,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,inst_seg_social,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,28442.8,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,resultado-fiscal_agosto-2022.xlsx
@@ -11311,6 +11310,7 @@
 2022-08-01,2022,8,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,inst_seg_social,193245.6,resultado-fiscal_agosto-2022.xlsx
+2022-08-01,2022,8,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,inst_seg_social,306462.7,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,inst_seg_social,401.2,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,inst_seg_social,24547.2,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,8354.9,resultado-fiscal_agosto-2022.xlsx
@@ -11343,7 +11343,6 @@
 2022-08-01,2022,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,647945.4000000001,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,inst_seg_social,32137.800000000163,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,77393.1,resultado-fiscal_agosto-2022.xlsx
-2022-08-01,2022,8,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,76.19999999999982,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,org_descentralizados,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,31318.9,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,0.3,resultado-fiscal_agosto-2022.xlsx
@@ -11362,6 +11361,7 @@
 2022-08-01,2022,8,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,83.80000000000001,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,org_descentralizados,12237.1,resultado-fiscal_agosto-2022.xlsx
+2022-08-01,2022,8,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,org_descentralizados,76.19999999999982,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,org_descentralizados,7774.1,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,org_descentralizados,529.8,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,30430.500000000004,resultado-fiscal_agosto-2022.xlsx
@@ -11394,7 +11394,6 @@
 2022-08-01,2022,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,102311.4,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,org_descentralizados,14035.5,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,12.5,resultado-fiscal_agosto-2022.xlsx
-2022-08-01,2022,8,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,48107.4,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,pami_fdos_otros,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,16631.4,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,12.2,resultado-fiscal_agosto-2022.xlsx
@@ -11413,6 +11412,7 @@
 2022-08-01,2022,8,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,102.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,pami_fdos_otros,48234.3,resultado-fiscal_agosto-2022.xlsx
+2022-08-01,2022,8,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,pami_fdos_otros,48107.4,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,pami_fdos_otros,17519.5,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,pami_fdos_otros,30867.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,51662.200000000004,resultado-fiscal_agosto-2022.xlsx
@@ -11445,7 +11445,6 @@
 2022-08-01,2022,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,302532.3,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,pami_fdos_otros,-65094.40000000008,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,6546.9,resultado-fiscal_agosto-2022.xlsx
-2022-08-01,2022,8,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,52.199999999999996,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,rec_afectados,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,1000.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,0.0,resultado-fiscal_agosto-2022.xlsx
@@ -11464,6 +11463,7 @@
 2022-08-01,2022,8,mensual,. RESTO,. Resto,subdetalle,rec_afectados,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,29.600000000000044,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,rec_afectados,41104.4,resultado-fiscal_agosto-2022.xlsx
+2022-08-01,2022,8,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,rec_afectados,52.199999999999996,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,rec_afectados,9998.5,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,rec_afectados,12.2,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,23419.9,resultado-fiscal_agosto-2022.xlsx
@@ -11496,7 +11496,6 @@
 2022-08-01,2022,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,53933.7,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,rec_afectados,-3177.600000000006,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,13934.7,resultado-fiscal_agosto-2022.xlsx
-2022-08-01,2022,8,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,tesoro_nacional,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,0.0,resultado-fiscal_agosto-2022.xlsx
@@ -11515,6 +11514,7 @@
 2022-08-01,2022,8,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,232.0999999999999,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,1266.7999999999956,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,tesoro_nacional,473825.9,resultado-fiscal_agosto-2022.xlsx
+2022-08-01,2022,8,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,tesoro_nacional,606.7,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,tesoro_nacional,15828.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,114481.6,resultado-fiscal_agosto-2022.xlsx
@@ -11547,7 +11547,6 @@
 2022-08-01,2022,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,490932.20000000007,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO (XI-XIII),principal,tesoro_nacional,-348005.6999999997,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,235121.1,resultado-fiscal_agosto-2022.xlsx
-2022-08-01,2022,8,mensual,- CONTRIBUCIONES A LA SEG. SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,311972.60000000003,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE EX-CAJAS PROVINCIALES,- De Ex-Cajas Provinciales,detalle,total_adm_nacional,0.0,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,60761.7,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,0.3,resultado-fiscal_agosto-2022.xlsx
@@ -11566,6 +11565,7 @@
 2022-08-01,2022,8,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,315.8999999999999,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,1296.3999999999958,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS TRIBUTARIOS,detalle,total_adm_nacional,720413.0,resultado-fiscal_agosto-2022.xlsx
+2022-08-01,2022,8,mensual,I2_APORTES_SEG_SOCIAL,- CONTRIBUCIONES A LA SEG. SOCIAL,detalle,total_adm_nacional,311972.60000000003,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO TRIBUTARIOS,detalle,total_adm_nacional,18780.500000000004,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1) (3),detalle,total_adm_nacional,40917.2,resultado-fiscal_agosto-2022.xlsx
 2022-08-01,2022,8,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,176686.9,resultado-fiscal_agosto-2022.xlsx

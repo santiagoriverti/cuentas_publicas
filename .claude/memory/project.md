@@ -123,6 +123,10 @@ OJO endpoint: may-2026 es mes de CUPON de deuda (intereses altos) → intereses 
 ## Bugs corregidos (historial completo)
 - AIF: sangria en col_b borrada por .strip() → usar col_b_raw
 - AIF: ". A PROVINCIAS" patron capital vs corrientes
+- AIF: I2_APORTES_SEG_SOCIAL no capturado en 2021-05/06 y 2022-05/07/08 (formato viejo
+  "- Contribuciones a la Seg. Social" sin "Aportes y") → patron ampliado a
+  "APORTES Y CONTRIB.*SEG|CONTRIBUCIONES A LA SEG". Eliminaba un codigo huerfano y
+  dejaba huecos en grafico 03 (Seg.Social). Unico hueco legitimo restante: 2022-06 (gap global)
 - IMIG: solo leia col base → ahora base/+1/+2
 - IMIG: fechas 2027+ por seriales Excel → rango 2018-2026
 - IMIG: r"IVA" matcheaba "CONTRIBUTIVAS" → r"\bIVA\b" + orden correcto
