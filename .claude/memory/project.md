@@ -18,9 +18,12 @@ Consolidar datos del Sector Publico Nacional argentino (Hacienda) en un dataset 
 - IPC INDEC: data/reference/IPC.xlsx (commiteado, ene-2017 a may-2026)
 - 80 archivos Excel, cobertura ene-2020 a may-2026
 - Gap unico AIF mensual: Jun-2022 (solo existe acumulado I Semestre)
-- Gap unico IMIG: 2026-03 (FALTA el archivo IMIG de marzo 2026 en origen; marzo_26.xlsx
-  es AIF puro, sin hoja IMIG). No afecta graficos (IMIG solo usa 2023-2025 anual).
-  Para completarlo: descargar IMIG marzo 2026 de Hacienda -> data/raw/ -> reconsolidar
+- Gap unico IMIG: 2026-03. PERMANENTE: Hacienda NO publico informe IMIG de marzo 2026,
+  solo el AIF (marzo_26.xlsx, hojas Marzo/Acumulado, sin IMIG). Confirmado con el usuario
+  (2026-06-18). No se puede reconstruir desde el AIF (desagregacion funcional distinta).
+  No afecta graficos (IMIG solo usa 2023-2025 anual). NO volver a marcarlo como "a descargar".
+- AIF marzo 2026 VALIDADO contra fuente cruda: 16 conceptos x subsector coinciden exacto
+  (Adm.Nacional, Total general, Tesoro), incl. I2_APORTES_SEG_SOCIAL
 - IMIG 2026 viene en archivos separados por mes: ene/feb en sector_publico_base_caja_*_2026
   (hoja IMIG), abril=IMIG Abril 2026.xlsx, mayo=imig_mayo_2026.xlsx, MARZO=ausente
 - En Windows correr con PYTHONUTF8=1 (los prints usan flecha unicode -> crash cp1252)
@@ -53,7 +56,7 @@ data/reference/
   "(2)/(3)" quedan como texto crudo separado (ej. SUPERAVIT OP. EMPRESAS PUB / ...(3),
   . INTERESES (2), XVI INGRESOS EXTRAORDINARIOS (3)). Los principales se leen directo
   del Excel, NO se suman de detalles -> totales correctos. Dejado asi a proposito.
-- Pendiente de datos (no de codigo): conseguir IMIG marzo 2026.
+- Sin pendientes de datos: IMIG marzo 2026 no existe en origen (gap permanente, ver arriba).
 
 ## Notebook 01 - Consolidacion
 Exporta datos_fiscales_consolidado.xlsx (5 hojas):
