@@ -25,7 +25,7 @@ Consolidar datos del Sector Publico Nacional argentino (Hacienda) en un dataset 
 - output/imig_consolidado.csv: 8.529 registros (incluye may-2026)
 - Validado vs Hacienda: 2024 y 2025 con 0.00% diferencia en primario y financiero
 - Deflactor base = ultimo mes IPC (auto). Tras agregar may-2026, base = may-2026
-  (antes abr-2026): los hallazgos en B mas abajo estan en base abr-2026, reescalan ~+2.1%
+  (antes abr-2026). Bloque "Hallazgos clave" abajo ya recomputado en base may-2026
 
 ## Estructura de codigo
 ```
@@ -87,35 +87,38 @@ Celda 9 - Resumen completo (4 secciones):
 2024:586.7 (superavit 1.76B = +0.3% PIB, Hacienda)
 2025:725.0 (superavit 1.45B = +0.2% PIB, Hacienda)
 
-## Hallazgos clave verificados (pesos constantes abr-2026)
+## Hallazgos clave verificados (pesos constantes may-2026, run 2026-06-18)
 
 ### Macro - Sector Publico Total (AIF):
-- Gasto primario: 274.6 B (2023) → 189.4 B (2024) → 193.0 B (2025)
+- Gasto primario: 280.6 B (2023) → 193.4 B (2024) → 197.2 B (2025) | 2026 parcial ene-may: 72.9 B
 - Reduccion: -31.1% en 2024 vs 2023 | -29.7% en 2025 vs 2023
-- Resultado primario: -27.3 B (2023) → +21.0 B (2024) → +15.7 B (2025)
-- Mejora primaria 2023→2024: +48.3 B
-- Resultado financiero: -47.0 B (2023) → +4.2 B (2024) → +2.4 B (2025)
+- Resultado primario: -27.9 B (2023) → +21.5 B (2024) → +16.1 B (2025) | 2026 parcial: +8.6 B
+- Mejora primaria 2023→2024: +49.4 B | 2023→2025: +44.0 B
+- Resultado financiero: -48.0 B (2023) → +4.3 B (2024) → +2.5 B (2025) | 2026 parcial: +2.6 B
+- Validacion nominal vs Hacienda intacta: primario 2024 10.41 B / 2025 11.77 B (0.00%)
 
-### Mensual dic-2023 → abr-2026 (AIF, Adm. Nacional):
+### Mensual dic-2023 → may-2026 (AIF, Adm. Nacional):
 ATENCION: dic-2023 es mes de alto gasto estacional (aguinaldo), caidas % magnificadas
-- Gastos corrientes: 18.0 → 10.9 B = -7.1 B (-39.3%)
-- Intereses: 1.3 → 0.4 B = -1.0 B (-72.4%)
-- Subsidios: 4.5 → 2.5 B = -2.0 B (-43.9%)
-- Remuneraciones: 2.8 → 1.4 B = -1.4 B (-51.0%)
-- Prestaciones: 6.8 → 5.5 B = -1.2 B (-18.1%)
-- Resultado primario: -7.0 → +0.3 B = +7.2 B
+OJO endpoint: may-2026 es mes de CUPON de deuda (intereses altos) → intereses sale +7.1%
+(artefacto estacional del mes final; usar comparacion ANUAL para intereses)
+- Gastos corrientes: 18.4 → 12.3 B = -6.1 B (-33.3%)
+- Intereses: 1.3 → 1.4 B = +0.1 B (+7.1%)  <- distorsion por cupon de mayo
+- Subsidios: 4.6 → 2.4 B = -2.3 B (-48.7%)
+- Remuneraciones: 2.9 → 1.4 B = -1.4 B (-50.6%)
+- Prestaciones: 6.9 → 5.7 B = -1.2 B (-17.8%)
+- Resultado primario: -7.1 → +1.4 B = +8.5 B
 
-### Funcional dic-2023 → abr-2026 (IMIG):
-- AUH: +0.4 B (+183.8%) <- UNICO rubro con gran suba
+### Funcional dic-2023 → may-2026 (IMIG):
+- AUH: +0.4 B (+174.4%) <- UNICO rubro con gran suba
 - PAMI: flat (+0.1%)
-- Salarios: -1.7 B (-50.5%)
-- Obra publica: -0.6 B (-57.8%)
-- Subsidios: -1.1 B (-48.0%)
-- Jubilaciones: -1.1 B (-18.2%)
-- Transf. Provincias: -0.8 B (-83.7%)
-- Universidades: -0.8 B (-65.1%)
-- Otros prog. sociales: -1.0 B (-53.8%)
-- Total baja: -7.2 B | Total suba: +0.4 B | Neto: -6.8 B
+- Salarios: -1.7 B (-51.6%)
+- Obra publica: -0.8 B (-82.0%)
+- Subsidios: -1.5 B (-66.0%)
+- Jubilaciones: -1.2 B (-18.0%)
+- Transf. Provincias: -0.8 B (-83.5%)
+- Universidades: -0.4 B (-35.4%)
+- Otros prog. sociales: -0.9 B (-47.9%)
+- Total baja: -7.3 B | Total suba: +0.4 B | Neto: -7.0 B
 
 ## Bugs corregidos (historial completo)
 - AIF: sangria en col_b borrada por .strip() → usar col_b_raw
