@@ -40,8 +40,13 @@ HECHO CICLO SEP-2026:
   vacias (NB solo usa "Nivel general").
 - NB02: "(5 meses)" ahora dinamico ({_n26} meses). NB01: markdown de cobertura actualizado.
 
+- NB02 export (sep-2026): ZIP = Excel + 7 PNG (SIN .tex). Excel: Leeme, Serie_mensual, Resumen_anual,
+  Transferencias_prov, Ajuste_AIF_anual, Ajuste_IMIG_rubros, Informe_tabla1, Informe_provincias,
+  AIF_mensual, AIF_acumulado, IMIG. Informe_valores/Tablas_LaTeX/.tex se calculan en celda 9 pero
+  NO se exportan (usuario pidio desestimar el LaTeX por ahora).
+
 PROXIMO PASO ABIERTO:
-- Informe LaTeX de prensa (el usuario lo tiene en chat, NO esta en repo): rebasear ahora a
+- [EN PAUSA por pedido del usuario] Informe LaTeX de prensa (el usuario lo tiene en chat, NO esta en repo): rebasear ahora a
   AGOSTO 2026 (ya no mayo) usando hojas Informe_valores y Tablas_LaTeX del Excel NB02.
   Ojo: seccion IMIG 2023 cambia ademas por el fix de mar-2023.
 - Decision pendiente titulo ajuste gasto primario (regla sin-redondear vs resta de redondeados).
