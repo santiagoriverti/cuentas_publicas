@@ -1,11 +1,16 @@
-# Datos crudos - no versionar (Excel originales de Hacienda)
-data/raw/
+# Excel/ZIP generados o sueltos: ignorados por defecto...
 *.zip
 *.xls
-
-# Ignorar xlsx EXCEPTO los de data/reference/ (deflactores, etc.)
 *.xlsx
+# ...EXCEPTO las fuentes versionadas (datos publicos, repo autocontenido):
+#   data/raw/        Excel originales de Hacienda (ZIP historico + meses sueltos nuevos)
+#   data/reference/  IPC INDEC
+!data/raw/*.zip
+!data/raw/*.xls
+!data/raw/*.xlsx
 !data/reference/*.xlsx
+# Copias duplicadas del contenido del ZIP (no se usan; se guardan solo localmente)
+data/raw/_duplicados/
 
 # Graficos y tablas generados por los notebooks (se regeneran en Colab/local)
 *.png
@@ -20,3 +25,6 @@ build/
 .ipynb_checkpoints/
 .DS_Store
 Thumbs.db
+
+# Salidas de scripts/run_notebooks_local.py
+_local_run/
