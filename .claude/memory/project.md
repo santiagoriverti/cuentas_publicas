@@ -44,6 +44,12 @@ HECHO CICLO SEP-2026:
   Transferencias_prov, Ajuste_AIF_anual, Ajuste_IMIG_rubros, Informe_tabla1, Informe_provincias,
   AIF_mensual, AIF_acumulado, IMIG. Informe_valores/Tablas_LaTeX/.tex se calculan en celda 9 pero
   NO se exportan (usuario pidio desestimar el LaTeX por ahora).
+- NB02 revision (sep-2026): tabla 1 usa Ingresos tot. = XI_INGRESOS_DESPUES_FIGURAT (XI - XII = XIV
+  exacto); antes mostraba I_INGRESOS_CORRIENTES (antes de figurativas) que no restaba al primario.
+  Ing. corrientes queda como columna informativa. Informe_tabla1 agrega ingresos_totales_B.
+  Graficos: torta con 10 colores unicos + leyenda lateral (% y B) y % solo en porciones >=3%;
+  05/07 leyenda debajo del eje solo con categorias presentes (helper leyenda_var en celda 1);
+  02 leyenda arriba del eje. 05 y 06 SIN titulo a proposito (pedido previo del usuario).
 
 PROXIMO PASO ABIERTO:
 - [EN PAUSA por pedido del usuario] Informe LaTeX de prensa (el usuario lo tiene en chat, NO esta en repo): rebasear ahora a
