@@ -72,6 +72,7 @@ def process(zip_path: Path, raw_dir: Path, output_dir: Path):
         print(f"\n-> {name}")
         all_aif.extend(aif_parser.parse_file(name, data))
         all_imig.extend(imig_parser.parse_file(name, data))
+        all_imig.extend(imig_parser.parse_mensualizacion(name, data))
 
     print("\n[3/3] Consolidando y guardando...")
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -81,6 +82,7 @@ def process(zip_path: Path, raw_dir: Path, output_dir: Path):
         df_aif["fecha"] = pd.to_datetime(df_aif["fecha"], format="%Y-%m", errors="coerce")
         df_aif = df_aif.sort_values(["fecha", "periodo", "subsector", "concepto_codigo"])
         df_aif = df_aif.drop_duplicates(subset=["fecha", "periodo", "concepto_codigo", "subsector"])
+        df_aif = _derivar_mensuales_aif(df_aif)
         out = output_dir / "aif_consolidado.csv"
         df_aif.to_csv(out, index=False, encoding="utf-8-sig")
         print(f"  AIF: {len(df_aif):,} registros -> {out}")
@@ -91,6 +93,7 @@ def process(zip_path: Path, raw_dir: Path, output_dir: Path):
     if all_imig:
         df_imig = pd.DataFrame(all_imig)
         df_imig["fecha"] = pd.to_datetime(df_imig["fecha"], format="%Y-%m", errors="coerce")
+        df_imig = _una_fuente_por_mes_imig(df_imig)
         df_imig = df_imig.sort_values(["fecha", "concepto_codigo"])
         df_imig = df_imig.drop_duplicates(
             subset=["fecha", "concepto_codigo", "nivel_jerarquia", "fuente_archivo"]
@@ -103,6 +106,86 @@ def process(zip_path: Path, raw_dir: Path, output_dir: Path):
         df_imig = None
 
     _print_summary(df_aif, df_imig)
+
+
+def _una_fuente_por_mes_imig(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Cada mes IMIG aparece en varios archivos: su publicacion original, la columna
+    comparativa (mismo mes del ano anterior, con valores REVISADOS) del archivo del
+    ano siguiente, y la hoja Mensualizacion. Para que la serie sea determinista y
+    homogenea, cada mes se toma de UNA sola fuente, por prioridad:
+      0 = publicacion original (mes mas reciente de su archivo)
+      1 = hoja Mensualizacion (completa meses no publicados, ej. mar/jul-2026)
+      2 = columna comparativa de otro archivo (unica fuente para 2019)
+    """
+    df = df.copy()
+    es_mens = df["fuente_archivo"].str.endswith(imig_parser.MENSUALIZACION_TAG)
+    mes_propio = df.groupby("fuente_archivo")["fecha"].transform("max")
+    df["_prio"] = 2
+    df.loc[~es_mens & (df["fecha"] == mes_propio), "_prio"] = 0
+    df.loc[es_mens, "_prio"] = 1
+    # Fuente elegida por mes: menor prioridad; empate -> nombre de archivo (determinista)
+    elegida = (df[["fecha", "_prio", "fuente_archivo"]].drop_duplicates()
+               .sort_values(["fecha", "_prio", "fuente_archivo"])
+               .drop_duplicates("fecha"))
+    df = df.merge(elegida[["fecha", "fuente_archivo"]], on=["fecha", "fuente_archivo"])
+    return df.drop(columns="_prio")
+
+
+def _derivar_mensuales_aif(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Reconstruye meses AIF mensuales faltantes a partir de las hojas Acumulado:
+      a) mens(M) = acum(M) - acum(M-1)                      (acum(0) = 0)
+      b) mens(M) = acum(M+1) - acum(M-1) - mens(M+1)        (si falta acum(M))
+    Validado exacto (dif 0,0 M$) contra abr/may/jun-2026 publicados.
+    Caso de uso: jul-2026 (Hacienda publico jun y ago pero no jul).
+    fuente_archivo queda como 'derivado: ...' para trazabilidad.
+    """
+    k = ["concepto_codigo", "subsector"]
+    mens = df[df["periodo"] == "mensual"]
+    acum = df[df["periodo"] == "acumulado"]
+    if mens.empty or acum.empty:
+        return df
+
+    def serie(sub, fecha):
+        x = sub[sub["fecha"] == fecha]
+        return x.set_index(k)["valor_millones_pesos"] if len(x) else None
+
+    todas = pd.date_range(mens["fecha"].min(), mens["fecha"].max(), freq="MS")
+    presentes = set(mens["fecha"])
+    nuevos = []
+    for f in todas:
+        if f in presentes:
+            continue
+        prev = f - pd.DateOffset(months=1)
+        nxt = f + pd.DateOffset(months=1)
+        a_prev = pd.Series(0.0) if f.month == 1 else serie(acum, prev)
+        a_f, a_nxt, m_nxt = serie(acum, f), serie(acum, nxt), serie(mens, nxt)
+        if a_prev is None:
+            continue
+        if a_f is not None:
+            val = a_f - a_prev if f.month > 1 else a_f
+            desc = f"derivado: acum {f:%Y-%m} - acum {prev:%Y-%m}"
+            base = acum[acum["fecha"] == f]
+        elif a_nxt is not None and m_nxt is not None and nxt.year == f.year:
+            val = (a_nxt - a_prev - m_nxt) if f.month > 1 else (a_nxt - m_nxt)
+            desc = f"derivado: acum {nxt:%Y-%m} - acum {prev:%Y-%m} - mens {nxt:%Y-%m}"
+            base = acum[acum["fecha"] == nxt]
+        else:
+            continue
+        val = val.dropna().round(6)
+        rec = base.set_index(k).loc[val.index].reset_index()
+        rec["valor_millones_pesos"] = val.values
+        rec["fecha"], rec["anio"], rec["mes"] = f, f.year, f.month
+        rec["periodo"] = "mensual"
+        rec["fuente_archivo"] = desc
+        print(f"  [DERIVADO] AIF {f:%Y-%m} mensual <- {desc} | {len(rec)} registros")
+        nuevos.append(rec[df.columns])
+
+    if nuevos:
+        df = pd.concat([df] + nuevos, ignore_index=True)
+        df = df.sort_values(["fecha", "periodo", "subsector", "concepto_codigo"])
+    return df
 
 
 def _print_summary(df_aif, df_imig):

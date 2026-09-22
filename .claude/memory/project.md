@@ -9,35 +9,46 @@ Consolidar datos del Sector Publico Nacional argentino (Hacienda) en un dataset 
 - Notebook 01 Colab: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb
 - Notebook 02 Colab: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb
 
-## HANDOFF — estado al 2026-06-18 (para retomar en otro chat)
-ESTADO: todo commiteado y pusheado a main (ultimo commit 5465e2a). Arbol git limpio.
-Datos hasta MAYO 2026. Deflactor base = ultimo mes IPC = may-2026 (automatico).
-Ambos notebooks ejecutan end-to-end sin errores y estan validados vs Hacienda y vs fuente cruda.
+## HANDOFF — estado al 2026-09-22 (para retomar en otro chat)
+Datos hasta AGOSTO 2026. Deflactor base = ago-2026 (IPC 12.276,766, auto = ultimo mes IPC).
+Ambos notebooks ejecutados end-to-end local (nbconvert con URLs redirigidas a disco): 0 errores.
+Cifras clave base ago-2026: gasto prim. 2023 296,7 B -> 2024 204,6 B (-31,1%), 2025 208,5 B;
+ajuste gp 2023->2024 = -92,1 B; mejora primaria +5,4 pp PIB (los % no cambian con la base).
 
-HECHO ESTE CICLO (jun-2026):
-- Incorporado mayo 2026 (IPC + AIF + IMIG), re-consolidado, validado.
-- Fix parser AIF: I2_APORTES_SEG_SOCIAL en formato viejo ("Contribuciones a la Seg.Social").
-- consolidate.py: autodetecta ZIP (corre con `python src/consolidate.py`) + reporta huecos IMIG.
-- NB02: agregadas 4 hojas nuevas al Excel -> Informe_tabla1, Informe_provincias,
-  Informe_valores (tabla larga con TODO valor del informe), Tablas_LaTeX (5 bloques .tex).
-  El ZIP ahora trae tambien 5 archivos .tex (filas de datos de cada tabla del informe).
-- Mapeo completo de reemplazos base-abril -> base-may del documento LaTeX entregado en chat.
+HECHO CICLO SEP-2026:
+- Incorporados jun y ago 2026 (AIF "Junio 26.xlsx"/"Agosto 26.xlsx" + "IMIG Junio/Agosto 2026.xlsx").
+- JUL-2026 NO publicado por Hacienda (la web salta de junio a agosto). Se completa asi:
+  * AIF: consolidate._derivar_mensuales_aif -> mens(jul) = acum(ago) - acum(jun) - mens(ago).
+    Metodo validado EXACTO (dif 0,0 M$ en 350 concepto x subsector) contra abr/may/jun-2026.
+    fuente_archivo = "derivado: ...". (jun-2022 sigue sin poder derivarse: no hay acum may-22.)
+  * IMIG: hoja "Mensualizacion" de los IMIG 2026 (una col por mes del ano). Validada exacta
+    vs hojas mensuales. Completa JUL-2026 y tambien MAR-2026 (antes "gap permanente": RESUELTO).
+    fuente_archivo = "<archivo> [Mensualizacion]". IMIG ahora cobertura completa 2019-01..2026-08.
+- IMIG una fuente por mes (consolidate._una_fuente_por_mes_imig): prioridad
+  0=publicacion original, 1=Mensualizacion, 2=columna comparativa de otro archivo.
+  Motivo: los archivos del ano siguiente traen el mismo mes del ano anterior con valores
+  REVISADOS/reclasificados (ej. Salud abr-25: 6.260 vs 66.920 original). Antes el dedup del
+  NB02 mezclaba versiones segun orden de filas. IMIG CSV bajo de 8.745 a 4.931 filas.
+- BUG CORREGIDO imig_parser.detect_value_columns: leia fechas en filas de datos; un valor
+  ~45.000 M$ en resultado_fiscal_mayo-20.xls se tomaba como serial Excel = 2023-03 ->
+  mar-2023 IMIG tenia valores de may-2019 (gasto prim. 294.374 vs real 1.984.632 M$).
+  IMPACTO en informe de junio: rubros IMIG 2023 subestimados ~4-5% (torta, barras, tab:imig,
+  Recorte_IMIG). Cifras AIF (principales) NO afectadas. Ahora solo busca fechas en encabezado
+  (antes de INGRESOS TOTALES), 1 fecha por columna, tope de ano = ano actual+1 (antes 2026 fijo).
+- IPC: agregados jun/jul/ago-2026 Nivel General desde API datos.gob.ar serie
+  148.3_INIVELNAL_DICI_M_26 (coincide con archivo, dif max 0,09). Divisiones de esos 3 meses
+  vacias (NB solo usa "Nivel general").
+- NB02: "(5 meses)" ahora dinamico ({_n26} meses). NB01: markdown de cobertura actualizado.
 
-PROXIMO PASO ABIERTO (lo que quedo pendiente de hacer):
-- Aplicar sobre el documento LaTeX del usuario (informe de prensa INECO) los reemplazos a
-  base may-2026: rebasear todos los $billones (~+2.1%), cambiar "abril 2026"->"mayo 2026",
-  cobertura a mayo, columna 2026 parcial (5 meses), %/pp del PIB NO cambian.
-  Fuente de verdad = hojas Informe_valores y Tablas_LaTeX del Excel del NB02.
-  El usuario tiene el .tex en su chat (no esta en el repo). Pedirselo de nuevo para editarlo.
-- Decision pendiente del usuario: en el titulo, ajuste gasto primario 2023->2024 da -87,1 B
-  por la regla sin-redondear; si prefiere que el lector lo verifique como 280,6-193,4 usar -87,2.
+PROXIMO PASO ABIERTO:
+- Informe LaTeX de prensa (el usuario lo tiene en chat, NO esta en repo): rebasear ahora a
+  AGOSTO 2026 (ya no mayo) usando hojas Informe_valores y Tablas_LaTeX del Excel NB02.
+  Ojo: seccion IMIG 2023 cambia ademas por el fix de mar-2023.
+- Decision pendiente titulo ajuste gasto primario (regla sin-redondear vs resta de redondeados).
 
-GAPS CONOCIDOS (no son bugs): AIF mensual falta jun-2022 (Hacienda solo publico acumulado);
-IMIG falta mar-2026 (Hacienda no publico IMIG ese mes; permanente; no afecta graficos).
+GAPS CONOCIDOS: AIF mensual jun-2022 (solo acumulado I Sem, no derivable).
 
-SEGURIDAD: el token del remote estaba vencido; los push de este ciclo se hicieron con un PAT
-nuevo pasado por chat (one-time URL, sin guardarlo). Conviene rotar ese token y limpiar el
-remote para que use Git Credential Manager.
+SEGURIDAD: rotar PAT usado en junio; usar Git Credential Manager.
 
 ## Fuente de datos
 - URL: https://www.argentina.gob.ar/economia/sechacienda/infoestadistica
@@ -48,7 +59,7 @@ remote para que use Git Credential Manager.
 - IPC INDEC: data/reference/IPC.xlsx (commiteado, ene-2017 a may-2026)
 - 80 archivos Excel, cobertura ene-2020 a may-2026
 - Gap unico AIF mensual: Jun-2022 (solo existe acumulado I Semestre)
-- Gap unico IMIG: 2026-03. PERMANENTE: Hacienda NO publico informe IMIG de marzo 2026,
+- [RESUELTO sep-2026 via hoja Mensualizacion] Antes gap IMIG 2026-03: Hacienda NO publico informe IMIG de marzo 2026,
   solo el AIF (marzo_26.xlsx, hojas Marzo/Acumulado, sin IMIG). Confirmado con el usuario
   (2026-06-18). No se puede reconstruir desde el AIF (desagregacion funcional distinta).
   No afecta graficos (IMIG solo usa 2023-2025 anual). NO volver a marcarlo como "a descargar".

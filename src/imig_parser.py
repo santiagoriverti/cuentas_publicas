@@ -16,6 +16,8 @@ import openpyxl
 import xlrd
 import pandas as pd
 
+ANIO_MAX = datetime.now().year + 1  # tope de anos validos en encabezados
+
 
 MESES_ES = {
     "enero": 1, "febrero": 2, "marzo": 3, "abril": 4,
@@ -65,7 +67,7 @@ def _extract_date_from_cell(cell) -> tuple[int, int] | None:
             mes_num = MESES_ABREV.get(mes_str)
             if mes_num:
                 year = 2000 + int(yy)
-                if 2018 <= year <= 2026:
+                if 2018 <= year <= ANIO_MAX:
                     return year, mes_num
     return None
 
@@ -74,25 +76,25 @@ def detect_value_columns(rows: list[list]) -> list[tuple[int, int, int]]:
     """
     Returns list of (col_idx, year, month) for data columns.
     Scans rows looking for date cells (datetime or excel serial).
+    Solo mira filas de encabezado (antes de 'INGRESOS TOTALES'): un valor en
+    millones ~40.000-50.000 dentro de los datos se confundia con una fecha serial
+    Excel (ej. resultado_fiscal_mayo-20.xls generaba registros falsos 2023-03).
+    Cada columna toma una sola fecha (la primera encontrada).
     """
-    results = []
+    unique = []
+    cols_vistas = set()
     for row in rows[:12]:
+        if any(c and "INGRESOS TOTALES" in str(c).upper() for c in row):
+            break
         for j, cell in enumerate(row):
-            if cell is None:
+            if cell is None or j in cols_vistas:
                 continue
             parsed = _extract_date_from_cell(cell)
             if parsed:
                 yr, mo = parsed
-                if 2018 <= yr <= 2026:
-                    results.append((j, yr, mo))
-    # Remove duplicates preserving order
-    seen = set()
-    unique = []
-    for item in results:
-        key = (item[0], item[1], item[2])
-        if key not in seen:
-            seen.add(key)
-            unique.append(item)
+                if 2018 <= yr <= ANIO_MAX:
+                    cols_vistas.add(j)
+                    unique.append((j, yr, mo))
     return unique
 
 
@@ -321,4 +323,38 @@ def parse_file(filename: str, data: bytes) -> list[dict]:
             print(f"  [OK] IMIG {filename} | {sname} → {year}-{month:02d} | {len(recs)} registros")
             records.extend(recs)
 
+    return records
+
+
+MENSUALIZACION_TAG = " [Mensualizacion]"
+
+
+def parse_mensualizacion(filename: str, data: bytes) -> list[dict]:
+    """
+    Lee la hoja 'Mensualizacion' (IMIG 2026+): una columna por mes del ano en curso.
+    Sirve para completar meses cuyo IMIG no se publico (ej. mar-2026, jul-2026).
+    Validado: coincide exacto con las hojas mensuales en los meses que si existen.
+    fuente_archivo queda marcado con MENSUALIZACION_TAG.
+    """
+    if not filename.lower().endswith(".xlsx"):
+        return []
+    try:
+        wb_meta = openpyxl.load_workbook(io.BytesIO(data), read_only=True)
+        sheet_names = wb_meta.sheetnames
+        wb_meta.close()
+    except Exception:
+        return []
+
+    records = []
+    for sname in sheet_names:
+        if "MENSUALIZACION" not in sname.upper():
+            continue
+        rows = read_xlsx_sheet(data, sname)
+        if not _is_imig_sheet(rows) or not detect_value_columns(rows):
+            continue
+        recs = parse_imig_sheet(rows, 0, 0, filename + MENSUALIZACION_TAG)
+        if recs:
+            meses = sorted({r["fecha"] for r in recs})
+            print(f"  [OK] IMIG {filename} | {sname} → {meses[0]}..{meses[-1]} | {len(recs)} registros")
+            records.extend(recs)
     return records
