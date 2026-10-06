@@ -20,15 +20,21 @@ Fuentes (todas publicas, sin clave):
 - argentinadatos.com: riesgo pais (EMBI) y dolar contado con liquidacion.
 - Ambito (mercados.ambito.com): dolar blue 2011+ con centavos (argentinadatos y bluelytics lo
   traen redondeado a $1 en 2011-2012).
+- Reservas netas: brutas - encajes (BCRA API) - obligaciones con organismos internacionales
+  (balance semanal del BCRA, XLS) - pasivos sin serie publica cargados a mano en
+  data/reference/reservas_pasivos_manual.csv (swap con China en yuanes, valuado con la cotizacion
+  CNY del BCRA; REPO del BCRA con bancos; swap con el Tesoro de EEUU).
 
 Si una fuente falla se conserva la columna que ya estaba en el CSV (aviso por pantalla), asi una
 caida puntual de una API no borra datos.
 
-Agregacion a mensual: series diarias -> promedio del mes, salvo stocks (reservas) -> ultimo dato
-del mes. Trimestrales (desocupacion, PIB) -> mismo valor en los 3 meses del trimestre.
+Agregacion a mensual: series diarias -> promedio del mes, salvo stocks (reservas, encajes,
+pasivos del BCRA) -> ultimo dato del mes. Trimestrales (desocupacion, PIB) -> mismo valor en los 3
+meses del trimestre.
 """
 
 import io
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -48,6 +54,10 @@ ITCRM_XLSX = "https://www.bcra.gob.ar/Pdfs/PublicacionesEstadisticas/ITCRMSerie.
 ARG_DATOS = "https://api.argentinadatos.com/v1"
 AMBITO_BLUE = "https://mercados.ambito.com//dolar/informal/historico-general/01-01-2011/{hasta}"
 IMIG_CSV = "https://infra.datos.gob.ar/catalog/sspm/dataset/452/distribution/452.3/download/imig-mensual.csv"
+BCRA_CAMBIOS = "https://api.bcra.gob.ar/estadisticascambiarias/v1.0/Cotizaciones"
+BALANCE_XLS = ("https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/"
+               "summary-balances-assets-liabilities-bcra-annual-series-1998-to-date.xls")
+PASIVOS_MANUAL = ROOT / "data" / "reference" / "reservas_pasivos_manual.csv"
 
 # columna -> (id serie datos.gob.ar, trimestral?)
 SERIES_DATOS_GOB = {
@@ -65,6 +75,7 @@ SERIES_DATOS_GOB = {
 # columna -> (idVariable BCRA, agregacion mensual)
 SERIES_BCRA = {
     "reservas_usd":      (1, "last"),   # reservas internacionales brutas (M USD)
+    "encajes_usd":       (1243, "last"),  # cuentas corrientes en moneda extranjera de los bancos en el BCRA (M USD)
     "a3500":             (5, "mean"),   # tipo de cambio mayorista de referencia ($/USD)
     "badlar":            (7, "mean"),   # BADLAR bancos privados (% TNA)
     "prestamos_privados": (26, "mean"), # prestamos al sector privado, pesos + dolares valuados en $ (M$)
@@ -137,6 +148,65 @@ def ambito_blue() -> pd.Series:
     return _mensual(s, "mean")
 
 
+def cny_usd() -> pd.Series:
+    """Dolares por yuan (cotizacion del BCRA), ultimo dato del mes: valua el swap con China."""
+    filas, hoy = [], pd.Timestamp.today()
+    for anio in range(2014, hoy.year + 1):  # el swap entra en las reservas en oct-2014
+        hasta = min(pd.Timestamp(anio, 12, 31), hoy).strftime("%Y-%m-%d")  # la API rechaza fechas futuras
+        r = requests.get(f"{BCRA_CAMBIOS}/CNY", params={"fechadesde": f"{anio}-01-01", "fechahasta": hasta,
+                                                        "limit": 1000}, timeout=60, verify=False)
+        r.raise_for_status()
+        filas += [(x["fecha"], x["detalle"][0]["tipoPase"]) for x in r.json()["results"] if x["detalle"]]
+    s = pd.Series({pd.Timestamp(f): float(v) for f, v in filas})
+    return _mensual(s, "last")
+
+
+def _fecha_balance(v, anio: int):
+    # encabezados: fecha o texto "mm/dd/aaaa"; en 2002-2006 el "07/01" (7-ene) quedo leido como 1-jul
+    if hasattr(v, "year"):
+        v = pd.Timestamp(v)
+        return pd.Timestamp(v.year, v.day, 7) if anio <= 2006 and v.month == 7 and v.day <= 12 else v
+    return pd.to_datetime(str(v).strip(), format="%m/%d/%Y", errors="coerce")
+
+
+def balance_org_internacionales() -> pd.Series:
+    """Obligaciones del BCRA con organismos internacionales (M USD, fin de mes), del balance semanal.
+    Incluye la deuda con el FMI hasta ene-2006 y los creditos/swap del BIS (2018-2024, dic-2025 a
+    may-2026). La deuda con el FMI desde 2018 es del Tesoro y no esta aca."""
+    r = requests.get(BALANCE_XLS, timeout=180, verify=False)
+    r.raise_for_status()
+    xls = pd.ExcelFile(io.BytesIO(r.content))
+    norm = lambda v: re.sub(r"[\.…]+", "", str(v)).strip().upper()  # noqa: E731
+    vals = {}
+    for hoja in xls.sheet_names:  # una hoja por anio ("2003", " 2004", ...), columnas = semanas
+        df = pd.read_excel(xls, sheet_name=hoja, header=None)
+        labs = [norm(v) for v in df.iloc[:, 0]]
+        fila = next(i for i, l in enumerate(labs)
+                    if l in ("OBLIGATIONS WITH INTERNATIONAL AGENCIES", "DUE TO INTERNATIONAL AGENCIES"))
+        fila_tc = next(i for i, l in enumerate(labs) if l.startswith(("RATE OF EXCHANGE", "USD EXCHANGE RATE")))
+        for c in df.columns[1:]:
+            f = _fecha_balance(df.iloc[3, c], int(hoja))
+            v, tc = pd.to_numeric(df.iloc[fila, c], errors="coerce"), pd.to_numeric(df.iloc[fila_tc, c], errors="coerce")
+            if pd.notna(f) and pd.notna(v) and tc:
+                vals[f] = v / tc / 1000  # miles de $ -> M USD
+    s = pd.Series(vals).sort_index()
+    return _mensual(s[s.index >= DESDE], "last")
+
+
+def pasivos_manuales(cny: pd.Series, hasta: pd.Timestamp) -> pd.DataFrame:
+    """Pasivos del BCRA sin serie publica (reservas_pasivos_manual.csv), en M USD por mes: swap con
+    China (monto en yuanes x cotizacion del mes), REPO con bancos internacionales, swap con EEUU."""
+    man = pd.read_csv(PASIVOS_MANUAL, dtype=str)
+    idx = pd.date_range(DESDE, hasta, freq="MS")
+    out = pd.DataFrame(0.0, index=idx, columns=[f"{c}_usd" for c in man["concepto"].unique()])
+    for r in man.itertuples():
+        fin = pd.Timestamp(r.hasta) if isinstance(r.hasta, str) else hasta  # vacio = vigente
+        sel = (idx >= pd.Timestamp(r.desde)) & (idx <= fin)
+        tc = cny.reindex(idx[sel]).ffill().to_numpy() if r.moneda == "CNY" else 1.0
+        out.loc[sel, f"{r.concepto}_usd"] += float(r.monto_millones) * tc
+    return out
+
+
 @lru_cache(maxsize=1)  # un solo CSV para las 5 columnas
 def imig_hist() -> pd.DataFrame:
     r = requests.get(IMIG_CSV, timeout=60)
@@ -162,6 +232,8 @@ def main():
     tareas["riesgo_pais"] = lambda: arg_datos("finanzas/indices/riesgo-pais", "valor")
     tareas["ccl"] = lambda: arg_datos("cotizaciones/dolares/contadoconliqui", "venta")
     tareas["blue"] = ambito_blue
+    tareas["org_internacionales_usd"] = balance_org_internacionales
+    tareas["cny_usd"] = cny_usd
     for col in ["imig_resultado_primario", "imig_intereses_netos", "imig_ingresos_totales",
                 "imig_iva", "imig_debitos_creditos"]:
         tareas[col] = lambda c=col: imig_hist()[c]
@@ -182,6 +254,14 @@ def main():
     df = pd.DataFrame(cols)
     df.index.name = "fecha"
     df = df[df.index >= DESDE].sort_index()
+
+    # Reservas netas = brutas - pasivos en moneda extranjera del BCRA que estan dentro de las brutas
+    pas = pasivos_manuales(df["cny_usd"], df["reservas_usd"].last_valid_index())
+    df = df.join(pas)
+    df["reservas_netas_usd"] = (df["reservas_usd"] - df["encajes_usd"] - df["org_internacionales_usd"]
+                                - pas.sum(axis=1))
+    s = df["reservas_netas_usd"].dropna()
+    print(f"  {'reservas_netas_usd':24} {s.index.min():%Y-%m} .. {s.index.max():%Y-%m}  ({len(s)} meses)")
     df.round(6).to_csv(OUT_FILE)
     print(f"Guardado: {OUT_FILE.relative_to(ROOT)} ({len(df)} meses x {df.shape[1]} series)")
     if fallas:

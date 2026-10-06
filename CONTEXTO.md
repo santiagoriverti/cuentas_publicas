@@ -87,14 +87,18 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 ## 4b. Indice Macroeconomico (notebook 03)
 
 ### Datos
-- `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (25 series crudas, mensuales).
-  Diarios → promedio del mes (reservas: ultimo dato del mes); trimestrales → mismo valor en los 3
-  meses. Si una API falla, conserva la columna anterior e imprime "FALLO".
+- `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (28 series crudas + 4 columnas
+  calculadas de reservas netas, mensuales). Diarios → promedio del mes (stocks: reservas, encajes,
+  pasivos del BCRA → ultimo dato del mes); trimestrales → mismo valor en los 3 meses. Si una API
+  falla, conserva la columna anterior e imprime "FALLO".
 - Fuentes: datos.gob.ar (EMAE, SIPA, salarios, desocupacion EPH [la API da fraccion → se guarda en
   %], expo/impo, PIB nominal, IPC Neuquen, UTDT promedio, CSV IMIG mensual 2016+), BCRA API v4
-  (`verify=False`; reservas, A3500, BADLAR, prestamos totales var 26 y en pesos var 117, REM var 29,
-  inflacion var 27), BCRA ITCRMSerie.xlsx (columna "ITCRM " con espacio), argentinadatos (riesgo
-  pais, CCL), Ambito (blue con centavos, `/dolar/informal/historico-general/dd-mm-aaaa/dd-mm-aaaa`).
+  (`verify=False`; reservas var 1, encajes var 1243, A3500, BADLAR, prestamos totales var 26 y en
+  pesos var 117, REM var 29, inflacion var 27), BCRA cotizaciones (`estadisticascambiarias/v1.0/
+  Cotizaciones/CNY`, `tipoPase` = USD por yuan; rechaza fechas futuras), BCRA balance semanal XLS
+  (obligaciones con organismos internacionales), BCRA ITCRMSerie.xlsx (columna "ITCRM " con
+  espacio), argentinadatos (riesgo pais, CCL), Ambito (blue con centavos,
+  `/dolar/informal/historico-general/dd-mm-aaaa/dd-mm-aaaa`).
 - Del repo: IPC (`IPC.xlsx`) e IMIG (`output/imig_consolidado.csv`). La IMIG se completa 2016-2018
   con el CSV de datos.gob.ar (distribucion 452.3; coincide 0,00% con la del repo en 2019-2026).
   OJO: los IDs `452.2_*` de la API son trimestrales y `452.1_*` anuales.
@@ -111,7 +115,7 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 | Precios | `inflacion_esperada` 100·ln(1+exp) | − | log |
 | Fiscal | `primario_pib` primario 12 m sin extraordinarios / PIB 12 m | + | desde dic-2016 |
 | Fiscal | `intereses_ingresos` intereses netos / ingresos sin extraordinarios, 12 m | − | desde dic-2016 |
-| Externo | `reservas_meses_impo` reservas brutas / importaciones mensuales promedio 12 m | + | |
+| Externo | `reservas_netas_meses_impo` reservas netas / importaciones mensuales promedio 12 m | + | ver "Reservas netas" |
 | Externo | `saldo_comercial` expo − impo 12 m (MM USD) | + | |
 | Externo | `brecha` CCL / A3500 − 1 | − | 0 antes de nov-2011 |
 | Externo | `tcrm_desalineado` \|ln(ITCRM / mediana)\| | − | simetrico |
@@ -167,9 +171,35 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 - Por gestion: el mes va a quien gobierno la mayor parte (asuncion hasta el dia 15 → mes propio);
   pilar vacio si tiene < 12 meses con dato.
 
+### Reservas netas (oct-2026; reemplazan a las brutas en el pilar Externo)
+- **Netas = brutas − encajes − obligaciones con organismos internacionales − swap con China − REPO
+  del BCRA − swap con el Tesoro de EEUU**, a fin de mes (M USD, columna `reservas_netas_usd`).
+  Idea: restar los pasivos en moneda extranjera del BCRA cuya contrapartida esta dentro de las brutas.
+  - Encajes: cuentas corrientes en ME de los bancos en el BCRA (API var 1243; coincide con el balance).
+  - Organismos internacionales: renglon del balance semanal (XLS, "Obligations with international
+    agencies", neto de la contrapartida del tramo de reservas). Capta la deuda del BCRA con el FMI
+    hasta ene-2006 (16,8 MM en 2003), los creditos del BIS 2018-abr 2024 (2,3-3,7 MM) y el swap con
+    el BIS de dic-2025 a may-2026 (2,5 MM, con el que se cancelo el swap con EEUU).
+  - Sin serie publica → `data/reference/reservas_pasivos_manual.csv` (con fuente por fila): swap con
+    China en yuanes (tramos 2014-15, 70.000 M desde sep-2015, 130.000 M desde dic-2018; valuado con la
+    cotizacion CNY del BCRA), REPO del BCRA (2016: 5.000 → 1.000 M, var 76; 2025-26: 1.000 → 3.000 →
+    6.000 M) y swap con el Tesoro de EEUU (2.541 M, oct-nov 2025).
+- **No se restan**: SEDESA (fondo de garantia de depositos, ~1,5-2 MM USD en 2023-26; sin serie
+  publica), Bopreal (no trajo dolares a las brutas; mayormente > 1 anio), deuda del Tesoro (bonos,
+  REPO del Tesoro de 2017, FMI desde 2018: el desembolso de 2025 cuenta como reserva, igual que el de
+  2018-19), asignaciones de DEG. Los "otros pasivos" y "pases" del balance no sirven para el swap ni los
+  REPO: mezclan partidas en pesos.
+- Contraste: dic-2023 = −6,6 MM (consultoras: −9,4 a −11,5, que ademas restan SEDESA y el BIS bruto);
+  feb-2026 = +1,4 MM (FMI Art. IV 2026: activos ~45 − encajes 18 − swaps PBoC+BIS 20 − SEDESA 2 ≈ +5,
+  sin restar REPO; y ≈ −10 excluyendo el credito FMI 2025, criterio del programa). Ago-2026 = +9,2 MM.
+- En meses de importaciones: 2004 negativo (deuda con el FMI), maximo 12,6 en jun-2007, ~5-7 en
+  2017-19, minimo reciente −1,4 en nov-2023. Correlacion con las brutas (z) 0,61. Efecto en el indice:
+  max 0,15 (ene-2004), promedio 0,03; ago-2026 +0,20 → +0,19; Spearman con miseria sin cambio (−0,56).
+- Si el BCRA toma o cancela un REPO/swap, agregar la fila en el CSV manual (`hasta` vacio = vigente).
+
 ### Limitaciones conocidas (documentadas, no resolubles con datos publicos por API)
-- Reservas **brutas** (incluyen swap con China y encajes) y a **fin de mes** (pico diario 2019:
-  77,5 MM USD el 9-abr; fin de mes max 71,7). El BCRA no publica reservas netas por API.
+- Reservas a **fin de mes** (pico diario 2019: 77,5 MM USD el 9-abr; fin de mes max 71,7). Netas sin
+  SEDESA y con el swap chino 2015 interpolado entre ene y sep (sin dato mensual publico).
 - IPC Neuquen es provincial; UTDT es encuesta a hogares (por eso se ajusta el nivel).
 - `inflacion_3m` e `inflacion_esperada` correlacionan 0,81: el pilar Precios es casi una sola senal.
 - Desocupacion 2004-T1 = 14,28% en la API vs 14,4% publicado entonces (revision de la serie).

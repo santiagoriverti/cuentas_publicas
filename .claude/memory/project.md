@@ -88,6 +88,16 @@
 - Las auditorias usaron scripts descartables (scratchpad): recalcular Z/pilares/indice desde el
   Excel, comparar Colab vs local hoja por hoja, benchmarks (inflacion oficial, EMAE, reservas,
   desocupacion, primario % PIB), tramos congelados y saltos en crudos. Repetirlas si se cambia el NB03.
+- v5 (2026-10-06, otra sesion): **reservas netas** reemplazan a las brutas en el pilar Externo
+  (`reservas_netas_meses_impo`). Netas = brutas (var 1) − encajes (var 1243, M USD; = renglon
+  "Current accounts in other currencies" del balance) − organismos internacionales (balance semanal
+  XLS `summary-balances-assets-liabilities-bcra-annual-series-1998-to-date.xls`, una hoja por anio,
+  miles de $ / "Rate of Exchange"; 2002-2006 traen el dia 7 leido como mes) − swap China − REPO BCRA −
+  swap EEUU (estos tres a mano en `data/reference/reservas_pasivos_manual.csv`; el yuan se valua con
+  `estadisticascambiarias/v1.0/Cotizaciones/CNY`, `tipoPase`). Descartados como fuente: dataset
+  datos.gob.ar 300.1 (balance mensual, corta en oct-2025), "Other liabilities" y "Due to repo" del
+  balance (mezclan pesos), FRED (corta la conexion). REPO 2017 = Tesoro (no se resta). Efecto: max
+  0,15 (2004), ago-2026 IMA +0,19 (antes +0,20), Spearman −0,56 sin cambio. CSV macro: 32 columnas.
 
 ## Notas sueltas utiles
 - Mensualizacion: cada IMIG 2026+ trae ene..mes actual → si falta el IMIG de un mes, el del mes
@@ -105,5 +115,6 @@
 - [ ] Datos provinciales MECON por jurisdiccion.
 - [ ] Consolidacion intra-sector para % provincias.
 - [ ] Revocar PAT viejo de jun-2026 si sigue activo.
-- [ ] Correr NB03 v4 en Colab y confirmar identico a local.
-- [ ] Indice macro: reservas netas; dashboard/Artifact. (PCA: evaluado y descartado en v4.)
+- [ ] Correr NB03 v5 en Colab y confirmar identico a local.
+- [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
+- [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.

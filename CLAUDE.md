@@ -41,6 +41,8 @@
   mensual) · 3 variables (lista `VARS`: codigo, nombre, pilar, signo, unidad, origen, serie) · 4 z,
   pilares, `indice_ancla` · 5-8 graficos 01-04 + Por_gobierno · 9 export. Para agregar una variable:
   sumar la serie en `actualizar_macro.py` y una tupla en `VARS`. Editar via JSON (igual que NB02).
+  Reservas netas (v5): pasivos sin API (swap China, REPO, swap EEUU) en
+  `data/reference/reservas_pasivos_manual.csv`; si el BCRA toma/cancela uno, agregar la fila.
   Antes de dar por buena una corrida, recalcular desde el Excel: Z = (Variables − mediana)/escala,
   pilares = promedio de Z, indice = promedio de pilares (las auditorias de oct-2026 lo hicieron asi).
 

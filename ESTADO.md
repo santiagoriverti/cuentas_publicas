@@ -10,8 +10,8 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | v4 (2026-10-06), tres revisiones aplicadas; verificado local: ZIP = Excel 8 hojas + 4 PNG. v2 verificada en Colab (identica a local) |
-| Series macro externas | `data/reference/macro_mensual.csv` (25 series, 2003 a oct-2026) |
+| Notebook 03 (indice macro) | v5 (2026-10-06): **reservas netas** en el pilar Externo; tres revisiones previas aplicadas; verificado local: ZIP = Excel 8 hojas + 4 PNG. v2 verificada en Colab (identica a local) |
+| Series macro externas | `data/reference/macro_mensual.csv` (28 series + 4 columnas de reservas netas, 2003 a oct-2026) + `reservas_pasivos_manual.csv` |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
 | Ultimo mes publicado por Hacienda revisado | agosto 2026 (julio 2026 NO publicado → derivado) |
@@ -38,14 +38,23 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 
   | Ago-2026 | Valor | Hace 12 meses |
   |---|---|---|
-  | Indice | **+0,20** | +0,37 |
+  | Indice | **+0,19** | +0,38 |
   | Indice sin fiscal (comparable 2004-hoy) | −0,00 | +0,18 |
-  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,04 | +0,13 |
+  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,05 | +0,14 |
 
   Pilares ago-2026: Actividad −0,55 · Empleo −0,40 · Precios +0,33 (vs meta: −1,11) · Fiscal +1,18 ·
-  Externo +0,11 · Financiero +0,51. Promedio por gestion (indice sin fiscal): N. Kirchner +0,01 ·
-  C. Fernandez +0,06 · C. Fernandez II −0,09 · Macri −0,23 · A. Fernandez −0,72 · Milei −0,35.
+  Externo +0,09 · Financiero +0,51. Promedio por gestion (indice sin fiscal): N. Kirchner +0,00 ·
+  C. Fernandez +0,10 · C. Fernandez II −0,03 · Macri −0,23 · A. Fernandez −0,74 · Milei −0,35.
   Correlacion con el indice de miseria: −0,56.
+- **v5: reservas netas** (reemplazan a las brutas en el pilar Externo; `reservas_netas_meses_impo`).
+  Netas = brutas − encajes (API var 1243) − obligaciones con organismos internacionales (balance
+  semanal XLS: FMI hasta 2006, BIS) − swap China − REPO del BCRA − swap EEUU; los tres ultimos sin
+  serie publica, cargados con fuente en `data/reference/reservas_pasivos_manual.csv`. No se restan
+  SEDESA (~2 MM, sin serie), Bopreal ni deuda del Tesoro (FMI incluido). Ago-2026: +9,2 MM USD
+  (1,5 meses de impo); dic-2023 −6,6 MM (consultoras −9,4 a −11,5: restan SEDESA y BIS bruto).
+  Efecto en el indice: max 0,15 (2004, por la deuda con el FMI), promedio 0,03; Externo por gestion:
+  CFK +0,18 → +0,36, CFK II −0,65 → −0,37, A. Fernandez −0,62 → −0,68, Milei −0,42 → −0,38.
+  Detalle y contrastes (FMI Art. IV 2026, CIFRA) en CONTEXTO.md §4b "Reservas netas".
 - **v4 (3ra revision, verificacion independiente)**: la mediana y el IQR de la normalizacion ahora
   se calculan **solo sobre datos propios** (antes los arrastres de borde de la hoja Arrastrados
   entraban en las estadisticas; impacto max 0,02 z historico, titulares sin cambio). La hoja
@@ -88,7 +97,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 ## 3. Proximos pasos
 
 1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
-   Correr el notebook 03 v4 en Colab y comparar con la corrida local (deberia dar identico).
+   Correr el notebook 03 v5 en Colab y comparar con la corrida local (deberia dar identico).
    Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
 2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
    NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
@@ -97,9 +106,8 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
    valores redondeados (difieren en 0,1 B).
 3. Ideas no iniciadas: datos provinciales MECON por jurisdiccion; consolidacion intra-sector para
    medir mejor el peso de las provincias en el ajuste.
-   Indice macro: reservas netas (requiere armarlas a mano: brutas − swap China − encajes − otros
-   pasivos de corto plazo; el BCRA no las publica por API); publicar el indice como
-   Artifact/dashboard. (Pesos por PCA: evaluados y descartados en la v4, ver seccion 2.)
+   Indice macro: publicar el indice como Artifact/dashboard; SEDESA en las reservas netas si aparece
+   una serie publica. (Pesos por PCA: evaluados y descartados en la v4; reservas netas: hechas en la v5.)
 4. Seguridad: el remote usa Git Credential Manager (push funciona). Si quedo algun PAT viejo en
    GitHub (usado en jun-2026), revocarlo en Settings → Developer settings → Tokens.
 
@@ -111,6 +119,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 python scripts/actualizar_ipc.py          # 2. IPC nuevo (API datos.gob.ar)
 python scripts/actualizar_macro.py        # 2b. series del indice macro (BCRA, INDEC, argentinadatos, Ambito)
                                           #     revisar que no diga "FALLO" (si falla conserva la version anterior)
+                                          #     si el BCRA tomo/cancelo un REPO o swap: data/reference/reservas_pasivos_manual.csv
 python src/consolidate.py                 # 3. revisar "RESUMEN DE COBERTURA" al final
 python scripts/run_notebooks_local.py 02 03  # 4. verificar (salidas en _local_run/)
 git add data/raw data/reference output && git commit -m "datos: YYYY-MM" && git push
