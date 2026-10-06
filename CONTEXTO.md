@@ -146,11 +146,18 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 ### Normalizacion y agregacion
 - z = (x − mediana) / (IQR/1,349) sobre toda la historia disponible de cada variable, signo "mas
   alto = mejor", recorte ±3. Se descarto MAD: la brecha tiene ~95 meses en 0 y el MAD quedaba ~0,8 pp
-  → cualquier brecha > 3% saturaba.
+  → cualquier brecha > 3% saturaba. La mediana y el IQR se calculan **solo sobre datos propios**
+  (v4: los arrastres de borde de la hoja Arrastrados no entran en las estadisticas; el z de los
+  meses arrastrados si se calcula con esa mediana/escala).
 - **Ventanas distintas**: cada variable se normaliza con su historia (recaudacion 2017+, fiscal
   dic-2016+, salario 2016+, SIPA 2013+): 0 = tipico de ESE periodo (`normalizado_desde` en Metodologia).
 - Pilar = promedio de sus variables con dato; indice = promedio de pilares (minimo 4).
   `indice_sin_fiscal` = sin el pilar fiscal (arranca dic-2016): comparable en toda la serie.
+  **Pesos iguales por pilar**: se evaluo ponderar por PCA (oct-2026) y se descarto — el 1er
+  componente principal de los pilares explica solo ~40% de la varianza y carga con signos mixtos
+  (con 6 pilares: Externo −46%, Precios −10%; con 5 sin fiscal: Empleo −17%), senal de que no hay
+  un factor comun dominante. En ese caso la practica estandar en indicadores compuestos (manual
+  OCDE) es mantener pesos iguales.
 - **Vara de Precios**: el indice principal compara con la historia argentina (mediana de inflacion
   ~26% anual → 20% cuenta como "mejor que lo tipico"; nov-2008 da +0,03 en plena crisis global).
   Como referencia, `indice_ancla` mide Precios contra una **meta de 10% anual** (`Precios_ancla`,
@@ -166,7 +173,8 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 - IPC Neuquen es provincial; UTDT es encuesta a hogares (por eso se ajusta el nivel).
 - `inflacion_3m` e `inflacion_esperada` correlacionan 0,81: el pilar Precios es casi una sola senal.
 - Desocupacion 2004-T1 = 14,28% en la API vs 14,4% publicado entonces (revision de la serie).
-- TCRM penaliza igual atraso y adelanto; tasa real neutral fijada en 2%; pesos iguales por pilar.
+- TCRM penaliza igual atraso y adelanto; tasa real neutral fijada en 2%; pesos iguales por pilar
+  (PCA evaluado y descartado, ver "Normalizacion y agregacion").
 - Validacion: correlacion de Spearman con el indice de miseria ≈ −0,56; episodios (2009, 2014,
   2018-19, 2020, fines de 2023 - inicio 2024) ubicados correctamente.
 

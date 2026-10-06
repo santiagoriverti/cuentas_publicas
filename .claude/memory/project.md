@@ -76,6 +76,15 @@
   (−5,4 pts log vs REM), `indice_ancla` (Precios vs meta 10%). Ago-2026: IMA +0,20, sin fiscal +0,00,
   ancla −0,04. Por gestion (sin fiscal): NK +0,01 · CFK +0,06 · CFK2 −0,09 · Macri −0,23 · AF −0,72 ·
   Milei −0,35.
+- Revision v4 (3ra, verificacion independiente 2026-10-06): se recalculo TODO desde el Excel sin
+  usar el codigo del NB y reprodujo exacto (z, pilares, indice/sin_fiscal/ancla — formula del ancla
+  confirmada: −(x − 100·ln(1,10))/escala —, Por_gobierno, arrastres ≤3m, spot-checks desde
+  Datos_crudos; tcrm usa la mediana del ITCRM en ventana INICIO:FIN_IPC). Unico hallazgo: la
+  mediana/IQR se calculaba sobre X DESPUES del ffill de borde → fix: `X_propio = X.where(OBS)` en
+  celda 4; Metodologia (normalizado_hasta/meses/pct_meses_en_tope) ahora sobre datos propios
+  (celda 9). Impacto max 0,02 z historico; ago-2026: IMA +0,20 (igual), sin fiscal −0,00 (antes
+  +0,00), ancla −0,04 (igual); Empleo −0,40 (antes −0,39). PCA para pesos: evaluado y DESCARTADO
+  (PC1 explica ~40%, signos mixtos: Externo −46% / Precios −10%); queda documentado en CONTEXTO §4b.
 - Las auditorias usaron scripts descartables (scratchpad): recalcular Z/pilares/indice desde el
   Excel, comparar Colab vs local hoja por hoja, benchmarks (inflacion oficial, EMAE, reservas,
   desocupacion, primario % PIB), tramos congelados y saltos en crudos. Repetirlas si se cambia el NB03.
@@ -96,5 +105,5 @@
 - [ ] Datos provinciales MECON por jurisdiccion.
 - [ ] Consolidacion intra-sector para % provincias.
 - [ ] Revocar PAT viejo de jun-2026 si sigue activo.
-- [ ] Correr NB03 v3 en Colab y confirmar identico a local.
-- [ ] Indice macro: reservas netas; pesos por PCA (sensibilidad); dashboard/Artifact.
+- [ ] Correr NB03 v4 en Colab y confirmar identico a local.
+- [ ] Indice macro: reservas netas; dashboard/Artifact. (PCA: evaluado y descartado en v4.)
