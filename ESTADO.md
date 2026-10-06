@@ -10,7 +10,7 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | **v9 congelada** (2026-10-06): salario real vs su maximo; v8: EMAE vs su maximo; v7: fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; v8 verificada en Colab (identica a local); **v9 verificada solo local** (falta Colab); ZIP = Excel 8 hojas + 4 PNG |
+| Notebook 03 (indice macro) | **v9 congelada** (2026-10-06): salario real vs su maximo; v8: EMAE vs su maximo; v7: fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; **v9 verificada en Colab (2026-10-06): identica a local** en las 8 hojas (dif 0); ZIP = Excel 8 hojas + 4 PNG |
 | Series macro externas | `data/reference/macro_mensual.csv` (28 series + 4 columnas de reservas netas, 2003 a oct-2026) + `reservas_pasivos_manual.csv` |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
@@ -45,7 +45,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
   Pilares ago-2026: Actividad −0,66 · Empleo −0,37 · Precios +0,33 (vs meta: −1,11) · Fiscal +0,33 ·
   Externo −0,19 · Financiero +0,50. Promedio por gestion (indice completo): N. Kirchner +0,04 ·
   C. Fernandez +0,17 · C. Fernandez II +0,06 · Macri −0,30 · A. Fernandez −0,79 · Milei −0,28
-  (sin fiscal: −0,02 · +0,09 · +0,01 · −0,18 · −0,77 · −0,36). Cifras = las que imprime el NB. Pilar Fiscal por gestion: NK +0,27 ·
+  (sin fiscal: −0,02 · +0,09 · +0,01 · −0,17 · −0,77 · −0,36). Cifras = las que imprime el NB. Pilar Fiscal por gestion: NK +0,27 ·
   CFK +0,57 · CFK II +0,32 · Macri −0,90 · AF −0,89 · Milei +0,13. Spearman con miseria: −0,56.
 - **v9: nivel del salario real** (`salario_real_vs_maximo`, 19na variable, pilar Empleo): misma logica que
   el EMAE de la v8. Ene-2025: +11,9% i.a. (z +2,17, casi record) pero −12,4% vs el pico (z +0,01).
@@ -123,7 +123,6 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 ## 3. Proximos pasos
 
 1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
-   Correr el notebook 03 v9 en Colab y comparar con la corrida local (deberia dar identico).
    Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
 2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
    NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y

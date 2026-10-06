@@ -125,7 +125,8 @@
 
 ## Notas sueltas utiles
 - Cifras titulares del NB03: tomar las que IMPRIME el notebook (redondeo del valor exacto), NO
-  re-redondear la hoja Indice (viene a 3 decimales: −0,015 → el NB dice −0,01). Ya paso dos veces.
+  re-redondear la hoja Indice ni Por_gobierno (vienen a 3 decimales: −0,015 → el NB dice −0,01;
+  Macri sin fiscal −0,175 → −0,17). Ya paso tres veces.
 - Mensualizacion: cada IMIG 2026+ trae ene..mes actual → si falta el IMIG de un mes, el del mes
   siguiente lo cubre automaticamente.
 - 2026 en AIF: `total_general` reemplaza la suma nac+pami en `get_serie_total`.
@@ -146,7 +147,7 @@
 - [x] Pilar fiscal desde 2004 (v7, 2026-10-06).
 - [x] Nivel de actividad: EMAE vs maximo 36m (v8).
 - [x] Nivel del salario real (v9; metodologia congelada).
-- [ ] Correr NB03 v9 en Colab y comparar con local.
+- [x] NB03 v9 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] (opcional) Sensibilidad + validacion vs cronologia de recesiones; dashboard.
 - [x] NB03 v8 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
