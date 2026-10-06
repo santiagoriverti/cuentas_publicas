@@ -104,7 +104,7 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   OJO: los IDs `452.2_*` de la API son trimestrales y `452.1_*` anuales. 2003-2015: AIF historica
   (columnas `aif_hist_*`, ver "Fiscal 2003-2015").
 
-### Variables (18) y pilares (celda 3 del NB03; hoja `Metodologia`)
+### Variables (19) y pilares (celda 3 del NB03; hoja `Metodologia`)
 | Pilar | Variable | Signo | Nota |
 |---|---|---|---|
 | Actividad | `emae_ia` EMAE desest. var. i.a. | + | |
@@ -112,6 +112,7 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 | Actividad | `recaudacion_ia` IVA + Deb./Cred. reales, trim. movil, var. i.a. | + | repo IMIG, desde 2017-03 |
 | Empleo | `sipa_ia` asalariados privados registrados var. i.a. | + | desde 2013 |
 | Empleo | `salario_real_ia` indice de salarios registrados / IPC, var. i.a. | + | desde 2016-10 |
+| Empleo | `salario_real_vs_maximo` salario real vs su maximo de los 36 meses previos, % | + | nivel (v9), desde 2016-10 |
 | Empleo | `desocupacion` | − | trimestral |
 | Precios | `inflacion_3m` 400·ln(IPC/IPC₋₃) | − | log |
 | Precios | `inflacion_esperada` 100·ln(1+exp) | − | log |
@@ -185,6 +186,11 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   posicion en el ciclo, no estancamiento estructural). Corr. con `emae_ia` 0,77. Ej.: jun-2021 var. i.a.
   +13,9% pero −3,6% vs el pico; dic-2019 −1,4% i.a. pero −8,3% vs el pico; jul-2026 −4,5% vs el pico.
   Efecto: max 0,20 (may-2021), promedio 0,03; ago-2026 +0,00 → −0,01.
+  v9: lo mismo para el salario real (`salario_real_vs_maximo`, funcion `vs_maximo` en la celda 3): ene-2025
+  var. i.a. +11,9% (z +2,17) pero −12,4% vs el pico (z +0,01). Ojo: su mediana es −12,4% porque el salario
+  real cae casi sin pausa desde 2017 y se normaliza con su historia (2016-10+): estar 12% debajo del pico es
+  "tipico" de esa ventana. Efecto: max 0,07, promedio 0,01; Empleo ago-2026 −0,40 → −0,37.
+  **Metodologia congelada en la v9** (19 variables): cambios futuros solo con un sesgo verificado en datos.
 
 ### Normalizacion y agregacion
 - z = (x − mediana) / (IQR/1,349) sobre toda la historia disponible de cada variable, signo "mas

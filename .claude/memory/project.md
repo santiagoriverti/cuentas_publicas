@@ -118,6 +118,10 @@
 - v8 (2026-10-06): `emae_vs_maximo` = EMAE desest. / max(36 meses previos, min 12) − 1, en Actividad
   (nivel vs ritmo; se evaluaron incluir el mes [20% de ceros] y maximo historico; elegido 36m previo).
   Ago-2026 −4,5% (z −0,87), IMA −0,01 (−0,015), Actividad −0,66. Efecto max 0,20 (may-2021). Spearman −0,56.
+- v9 (2026-10-06): `salario_real_vs_maximo` (Empleo), helper `vs_maximo()` en la celda 3 (tambien lo usa
+  `emae_vs_maximo`, sin cambios). Mediana −12,4% (salario en caida desde 2017). Ago-2026 IMA −0,01 (NB),
+  Empleo −0,37. **Metodologia congelada en v9** (pedido: no seguir ajustando sin sesgo verificado).
+  Proximo posible: sensibilidad (pesos por variable, ventana fija, sin tope) y validacion vs recesiones.
 
 ## Notas sueltas utiles
 - Cifras titulares del NB03: tomar las que IMPRIME el notebook (redondeo del valor exacto), NO
@@ -141,6 +145,9 @@
 - [x] NB03 v6 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] Pilar fiscal desde 2004 (v7, 2026-10-06).
 - [x] Nivel de actividad: EMAE vs maximo 36m (v8).
+- [x] Nivel del salario real (v9; metodologia congelada).
+- [ ] Correr NB03 v9 en Colab y comparar con local.
+- [ ] (opcional) Sensibilidad + validacion vs cronologia de recesiones; dashboard.
 - [x] NB03 v8 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)

@@ -15,7 +15,7 @@ tidy, con graficos y un Excel de resultados en pesos constantes.
 | Notebook | Descripcion | Link |
 |---|---|---|
 | **02 - Analisis Fiscal** (principal) | 7 graficos en pesos constantes + Excel con resultados y datos consolidados, todo en un ZIP descargable | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb) |
-| **03 - Indice Macroeconomico** | Indice mensual 2004-hoy (18 variables, 6 pilares) + 4 graficos + Excel de 8 hojas, en un ZIP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/03_indice_macro.ipynb) |
+| **03 - Indice Macroeconomico** | Indice mensual 2004-hoy (19 variables, 6 pilares) + 4 graficos + Excel de 8 hojas, en un ZIP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/03_indice_macro.ipynb) |
 | 01 - Consolidacion (opcional) | Exporta solo los datos consolidados a un Excel (ya incluidos en el Excel del 02) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb) |
 
 Los notebooks son independientes: leen los CSV e `IPC.xlsx` directamente desde GitHub.

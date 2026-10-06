@@ -10,7 +10,7 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | v8 (2026-10-06): **EMAE vs su maximo** (nivel); v7: pilar fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; **v8 verificada en Colab (2026-10-06): identica a local** en las 8 hojas (dif 0); ZIP = Excel 8 hojas + 4 PNG |
+| Notebook 03 (indice macro) | **v9 congelada** (2026-10-06): salario real vs su maximo; v8: EMAE vs su maximo; v7: fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; v8 verificada en Colab (identica a local); **v9 verificada solo local** (falta Colab); ZIP = Excel 8 hojas + 4 PNG |
 | Series macro externas | `data/reference/macro_mensual.csv` (28 series + 4 columnas de reservas netas, 2003 a oct-2026) + `reservas_pasivos_manual.csv` |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
@@ -32,21 +32,27 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 
 ## 2. Que se hizo en el ultimo ciclo (oct-2026)
 
-- **Indice Macroeconomico (IMA)**: notebook 03 + `scripts/actualizar_macro.py`. 18 variables en 6
+- **Indice Macroeconomico (IMA)**: notebook 03 + `scripts/actualizar_macro.py`. 19 variables en 6
   pilares (actividad, empleo e ingresos, precios, fiscal, externo, financiero), z robusto, mensual
   desde 2004. Metodologia completa en CONTEXTO.md §4b.
 
   | Ago-2026 | Valor | Hace 12 meses |
   |---|---|---|
-  | Indice (6 pilares, comparable 2004-hoy desde la v7) | **−0,01** | +0,25 |
-  | Indice sin fiscal (referencia) | −0,08 | +0,20 |
-  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,25 | +0,01 |
+  | Indice (6 pilares, comparable 2004-hoy desde la v7) | **−0,01** | +0,23 |
+  | Indice sin fiscal (referencia) | −0,08 | +0,18 |
+  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,25 | −0,01 |
 
-  Pilares ago-2026: Actividad −0,66 · Empleo −0,40 · Precios +0,33 (vs meta: −1,11) · Fiscal +0,33 ·
+  Pilares ago-2026: Actividad −0,66 · Empleo −0,37 · Precios +0,33 (vs meta: −1,11) · Fiscal +0,33 ·
   Externo −0,19 · Financiero +0,50. Promedio por gestion (indice completo): N. Kirchner +0,04 ·
-  C. Fernandez +0,17 · C. Fernandez II +0,06 · Macri −0,33 · A. Fernandez −0,79 · Milei −0,27
-  (sin fiscal: −0,02 · +0,09 · +0,01 · −0,22 · −0,77 · −0,35). Pilar Fiscal por gestion: NK +0,27 ·
+  C. Fernandez +0,17 · C. Fernandez II +0,06 · Macri −0,30 · A. Fernandez −0,79 · Milei −0,28
+  (sin fiscal: −0,02 · +0,09 · +0,01 · −0,18 · −0,77 · −0,36). Cifras = las que imprime el NB. Pilar Fiscal por gestion: NK +0,27 ·
   CFK +0,57 · CFK II +0,32 · Macri −0,90 · AF −0,89 · Milei +0,13. Spearman con miseria: −0,56.
+- **v9: nivel del salario real** (`salario_real_vs_maximo`, 19na variable, pilar Empleo): misma logica que
+  el EMAE de la v8. Ene-2025: +11,9% i.a. (z +2,17, casi record) pero −12,4% vs el pico (z +0,01).
+  Efecto max 0,07, promedio 0,01; Empleo ago-2026 −0,40 → −0,37; Macri Empleo −0,37 → −0,16 (2016-17
+  con el salario en su maximo). **Metodologia congelada en la v9**: proximos cambios solo ante un sesgo
+  verificado en los datos; lo siguiente es analisis de sensibilidad (antes de publicar) y validacion
+  contra una cronologia de recesiones.
 - **v8: nivel de actividad** (`emae_vs_maximo`, 18va variable, pilar Actividad): EMAE vs su maximo de
   los 36 meses previos, para que un rebote post-crisis no cuente como bonanza (jun-2021: +13,9% i.a. pero
   −3,6% vs el pico). Ago-2026: −4,5% vs el pico (dato de julio), Actividad −0,55 → −0,66, IMA +0,00 →
@@ -117,6 +123,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 ## 3. Proximos pasos
 
 1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
+   Correr el notebook 03 v9 en Colab y comparar con la corrida local (deberia dar identico).
    Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
 2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
    NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
