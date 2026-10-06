@@ -87,8 +87,8 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 ## 4b. Indice Macroeconomico (notebook 03)
 
 ### Datos
-- `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (28 series crudas + 4 columnas
-  calculadas de reservas netas, mensuales). Diarios → promedio del mes (stocks: reservas, encajes,
+- `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv`: 36 columnas mensuales = 28 series
+  crudas + 4 de reservas netas (calculadas) + 4 de la AIF historica 2003-2015 (`aif_hist_*`, calculadas). Diarios → promedio del mes (stocks: reservas, encajes,
   pasivos del BCRA → ultimo dato del mes); trimestrales → mismo valor en los 3 meses. Si una API
   falla, conserva la columna anterior e imprime "FALLO".
 - Fuentes: datos.gob.ar (EMAE, SIPA, salarios, desocupacion EPH [la API da fraccion → se guarda en
@@ -96,7 +96,8 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   (`verify=False`; reservas var 1, encajes var 1243, A3500, BADLAR, prestamos totales var 26 y en
   pesos var 117, REM var 29, inflacion var 27), BCRA cotizaciones (`estadisticascambiarias/v1.0/
   Cotizaciones/CNY`, `tipoPase` = USD por yuan; rechaza fechas futuras), BCRA balance semanal XLS
-  (obligaciones con organismos internacionales), BCRA ITCRMSerie.xlsx (columna "ITCRM " con
+  (obligaciones con organismos internacionales), BCRA var 50 (utilidades transferidas al Tesoro),
+  datos.gob.ar AIF del Sector Publico Nacional mensual (dataset 379), BCRA ITCRMSerie.xlsx (columna "ITCRM " con
   espacio), argentinadatos (riesgo pais, CCL), Ambito (blue con centavos,
   `/dolar/informal/historico-general/dd-mm-aaaa/dd-mm-aaaa`).
 - Del repo: IPC (`IPC.xlsx`) e IMIG (`output/imig_consolidado.csv`). La IMIG se completa 2016-2018
@@ -300,6 +301,13 @@ cada variable (19): 33 variantes. Salida `_local_run/sensibilidad_indice.xlsx`.
 | Identidades AIF por mes (III=I−II, VI=I+IV, VII=II+V, VIII=VI−VII, XIV=XV+II2) | cierran en los 79 meses |
 | XI − XII = XIV (anual) | exacto |
 | Consolidacion reproducible | `consolidate.py` genera los CSV versionados byte a byte |
+| Indice: Colab vs local | `indice_macro.xlsx` identico en las 8 hojas (dif 0) |
+| Indice: reproduccion independiente | `sensibilidad_indice.py` reproduce la hoja Indice desde Variables/Arrastrados/Metodologia (dif ≤ 0,001) |
+| Indice: control antes de publicar | `control_calidad.py`: 0 ALERTAS; revision del indice publicado ≤ 0,10 |
+| Indice: rango de sensibilidad | banda del NB03 = rango de `sensibilidad_indice.py` (ago-2026: −0,11 a +0,34) |
+| AIF 2017 (datos.gob.ar 379.9) vs IMIG | identicas en 2016-2026 (primario, intereses, ingresos, financiero) |
+| BCRA var 50 vs "rentas percibidas del BCRA" (AIF) | identicas mes a mes 2015-2026 |
+| Primario % PIB vs oficial | 2017 −3,79 · 2019 −0,44 · 2020 −6,43 · 2021 −3,05 · 2022 −2,36 · 2024 +1,78 |
 
 ## 6. Trampas conocidas (historial de bugs)
 
@@ -314,3 +322,18 @@ cada variable (19): 33 variantes. Salida `_local_run/sensibilidad_indice.xlsx`.
 - AIF: filas con notas al pie "(2)", "(3)" quedan como conceptos crudos separados. No afecta
   totales (los principales se leen directo, no se suman detalles).
 - Rama `main` (no `master`): los links de Colab dependen de eso.
+
+Indice macro (oct-2026):
+- **Redondeo**: la hoja Indice y Por_gobierno vienen a 3 decimales; las cifras titulares salen de lo que
+  imprime el NB03 (−0,015 en el Excel → −0,01 impreso). Re-redondear el Excel dio cifras mal tres veces.
+- **Heredocs de bash** convierten `\n` en saltos reales: rompen f-strings y `str.replace` al editar
+  notebooks o scripts. Usar archivos `.py` aparte o las herramientas de edicion.
+- datos.gob.ar: el balance mensual del BCRA (dataset 300.1) corta en oct-2025 → usar el XLS de balances
+  semanales del BCRA; ese XLS trae en 2002-2006 el dia 7 leido como mes (7-ene → 1-jul).
+- Los "otros pasivos" y "pases" del balance del BCRA mezclan partidas en pesos: no sirven para el swap
+  chino ni los REPO en dolares (por eso van a mano en `reservas_pasivos_manual.csv`).
+- La API de series de datos.gob.ar devuelve ruido de ~1e-6 entre descargas: al agregar columnas sin
+  refrescar el resto, conservar el texto original de las existentes.
+- Cotizaciones del BCRA: `fechahasta` en el futuro da error 400. FRED corta la conexion desde la PC INECO.
+- AIF historica: la metodologia 1993-2006 registra coparticipacion como ingreso y gasto (ingresos ~5,5%
+  del PIB mas altos); el DEG de 2009 entro como "transferencias corrientes" (nov-dic 2009).

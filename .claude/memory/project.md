@@ -10,12 +10,18 @@
 - Colab NB01: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb
 - Colab NB03: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/03_indice_macro.ipynb
 
-## Snapshot al cierre 2026-09-22
-- Datos hasta ago-2026; base deflactor ago-2026 (IPC 12.276,766).
-- AIF 30.414 registros (79 meses mensuales, falta solo jun-2022); IMIG 4.931 (2019-01..2026-08 completo).
-- Gasto primario 2023 296,7 B → 2024 204,6 B (−31,1%) → 2025 208,5 B (−29,7%).
-- Primario 2023 −29,5 / 2024 +22,7 / 2025 +17,0 / 2026 ene-ago +13,3 B.
+## Snapshot al cierre 2026-10-06
+- Fiscal: datos hasta ago-2026; base deflactor ago-2026 (IPC 12.276,766). AIF 30.414 registros (79 meses
+  mensuales, falta solo jun-2022); IMIG 4.931 (2019-01..2026-08 completo). Gasto primario 2023 296,7 B →
+  2024 204,6 B (−31,1%) → 2025 208,5 B (−29,7%). Primario 2023 −29,5 / 2024 +22,7 / 2025 +17,0 /
+  2026 ene-ago +13,3 B.
+- Indice macro (NB03): **v9, metodologia congelada**, 19 variables / 6 pilares, 2004-01 a 2026-08.
+  Ago-2026 −0,01 (rango de sensibilidad −0,11 a +0,34; hace 12 meses +0,23). Circula: nota metodologica
+  en el README. Verificado en Colab (identico a local). Publicado en `output/indice_macro.csv`.
+- Scripts del indice: `actualizar_macro.py` (36 columnas), `control_calidad.py` (antes de publicar),
+  `sensibilidad_indice.py` (33 variantes + recesiones UTDT).
 - Push funciona con Git Credential Manager (desde sep-2026).
+- Proximo: septiembre 2026 cuando lo publique Hacienda (rutina ESTADO.md §5).
 
 ## Historial de sesiones
 
@@ -53,7 +59,7 @@
 - Docs nuevos: ESTADO.md, CONTEXTO.md, CLAUDE.md; README reescrito.
 - Usuario ejecuto NB02 en Colab: resultados identicos a la corrida local (11 hojas, 0 diferencias).
 
-## Sesion 2026-10-06: indice macroeconomico
+### 2026-10-06 — indice macroeconomico (v1 a v9) y preparacion para circular
 - Nuevo `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (16 series: datos.gob.ar,
   BCRA API v4, BCRA ITCRMSerie.xlsx, argentinadatos). Nuevo `notebooks/03_indice_macro.ipynb`
   (10 celdas: 0 md · 1 params · 2 carga + IPC empalmado + PIB mensual · 3 variables · 4 z/pilares ·
@@ -145,23 +151,18 @@
 - NB01 (7 celdas) exporta `datos_fiscales_consolidado.xlsx`: AIF_mensual, AIF_acumulado,
   Resultado_pivot, Transferencias_provincias, IMIG; imprime validacion 2024/2025 vs Hacienda.
 
-## Pendientes (ver ESTADO.md §3)
-- [ ] Proximo mes: septiembre 2026 (rutina ESTADO.md §4).
+## Pendientes (ver ESTADO.md §4)
+- [ ] Proximo mes: septiembre 2026 (rutina ESTADO.md §5, con `control_calidad.py`).
+- [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.
+- [ ] Cuando INDEC publique el PIB anual 2026: agregarlo a `PIB_B` del NB02.
 - [ ] (pausa) Informe LaTeX rebaseado.
 - [ ] Datos provinciales MECON por jurisdiccion.
 - [ ] Consolidacion intra-sector para % provincias.
 - [ ] Revocar PAT viejo de jun-2026 si sigue activo.
-- [x] NB03 v5 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [x] NB03 v6 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [x] Pilar fiscal desde 2004 (v7, 2026-10-06).
-- [x] Nivel de actividad: EMAE vs maximo 36m (v8).
-- [x] Nivel del salario real (v9; metodologia congelada).
-- [x] NB03 v9 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [x] Sensibilidad + validacion vs recesiones (`scripts/sensibilidad_indice.py`, 2026-10-06).
-- [ ] (no por ahora, pedido del usuario) dashboard / pagina interactiva.
-- [x] Nota metodologica en README + banda de sensibilidad en NB03 + control_calidad.py + output/indice_macro.csv.
-- [x] NB03 con banda corrido en Colab (2026-10-06): identico a local; control_calidad sobre el Excel de Colab: 0 ALERTAS, revision 0,000.
-- [x] NB03 v8 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
-- [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.
+- [ ] (no por ahora, pedido del usuario) dashboard / pagina interactiva del indice.
+- [ ] (solo si aparece serie publica) SEDESA en las reservas netas.
+- [x] Indice macro v1-v9 (2026-10-06): reservas netas, saldo % PIB, fiscal desde 2004, EMAE y salario vs
+  maximo; metodologia congelada. Cada version verificada en Colab (identica a local).
+- [x] Sensibilidad + validacion vs recesiones (`scripts/sensibilidad_indice.py`).
+- [x] Para circular: nota metodologica en README, banda de sensibilidad en NB03, `control_calidad.py`,
+  `output/indice_macro.csv` (verificado en Colab; control de calidad 0 ALERTAS).

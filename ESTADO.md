@@ -1,7 +1,12 @@
 # ESTADO DEL PROYECTO — cuentas_publicas
 
 > Punto de entrada para retomar el trabajo en otra sesion o en otra PC.
-> Ultima actualizacion: **2026-10-06**.
+> Ultima actualizacion: **2026-10-06**. Siguiente tarea: **septiembre 2026** cuando lo publique Hacienda (seccion 5).
+
+El repo tiene dos productos:
+1. **Analisis fiscal** (notebooks 01-02): ajuste del Sector Publico Nacional en pesos constantes.
+2. **Indice Macroeconomico** (notebook 03): indice mensual 2004-hoy, 19 variables en 6 pilares. **Circula**:
+   su nota metodologica esta en el README.
 
 ## 1. Donde estamos
 
@@ -10,13 +15,14 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | **v9 congelada** (2026-10-06): salario real vs su maximo; v8: EMAE vs su maximo; v7: fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; **v9 con banda verificada en Colab (2026-10-06): identica a local** en las 8 hojas; control de calidad 0 ALERTAS; ZIP = Excel 8 hojas + 4 PNG |
-| Series macro externas | `data/reference/macro_mensual.csv` (28 series + 4 columnas de reservas netas, 2003 a oct-2026) + `reservas_pasivos_manual.csv` |
+| Notebook 03 (indice macro) | **v9, metodologia congelada**; con rango de sensibilidad. Verificado en Colab (2026-10-06): identico a local en las 8 hojas; control de calidad 0 ALERTAS. ZIP = Excel 8 hojas + 4 PNG |
+| Indice publicado | `output/indice_macro.csv` (2004-01 a 2026-08), lo actualiza `control_calidad.py --guardar` |
+| Series macro externas | `data/reference/macro_mensual.csv`: 36 columnas (28 descargadas + 4 de reservas netas + 4 de la AIF historica 2003-2015), 2003 a oct-2026; pasivos del BCRA a mano en `reservas_pasivos_manual.csv` |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
 | Ultimo mes publicado por Hacienda revisado | agosto 2026 (julio 2026 NO publicado → derivado) |
 
-### Cifras clave (pesos constantes de ago-2026, Sector Publico Total)
+### Cifras clave del analisis fiscal (pesos constantes de ago-2026, Sector Publico Total)
 
 | | 2023 | 2024 | 2025 | 2026 (ene-ago) |
 |---|---|---|---|---|
@@ -30,155 +36,127 @@ Ajuste del gasto primario: **−31,1%** 2023→2024 y −29,7% 2023→2025.
 IMIG 2023→2025: baja total −61,3 B (obra publica −15,4; subsidios −13,6; otros prog. sociales −12,8;
 salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 
-## 2. Que se hizo en el ultimo ciclo (oct-2026)
+## 2. Indice Macroeconomico: estado actual (ago-2026)
 
-- **Indice Macroeconomico (IMA)**: notebook 03 + `scripts/actualizar_macro.py`. 19 variables en 6
-  pilares (actividad, empleo e ingresos, precios, fiscal, externo, financiero), z robusto, mensual
-  desde 2004. Metodologia completa en CONTEXTO.md §4b.
+Cifras = las que **imprime el notebook** (no re-redondear el Excel, que viene a 3 decimales).
 
-  | Ago-2026 | Valor | Hace 12 meses |
-  |---|---|---|
-  | Indice (6 pilares, comparable 2004-hoy desde la v7) | **−0,01** | +0,23 |
-  | Indice sin fiscal (referencia) | −0,08 | +0,18 |
-  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,25 | −0,01 |
+| Ago-2026 | Valor | Hace 12 meses |
+|---|---|---|
+| Indice (6 pilares, 19 variables) | **−0,01** (rango de sensibilidad −0,11 a +0,34) | +0,23 |
+| Indice sin fiscal (referencia) | −0,08 | +0,18 |
+| Indice con Precios vs meta 10% (`indice_ancla`) | −0,25 | −0,01 |
 
-  Pilares ago-2026: Actividad −0,66 · Empleo −0,37 · Precios +0,33 (vs meta: −1,11) · Fiscal +0,33 ·
-  Externo −0,19 · Financiero +0,50. Promedio por gestion (indice completo): N. Kirchner +0,04 ·
-  C. Fernandez +0,17 · C. Fernandez II +0,06 · Macri −0,30 · A. Fernandez −0,79 · Milei −0,28
-  (sin fiscal: −0,02 · +0,09 · +0,01 · −0,17 · −0,77 · −0,36). Cifras = las que imprime el NB. Pilar Fiscal por gestion: NK +0,27 ·
-  CFK +0,57 · CFK II +0,32 · Macri −0,90 · AF −0,89 · Milei +0,13. Spearman con miseria: −0,56.
-- **v9: nivel del salario real** (`salario_real_vs_maximo`, 19na variable, pilar Empleo): misma logica que
-  el EMAE de la v8. Ene-2025: +11,9% i.a. (z +2,17, casi record) pero −12,4% vs el pico (z +0,01).
-  Efecto max 0,07, promedio 0,01; Empleo ago-2026 −0,40 → −0,37; Macri Empleo −0,37 → −0,16 (2016-17
-  con el salario en su maximo). **Metodologia congelada en la v9**: proximos cambios solo ante un sesgo
-  verificado en los datos.
-- **Para circular** (2026-10-06): nota metodologica en el **README** (como leerlo, variables, calculo,
-  que es firme, validacion, limitaciones); **rango de sensibilidad** en el NB03 (columnas `banda_min`/
-  `banda_max`, banda gris del grafico 01, impresion "signo NO concluyente" + cambio en 12 meses por
-  variante); **`scripts/control_calidad.py`** (revisiones, saltos, series que pierden meses, revision del
-  indice publicado) e indice publicado versionado en **`output/indice_macro.csv`**. Ago-2026: −0,01, rango
-  −0,11 a +0,34; cambio en 12 meses −0,24 (−0,35 a −0,13).
-- **Robustez y validacion** (`scripts/sensibilidad_indice.py`, 33 variantes + 7 recesiones fechadas con
-  la regla de la UTDT): forma historica robusta (corr. 0,90-1,00); el **signo de ago-2026 no es robusto**
-  (−0,11 a +0,34) pero la **caida del ultimo anio si**; A. Fernandez ultimo en todas; los tres gobiernos
-  kirchneristas por encima de Macri, Milei y A. Fernandez en todas (NK vs Milei 97%); **no robustos: NK vs
-  CFK II y Macri vs Milei**. Recesiones: el indice cae en las 7, AUC 0,67. Detalle en CONTEXTO.md §4b.
-- **v8: nivel de actividad** (`emae_vs_maximo`, 18va variable, pilar Actividad): EMAE vs su maximo de
-  los 36 meses previos, para que un rebote post-crisis no cuente como bonanza (jun-2021: +13,9% i.a. pero
-  −3,6% vs el pico). Ago-2026: −4,5% vs el pico (dato de julio), Actividad −0,55 → −0,66, IMA +0,00 →
-  −0,01. Actividad por gestion: NK +0,95 → +0,87 · CFK +0,19 → +0,01 · CFK II −0,31 → −0,16 · Macri −0,33
-  → −0,40 · AF −0,01 → −0,34 · Milei −0,30 → −0,32. Spearman con miseria −0,56 (sin cambio).
-- **v7: pilar fiscal desde 2004** (antes dic-2016). AIF historica de Hacienda (datos.gob.ar, dataset 379)
-  llevada a la metodologia 2017: sin utilidades del BCRA (var 50) ni rentas intra-sector publico del FGS
-  (proporcion 2015-16), ingresos 2003-06 sin coparticipacion, DEG 2009 y 4G 2014 como extraordinarios.
-  Primario % PIB: 2004 +3,3 · 2008 +2,2 · 2010 −0,2 · 2014 −3,3 · 2015 −3,8 (empalma con la IMIG).
-  Ahora el indice completo compara todas las gestiones; el superavit actual se mide contra 2004-2026
-  (Fiscal ago-2026 +1,18 → +0,33). Ojo: intereses/ingresos premia 2010-15 (deuda en manos del propio
-  sector publico). Detalle en CONTEXTO.md §4b "Fiscal 2003-2015".
-- **v6: saldo comercial en % del PIB en dolares** (`saldo_comercial_pib`; antes MM USD corrientes, que
-  premiaba los anios recientes porque la economia en dolares crecio ~3 veces). Ago-2026: 3,4% del PIB
-  (z +1,64 → +0,52) vs 7,4% en 2004 y 5,9% en 2005. PIB nominal: serie `4.4_OGP_2004_T_17` (desde
-  2004 y con 2026-T1/T2; misma serie que la 166.2, que arrancaba en 2006) → `credito_pib` tambien
-  arranca en dic-2004 (Financiero N. Kirchner −0,00 → −0,19: credito/PIB bajo post-crisis). Efecto
-  total en el indice: max 0,09, promedio 0,03. Externo por gestion: NK −0,18 → −0,01 · CFK +0,36 →
-  +0,45 · CFK II −0,37 → −0,29 · Macri −0,34 → −0,15 · AF −0,68 → −0,63 · Milei −0,38 → −0,43.
-- **v5: reservas netas** (reemplazan a las brutas en el pilar Externo; `reservas_netas_meses_impo`).
-  Netas = brutas − encajes (API var 1243) − obligaciones con organismos internacionales (balance
-  semanal XLS: FMI hasta 2006, BIS) − swap China − REPO del BCRA − swap EEUU; los tres ultimos sin
-  serie publica, cargados con fuente en `data/reference/reservas_pasivos_manual.csv`. No se restan
-  SEDESA (~2 MM, sin serie), Bopreal ni deuda del Tesoro (FMI incluido). Ago-2026: +9,2 MM USD
-  (1,5 meses de impo); dic-2023 −6,6 MM (consultoras −9,4 a −11,5: restan SEDESA y BIS bruto).
-  Efecto en el indice: max 0,15 (2004, por la deuda con el FMI), promedio 0,03; Externo por gestion:
-  CFK +0,18 → +0,36, CFK II −0,65 → −0,37, A. Fernandez −0,62 → −0,68, Milei −0,42 → −0,38.
-  Detalle y contrastes (FMI Art. IV 2026, CIFRA) en CONTEXTO.md §4b "Reservas netas".
-- **v4 (3ra revision, verificacion independiente)**: la mediana y el IQR de la normalizacion ahora
-  se calculan **solo sobre datos propios** (antes los arrastres de borde de la hoja Arrastrados
-  entraban en las estadisticas; impacto max 0,02 z historico, titulares sin cambio). La hoja
-  Metodologia reporta `normalizado_hasta`/`meses`/`pct_meses_en_tope` sobre datos propios.
-  **Pesos por PCA evaluados y descartados**: el 1er componente de los pilares explica solo ~40% de
-  la varianza y carga con signos mixtos (Externo −46%, Precios −10% con 6 pilares) → se mantienen
-  pesos iguales por pilar (practica estandar sin factor comun dominante). Todo lo demas de la
-  revision independiente reprodujo exacto (z, pilares, indices, ancla, Por_gobierno, arrastres).
-- **v3 (2da revision, de datos)**: fiscal sin ingresos extraordinarios (DEG sep-2021 428 mil M$,
-  rentas por emision 2022 295 mil M$, recursos extraordinarios ene-2026 1,04 billones) → primario %
-  PIB ahora coincide con el oficial (2021 −3,05 vs −3,0; 2022 −2,36 vs −2,4); credito real solo en
-  pesos (BCRA var 117; la var 26 suma dolares y las devaluaciones inflaban el crecimiento); blue
-  2011-12 de Ambito con centavos (argentinadatos/bluelytics redondean a $1); expectativas UTDT con
-  el promedio ajustado al nivel del REM (la mediana venia redondeada a 5 pp); `indice_ancla`.
-- **v2 (1ra revision, de estructura)**: inflacion 2007-2015 con IPC Neuquen (la
-  serie del BCRA repetia el IPC intervenido), expectativas 2006-2016 UTDT, brecha 2011-12 con blue,
-  fiscal extendido a 2016 (IMIG datos.gob.ar, identica a la del repo), credito/PIB, hoja
-  Arrastrados, Por_gobierno con asignacion por mayoria del mes y minimo 12 meses por pilar.
-- **Bug corregido: PIB del NB02** (`PIB_B`, celda 9). Los valores 2020-2023 y 2025 estaban mal
-  (ej. 2023 = 143,2 B en vez de 193,9 B). Ahora salen de la serie INDEC (trimestral anualizada /4).
-  Cambian los % PIB: primario 2023 −3,6% → −2,7%; 2025 +1,6% → +1,4%; 2020 −3,9% → −6,4%.
-  Los valores en B no cambian.
+- Pilares: Actividad −0,66 · Empleo −0,37 · Precios +0,33 (vs meta: −1,11) · Fiscal +0,33 · Externo −0,19 ·
+  Financiero +0,50. Cambio en 12 meses −0,24 (−0,35 a −0,13 segun la variante).
+- **Como comunicarlo:** "cerca de lo tipico y en baja". El signo del mes NO es concluyente (el rango cruza
+  el 0); la caida del ultimo anio si es robusta.
+- Promedio por gestion (indice completo): N. Kirchner +0,04 · C. Fernandez +0,17 · C. Fernandez II +0,06 ·
+  Macri −0,30 · A. Fernandez −0,79 · Milei −0,28 (sin fiscal: −0,02 · +0,09 · +0,01 · −0,17 · −0,77 · −0,36).
+- **Robustez** (`scripts/sensibilidad_indice.py`, 33 variantes): forma historica firme (corr. 0,90-1,00);
+  A. Fernandez ultimo en todas; los tres gobiernos kirchneristas arriba de Macri, Milei y A. Fernandez en
+  todas (NK vs Milei 97%). **No firmes:** NK vs CFK II y Macri vs Milei.
+- **Validacion:** 7 recesiones 2008-2024 (regla UTDT sobre el EMAE tendencia-ciclo): el indice cae en todas
+  (AUC 0,67); Spearman con el indice de miseria −0,56.
 
-## 2b. Ciclo anterior (sep-2026)
+### Historial de versiones del indice (todas del 2026-10-06; detalle en CONTEXTO.md §4b)
+
+| Version | Cambio | Efecto principal |
+|---|---|---|
+| v1 | Indice inicial: 16 series, 6 pilares, z robusto (IQR) | — |
+| v2 | IPC Neuquen 2007-15, expectativas UTDT 2006-16, blue 2011-12, fiscal desde 2016, credito/PIB, hoja Arrastrados | revision de estructura |
+| v3 | Fiscal sin extraordinarios (DEG 2021, rentas 2022, rec. extraordinarios 2026), credito real solo en pesos, blue de Ambito, UTDT ajustada al REM, `indice_ancla` | primario % PIB = oficial |
+| v4 | Mediana/IQR solo sobre datos propios; PCA evaluado y descartado | max 0,02 |
+| v5 | **Reservas netas** (reemplazan a las brutas) | max 0,15 (2004) |
+| v6 | **Saldo comercial en % del PIB** en dolares; PIB nominal desde 2004 (serie 4.4) | ago-26 +0,19 → +0,14 |
+| v7 | **Pilar fiscal desde 2004** (AIF historica llevada a la metodologia 2017) | ago-26 +0,14 → +0,00; el indice completo compara todas las gestiones |
+| v8 | **EMAE vs su maximo de 36 meses** (nivel, no solo ritmo) | max 0,20 (may-2021) |
+| v9 | **Salario real vs su maximo de 36 meses**; metodologia congelada | max 0,07 |
+| circulacion | Rango de sensibilidad (12 variantes) en el NB03, `control_calidad.py`, `output/indice_macro.csv`, nota en el README | no cambia el indice |
+
+Tambien en oct-2026: **bug del PIB del NB02 corregido** (`PIB_B`, celda 9: 2023 era 143,2 B y es 193,9 B;
+cambian los % PIB, no los valores en B).
+
+## 3. Ciclo anterior (sep-2026)
 
 - Incorporados junio y agosto 2026. **Julio 2026 no fue publicado por Hacienda** → AIF derivado de
   acumulados (validado exacto) e IMIG desde la hoja `Mensualizacion`. Marzo 2026 IMIG tambien
   recuperado por esa via (antes figuraba como gap permanente).
 - IMIG: ahora **una sola fuente por mes** (publicacion original > Mensualizacion > comparativa revisada).
 - **Bug corregido** en `imig_parser.detect_value_columns`: marzo 2023 tenia valores de mayo 2019
-  (un dato ~45.000 se leia como fecha serial Excel). Subestimaba ~5% los rubros IMIG 2023. Las
-  cifras AIF nunca estuvieron afectadas.
-- NB02: tabla 1 usa **Ingresos totales (XI)** para que Ingresos − Gasto primario = Resultado primario;
-  graficos 02/05/06/07 con leyendas y colores corregidos; descarga sin archivos LaTeX y con los datos
-  consolidados completos en el Excel.
-- IPC completo (nivel general + divisiones) a ago-2026.
-- Fuentes crudas versionadas; scripts nuevos `scripts/actualizar_ipc.py` y `scripts/run_notebooks_local.py`.
-- Documentacion reorganizada: README, ESTADO (este), CONTEXTO, CLAUDE, `.claude/memory/project.md`.
+  (un dato ~45.000 se leia como fecha serial Excel). Subestimaba ~5% los rubros IMIG 2023.
+- NB02: tabla 1 usa **Ingresos totales (XI)**; graficos 02/05/06/07 con leyendas y colores corregidos;
+  descarga sin archivos LaTeX y con los datos consolidados completos en el Excel.
+- Fuentes crudas versionadas; scripts `actualizar_ipc.py` y `run_notebooks_local.py`.
 
-## 3. Proximos pasos
+## 4. Proximos pasos
 
-1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
-   Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
-2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
-   NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
-   `Tablas_LaTeX` (no se exportan); para reactivarlo, volver a agregarlas al export de la celda 10.
-   Decision pendiente en ese informe: ajuste gasto primario con regla "sin redondear" vs resta de
+1. **Septiembre 2026** cuando lo publique Hacienda → rutina mensual (seccion 5). Cuando INDEC publique el
+   PIB anual 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo de la API).
+2. **Indice macro: metodologia congelada (v9).** Cambiarla solo ante un sesgo verificado en los datos y con
+   acuerdo del usuario; si cambia: actualizar la nota del README, CONTEXTO §4b, correr
+   `sensibilidad_indice.py` y `control_calidad.py --guardar`. Pagina interactiva/dashboard: **no por ahora**
+   (pedido del usuario). SEDESA en las reservas netas solo si aparece una serie publica.
+3. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex` NO
+   esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
+   `Tablas_LaTeX` (no se exportan). Decision pendiente: ajuste con regla "sin redondear" vs resta de
    valores redondeados (difieren en 0,1 B).
-3. Ideas no iniciadas: datos provinciales MECON por jurisdiccion; consolidacion intra-sector para
-   medir mejor el peso de las provincias en el ajuste.
-   Indice macro: publicar el indice como Artifact/dashboard; SEDESA en las reservas netas si aparece
-   una serie publica. (Pesos por PCA: evaluados y descartados en la v4; reservas netas: hechas en la v5.)
-4. Seguridad: el remote usa Git Credential Manager (push funciona). Si quedo algun PAT viejo en
-   GitHub (usado en jun-2026), revocarlo en Settings → Developer settings → Tokens.
+4. Ideas no iniciadas: datos provinciales MECON por jurisdiccion; consolidacion intra-sector para medir
+   mejor el peso de las provincias en el ajuste.
+5. Seguridad: el remote usa Git Credential Manager (push funciona). Si quedo algun PAT viejo en GitHub
+   (usado en jun-2026), revocarlo en Settings → Developer settings → Tokens.
 
-## 4. Rutina mensual (checklist)
+## 5. Rutina mensual (checklist)
 
 ```bash
-# 0. en PC nueva:  git clone ... && pip install -r requirements.txt   (Windows: set PYTHONUTF8=1)
+git pull                                       # 0. siempre (hay commits desde mas de una PC)
 # 1. copiar los Excel nuevos de Hacienda a data/raw/ (sin renombrar)
-python scripts/actualizar_ipc.py          # 2. IPC nuevo (API datos.gob.ar)
-python scripts/actualizar_macro.py        # 2b. series del indice macro (BCRA, INDEC, argentinadatos, Ambito)
-                                          #     revisar que no diga "FALLO" (si falla conserva la version anterior)
-                                          #     si el BCRA tomo/cancelo un REPO o swap: data/reference/reservas_pasivos_manual.csv
-python src/consolidate.py                 # 3. revisar "RESUMEN DE COBERTURA" al final
-python scripts/run_notebooks_local.py 02 03  # 4. verificar (salidas en _local_run/)
-python scripts/control_calidad.py            # 4b. control antes de publicar: debe dar 0 ALERTAS (o justificarlas)
-python scripts/control_calidad.py --guardar  #     actualiza output/indice_macro.csv (indice publicado)
-python scripts/sensibilidad_indice.py        # 4c. (opcional) robustez del indice: _local_run/sensibilidad_indice.xlsx
+python scripts/actualizar_ipc.py               # 2. IPC nuevo (API datos.gob.ar)
+python scripts/actualizar_macro.py             # 3. series del indice macro; revisar que no diga "FALLO"
+                                               #    si el BCRA tomo/cancelo un REPO o swap: reservas_pasivos_manual.csv
+python src/consolidate.py                      # 4. revisar "RESUMEN DE COBERTURA" al final
+python scripts/run_notebooks_local.py 02 03    # 5. correr los notebooks con los archivos locales (_local_run/)
+python scripts/control_calidad.py              # 6. control del indice: 0 ALERTAS (o explicarlas)
+python scripts/control_calidad.py --guardar    #    actualiza output/indice_macro.csv (indice publicado)
+python scripts/sensibilidad_indice.py          # 7. (opcional) robustez completa
 git add data/raw data/reference output && git commit -m "datos: YYYY-MM" && git push
-# 5. Colab: abrir notebook 02 -> Ejecutar todas -> descarga analisis_fiscal.zip (idem 03 -> indice_macro.zip)
+# 8. Colab: notebook 02 -> analisis_fiscal.zip; notebook 03 -> indice_macro.zip
+# 9. Actualizar este archivo (seccion 1 y 2) y, si cambiaron cifras citadas, el ejemplo de la nota del README
 ```
 
-Que revisar en el paso 3:
-- `Meses SIN datos` debe listar solo `2022-06`. Si aparece un mes nuevo, ver si Hacienda lo salteo
-  (la derivacion automatica necesita el acumulado del mes siguiente) o si falta copiar un archivo.
-- `Cobertura mensual IMIG: completa`. Si falta un mes, buscar el Excel IMIG del mes (a veces viene
-  aparte: "IMIG <Mes> <Año>.xlsx") o esperar al siguiente, cuya hoja `Mensualizacion` lo trae.
-- Si Hacienda cambia el formato de un Excel (conceptos nuevos sin normalizar, huecos en un concepto),
-  revisar `CONCEPTO_NORMALIZE` en `src/aif_parser.py` / `CONCEPTO_IMIG_NORMALIZE` en `src/imig_parser.py`.
+Que revisar:
+- **Paso 4:** `Meses SIN datos` debe listar solo `2022-06`. Si aparece un mes nuevo, ver si Hacienda lo
+  salteo (la derivacion necesita el acumulado del mes siguiente) o si falta copiar un archivo.
+  `Cobertura mensual IMIG: completa`; si falta un mes, buscar el Excel IMIG aparte o esperar al siguiente
+  (su hoja `Mensualizacion` lo trae). Si Hacienda cambia el formato, revisar `CONCEPTO_NORMALIZE`
+  (`src/aif_parser.py`) / `CONCEPTO_IMIG_NORMALIZE` (`src/imig_parser.py`).
+- **Paso 6:** ALERTA = dato de mas de 2 anios que cambio > 5%, dato reciente que cambio > 25%, serie que
+  perdio meses, salto atipico en un dato nuevo, o indice ya publicado revisado > 0,10. Los avisos son
+  informativos (EMAE/SIPA desestacionalizados y PIB se revisan siempre). Si ya commiteaste las series,
+  comparar con `--contra HEAD~1`.
+- **Paso 8:** si el usuario pasa el ZIP de Colab, compararlo hoja por hoja con `_local_run/indice_macro.xlsx`
+  y correr `control_calidad.py --excel <ruta del Excel de Colab>` (deberia dar identico y 0 ALERTAS).
 
-## 5. Gaps conocidos (no son bugs)
+## 6. Empezar en una PC nueva
+
+```bash
+git clone https://github.com/santiagoriverti/cuentas_publicas.git
+cd cuentas_publicas
+pip install -r requirements.txt
+```
+
+- Windows: definir `PYTHONUTF8=1` (prints con unicode rompen en cp1252).
+- Push con Git Credential Manager (pide login de GitHub la primera vez; Claude no ingresa tokens).
+- `_local_run/` (salidas locales) y `data/raw/_duplicados/` no estan en git: se regeneran o no hacen falta.
+- Claude: leer `CLAUDE.md` (reglas) → este archivo → `CONTEXTO.md` si hay que tocar calculos.
+
+## 7. Gaps conocidos (no son bugs)
 
 - **AIF mensual jun-2022**: Hacienda solo publico el acumulado del I semestre y no hay acumulado de
   mayo 2022 → no se puede derivar. Los graficos lo saltean (`GAP_DATE` en celda 1 del NB02).
-- IMIG antes de 2019: no disponible.
+- IMIG antes de 2019: no disponible en el repo (el indice usa la AIF historica 2003-2015 y la IMIG de
+  datos.gob.ar 2016-2018).
 - Divisiones del IPC: solo informativas (los notebooks usan solo "Nivel general").
-- Indice macro: desocupacion 2015-T4/2016-T1 no publicada (emergencia estadistica); REM ene-2005
-  vacio; UTDT termina ene-2026 (solo se usa hasta may-2016); IPC Neuquen termina ene-2026 (solo se
-  usa 2007-2015). Primario % PIB 2018 (−2,3 vs −2,6 oficial) y 2023 (−2,7 vs −2,9): diferencia
-  no atribuida a ninguna partida de la IMIG (probablemente base de PIB del dato oficial).
+- Indice macro: desocupacion 2015-T4/2016-T1 no publicada (emergencia estadistica); REM ene-2005 vacio;
+  UTDT e IPC Neuquen terminan ene-2026 (solo se usan hasta 2016 / 2015); primario % PIB 2018 (−2,3 vs
+  −2,6 oficial) y 2023 (−2,7 vs −2,9) sin explicar (probablemente base de PIB del dato oficial); reservas
+  netas sin SEDESA; rentas del FGS 2004-2014 repartidas con la proporcion 2015-16. Detalle: CONTEXTO §4b.
