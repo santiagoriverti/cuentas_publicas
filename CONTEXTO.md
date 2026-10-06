@@ -101,7 +101,8 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   `/dolar/informal/historico-general/dd-mm-aaaa/dd-mm-aaaa`).
 - Del repo: IPC (`IPC.xlsx`) e IMIG (`output/imig_consolidado.csv`). La IMIG se completa 2016-2018
   con el CSV de datos.gob.ar (distribucion 452.3; coincide 0,00% con la del repo en 2019-2026).
-  OJO: los IDs `452.2_*` de la API son trimestrales y `452.1_*` anuales.
+  OJO: los IDs `452.2_*` de la API son trimestrales y `452.1_*` anuales. 2003-2015: AIF historica
+  (columnas `aif_hist_*`, ver "Fiscal 2003-2015").
 
 ### Variables (17) y pilares (celda 3 del NB03; hoja `Metodologia`)
 | Pilar | Variable | Signo | Nota |
@@ -113,8 +114,8 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 | Empleo | `desocupacion` | − | trimestral |
 | Precios | `inflacion_3m` 400·ln(IPC/IPC₋₃) | − | log |
 | Precios | `inflacion_esperada` 100·ln(1+exp) | − | log |
-| Fiscal | `primario_pib` primario 12 m sin extraordinarios / PIB 12 m | + | desde dic-2016 |
-| Fiscal | `intereses_ingresos` intereses netos / ingresos sin extraordinarios, 12 m | − | desde dic-2016 |
+| Fiscal | `primario_pib` primario 12 m sin extraordinarios / PIB 12 m | + | desde dic-2004 (v7; antes dic-2016) |
+| Fiscal | `intereses_ingresos` intereses netos / ingresos sin extraordinarios, 12 m | − | desde ene-2004 (v7) |
 | Externo | `reservas_netas_meses_impo` reservas netas / importaciones mensuales promedio 12 m | + | ver "Reservas netas" |
 | Externo | `saldo_comercial_pib` (expo − impo) 12 m / PIB 12 m en USD (a A3500), % | + | desde dic-2004 (v6) |
 | Externo | `brecha` CCL / A3500 − 1 | − | 0 antes de nov-2011 |
@@ -140,7 +141,30 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   el **DEG del FMI de sep-2021**, que no tiene linea propia: exceso de "Transferencias corrientes"
   (nivel 2) sobre la mediana de 2021 (≈ 428 mil M$; Hacienda informo ≈ 427 mil M$). Con esto el
   primario coincide con el oficial: 2017 −3,79 · 2019 −0,44 · 2020 −6,43 · 2021 −3,05 · 2022 −2,36 ·
-  2024 +1,78. No se ajusta 2016-2017 (blanqueo dentro de tributarios).
+  2024 +1,78. No se ajusta 2016-2017 (blanqueo dentro de tributarios). En 2003-2015 tambien se restan
+  el DEG de nov-dic 2009 (≈ 9.573 M$, en transferencias corrientes) y la licitacion 4G de dic-2014
+  (≈ 7.978 M$, no tributarios; subasta de USD 2.233 M), como exceso sobre la mediana del anio.
+- **Fiscal 2003-2015 (v7)**: AIF del Sector Publico Nacional base caja mensual (datos.gob.ar, dataset
+  379: 379.7 = 1993-2006, 379.8 = 2007-2014, 379.9 = metodologia 2017 desde 2015) llevada al criterio
+  de la IMIG (`actualizar_macro.aif_historica`). La 379.9 es identica a la IMIG en 2016-2026 (primario,
+  intereses, ingresos y financiero) → 2015 se toma tal cual. En 2003-2014:
+  - Utilidades del BCRA: se restan con la var 50 del BCRA (transferencias de utilidades, suma mensual),
+    que coincide mes a mes con las "rentas percibidas del BCRA" de la AIF 2015-2026.
+  - Rentas que el FGS cobra al propio sector publico: en la metodologia 2017 se netean contra los
+    intereses; antes de 2015 no hay desglose → las rentas sin BCRA se reparten con la proporcion de
+    2015-16 (34% genuinas, 66% intra). Primario = superavit − utilidades − intra; intereses = brutos −
+    intra; ingresos = antes de figurativos − utilidades − intra. Las rentas sin BCRA eran 0,1-0,4% del
+    PIB antes de 2009 y 0,7-0,9% despues (estatizacion de las AFJP): el supuesto mueve el primario
+    ±0,3 pp como mucho.
+  - 1993-2006 registra coparticipacion + leyes especiales (~5,5% del PIB) como ingreso y como gasto: se
+    restan de los ingresos (el resultado no cambia; los tributarios 2006 → 2007 quedan 11,8% vs 12,2%).
+  - Resultado (% PIB): 2004 +3,3 · 2006 +2,9 · 2008 +2,2 · 2009 −0,3 · 2010 −0,2 · 2012 −1,0 · 2013
+    −2,2 · 2014 −3,3 · 2015 −3,8 · 2016 −4,2 (empalme sin saltos). Intereses/ingresos: 7-10% en 2004-09,
+    4-7% en 2010-15 (deuda en manos del propio sector publico y bonos en default sin pagar), 15% en 2018.
+  - No separable: los traspasos de afiliados de las AFJP de 2007 (dentro de aportes).
+  - Efecto: la normalizacion fiscal pasa a 2004-2026 (mediana del primario −0,85% vs −2,48%) → el
+    superavit actual pesa menos: Fiscal ago-2026 +1,18 → +0,33; IMA +0,14 → +0,00. Lectura: intereses/
+    ingresos premia 2010-15 (carga baja por deuda intra-sector publico): CFK II tiene Fiscal +0,32 con deficit.
 - **Credito**: crecimiento real con prestamos solo en pesos (var 117): la var 26 incluye prestamos en
   dolares valuados al oficial y cada devaluacion inflaba el "crecimiento" (dic-2023: +11% con +81% de
   devaluacion). Credito/PIB usa el total (ahi la valuacion corresponde).
@@ -161,9 +185,10 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   (v4: los arrastres de borde de la hoja Arrastrados no entran en las estadisticas; el z de los
   meses arrastrados si se calcula con esa mediana/escala).
 - **Ventanas distintas**: cada variable se normaliza con su historia (recaudacion 2017+, fiscal
-  dic-2016+, salario 2016+, SIPA 2013+): 0 = tipico de ESE periodo (`normalizado_desde` en Metodologia).
+  2004+ desde la v7, salario 2016+, SIPA 2013+): 0 = tipico de ESE periodo (`normalizado_desde` en Metodologia).
 - Pilar = promedio de sus variables con dato; indice = promedio de pilares (minimo 4).
-  `indice_sin_fiscal` = sin el pilar fiscal (arranca dic-2016): comparable en toda la serie.
+  `indice_sin_fiscal` = sin el pilar fiscal; desde la v7 es solo referencia (el fiscal cubre 2004-hoy y el
+  indice completo ya es comparable en toda la serie: 5 pilares en 2004, 6 desde 2005).
   **Pesos iguales por pilar**: se evaluo ponderar por PCA (oct-2026) y se descarto — el 1er
   componente principal de los pilares explica solo ~40% de la varianza y carga con signos mixtos
   (con 6 pilares: Externo −46%, Precios −10%; con 5 sin fiscal: Empleo −17%), senal de que no hay
@@ -212,7 +237,8 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 - Desocupacion 2004-T1 = 14,28% en la API vs 14,4% publicado entonces (revision de la serie).
 - TCRM penaliza igual atraso y adelanto; tasa real neutral fijada en 2%; pesos iguales por pilar
   (PCA evaluado y descartado, ver "Normalizacion y agregacion").
-- Validacion: correlacion de Spearman con el indice de miseria ≈ −0,54 (−0,56 hasta la v5); episodios (2009, 2014,
+- Validacion: correlacion de Spearman con el indice de miseria ≈ −0,56 (indice completo, v7; sin fiscal
+  −0,54); episodios (2009, 2014,
   2018-19, 2020, fines de 2023 - inicio 2024) ubicados correctamente.
 
 ## 5. Validaciones de referencia

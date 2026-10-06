@@ -38,8 +38,8 @@
 - PIB nominal de datos.gob.ar (`4.4_OGP_2004_T_17`, = `166.2_PPIB_0_0_3` desde 2006) viene trimestral
   **anualizado**: anual = suma / 4.
 - API del BCRA (`api.bcra.gob.ar`): usar `verify=False` (el certificado no valida en algunas PCs).
-- **Notebook 03**: celdas 0 md · 1 parametros · 2 carga (IPC empalmado, IMIG + extraordinarios, PIB
-  mensual) · 3 variables (lista `VARS`: codigo, nombre, pilar, signo, unidad, origen, serie) · 4 z,
+- **Notebook 03**: celdas 0 md · 1 parametros · 2 carga (IPC empalmado, IMIG + AIF historica 2003-15 +
+  extraordinarios, PIB mensual) · 3 variables (lista `VARS`: codigo, nombre, pilar, signo, unidad, origen, serie) · 4 z,
   pilares, `indice_ancla` · 5-8 graficos 01-04 + Por_gobierno · 9 export. Para agregar una variable:
   sumar la serie en `actualizar_macro.py` y una tupla en `VARS`. Editar via JSON (igual que NB02).
   Reservas netas (v5): pasivos sin API (swap China, REPO, swap EEUU) en

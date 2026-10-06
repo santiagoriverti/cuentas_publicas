@@ -106,6 +106,15 @@
   existentes se dejaron con el texto original: la API devuelve ruido de 1e-6).
   Evaluados y pendientes de decision: extender el pilar fiscal a 2004 (restando utilidades BCRA y
   rentas FGS 2007-15) y EMAE como brecha vs tendencia en vez de var. i.a. (el usuario eligio solo el saldo).
+- v7 (2026-10-06): **pilar fiscal desde 2004**. `actualizar_macro.aif_historica()` → columnas
+  `aif_hist_{primario,intereses,ingresos,extraordinarios}` (2003-2015) desde la AIF SPN base caja mensual
+  de datos.gob.ar (379.7 1993-2006, 379.8 2007-2014, 379.9 metodologia 2017 2015+; la 379.9 = IMIG
+  exacto en 2016-26). Ajustes 2003-14: utilidades BCRA = BCRA var 50 (suma mensual; = "rentas percibidas
+  del BCRA" de la AIF 2015+ mes a mes); rentas sin BCRA repartidas 34% genuina / 66% intra (2015-16);
+  primario = sup − util − intra, intereses = brutos − intra, ingresos = antes fig − util − intra
+  (− coparticipacion + leyes especiales en 1993-2006). Extraordinarios: DEG nov-dic 2009, 4G dic-2014.
+  NB03: `imig_serie(..., col_aif)`; graf. 01 y validacion con el indice completo. Ago-2026: IMA +0,00
+  (antes +0,14), Fiscal +0,33 (antes +1,18), ancla −0,24; Spearman −0,56.
 
 ## Notas sueltas utiles
 - Mensualizacion: cada IMIG 2026+ trae ene..mes actual → si falta el IMIG de un mes, el del mes
@@ -125,6 +134,7 @@
 - [ ] Revocar PAT viejo de jun-2026 si sigue activo.
 - [x] NB03 v5 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v6 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [ ] (propuesto) Pilar fiscal desde 2004 para que el indice principal compare gestiones.
+- [x] Pilar fiscal desde 2004 (v7, 2026-10-06).
+- [ ] Correr NB03 v7 en Colab y comparar con local.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
 - [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.

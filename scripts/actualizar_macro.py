@@ -13,6 +13,9 @@ Fuentes (todas publicas, sin clave):
 - datos.gob.ar (CSV IMIG mensual 2016+, dataset 452.3): resultado primario, intereses netos,
   ingresos totales, IVA y Debitos y creditos. Extiende hacia atras la IMIG del repo (2019+);
   coincide exacto con ella en 2019-2026.
+- datos.gob.ar (AIF del Sector Publico Nacional, dataset 379, mensual 1993+) + BCRA var 50
+  (utilidades transferidas al Tesoro): fiscal 2003-2015 llevado a la metodologia 2017 (ver
+  aif_historica); extiende el pilar fiscal del NB03 a 2004.
 - BCRA API v4 (estadisticas/monetarias): reservas, tipo de cambio A3500, BADLAR, prestamos al
   sector privado (total pesos + dolares, y solo pesos), expectativa de inflacion REM, inflacion
   mensual (historica, pre-2017).
@@ -58,6 +61,12 @@ BCRA_CAMBIOS = "https://api.bcra.gob.ar/estadisticascambiarias/v1.0/Cotizaciones
 BALANCE_XLS = ("https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/"
                "summary-balances-assets-liabilities-bcra-annual-series-1998-to-date.xls")
 PASIVOS_MANUAL = ROOT / "data" / "reference" / "reservas_pasivos_manual.csv"
+# Esquema Ahorro-Inversion-Financiamiento del Sector Publico Nacional, base caja, mensual (dataset 379)
+AIF_HIST = {
+    "1993_2006": "https://infra.datos.gob.ar/catalog/sspm/dataset/379/distribution/379.7/download/sector-publico-nacional-valores-mensuales-93-06.csv",
+    "2007_2014": "https://infra.datos.gob.ar/catalog/sspm/dataset/379/distribution/379.8/download/sector-publico-nacional-valores-mensuales-07-14.csv",
+    "2017": "https://infra.datos.gob.ar/catalog/sspm/dataset/379/distribution/379.9/download/sector-publico-nacional-valores-mensuales-17.csv",
+}
 
 # columna -> (id serie datos.gob.ar, trimestral?)
 SERIES_DATOS_GOB = {
@@ -88,8 +97,7 @@ SERIES_BCRA = {
 
 
 def _mensual(s: pd.Series, how: str) -> pd.Series:
-    s = s.sort_index()
-    return s.resample("MS").last() if how == "last" else s.resample("MS").mean()
+    return getattr(s.sort_index().resample("MS"), how)()  # "last", "mean" o "sum"
 
 
 def datos_gob(sid: str, trimestral: bool) -> pd.Series:
@@ -208,6 +216,54 @@ def pasivos_manuales(cny: pd.Series, hasta: pd.Timestamp) -> pd.DataFrame:
     return out
 
 
+@lru_cache(maxsize=1)  # una sola descarga para las 4 columnas
+def aif_historica() -> pd.DataFrame:
+    """Resultado primario, intereses netos e ingresos 2003-2015 (M$) con el criterio de la metodologia
+    2017 (la de la IMIG), para extender el pilar fiscal del NB03 hacia atras. 2015 sale tal cual de la
+    AIF 2017 (identica a la IMIG en 2016+). En 2003-2014 (metodologias 1993-2006 y 2007-2014):
+    - se restan las utilidades del BCRA (var 50 del BCRA; coincide mes a mes con las "rentas percibidas
+      del BCRA" de la AIF 2017) y las rentas que el FGS cobra al propio sector publico, que en la
+      metodologia 2017 se netean contra los intereses. El desglose de rentas no existe antes de 2015: las
+      rentas sin BCRA se reparten con la proporcion genuina/intra de 2015-2016 (~1/3 genuina).
+    - 1993-2006 registra la coparticipacion y las leyes especiales como ingreso y como gasto: se restan
+      de los ingresos (el resultado no cambia).
+    - aif_hist_extraordinarios: DEG del FMI (nov-dic 2009, en transferencias corrientes) y licitacion 4G
+      (dic-2014, no tributarios), como exceso sobre la mediana del resto del anio."""
+    lee = lambda k: pd.read_csv(io.StringIO(requests.get(AIF_HIST[k], timeout=120).text),  # noqa: E731
+                                parse_dates=["indice_tiempo"]).set_index("indice_tiempo")
+    m17 = lee("2017")
+    r = m17.loc["2015":"2016"]
+    netas = r["ing_corr_ren_prop_ren_prop_netas_2017"].sum()
+    intra = r["gtos_corr_int_ot_ren_prop_int_pag_intra_stor_pub_2017"].sum()
+    genuina = netas / (netas + intra)
+    utilidades = bcra(50, "sum")  # transferencias de utilidades del BCRA al Tesoro (M$)
+    partes = []
+    for k, desde, hasta in (("1993_2006", "2003", "2006"), ("2007_2014", "2007", "2014")):
+        m = lee(k).loc[desde:hasta]
+        c = lambda n: m[f"{n}_{k}"].fillna(0)  # noqa: E731
+        util = utilidades.reindex(m.index).fillna(0)
+        intra_est = (1 - genuina) * (c("ing_corr_ren_prop_total_ren_prop") - util)
+        copart = (c("gtos_corr_transf_corr_sec_pub_prov_caba_rec_cop") + c("gtos_corr_transf_corr_sec_pub_prov_caba_leyes_esp")
+                  + c("gtos_cap_transf_cap_prov_caba_leyes_especiales")) if k == "1993_2006" else 0
+        partes.append(pd.DataFrame({
+            "aif_hist_primario": c("superavit_primario") - util - intra_est,
+            "aif_hist_intereses": c("gtos_corr_int_ot_ren_prop_int_mon_loc") + c("gtos_corr_int_ot_ren_prop_int_mon_extra") - intra_est,
+            "aif_hist_ingresos": c("ing_antes_figurativos") - util - intra_est - copart}))
+    m = m17.loc["2015"]
+    partes.append(pd.DataFrame({"aif_hist_primario": m["superavit_primario_2017"],
+                                "aif_hist_intereses": m["gtos_corr_int_ot_ren_prop_int_netos_2017"],
+                                "aif_hist_ingresos": m["ing_antes_figurativos_2017"]}))
+    df = pd.concat(partes)
+    m8, ext = lee("2007_2014"), pd.Series(0.0, index=df.index)
+    for col, meses in (("ing_corr_transf_corr_2007_2014", ["2009-11-01", "2009-12-01"]),
+                       ("ing_corr_ing_no_tributarios_2007_2014", ["2014-12-01"])):
+        s, meses = m8[col], pd.to_datetime(meses)
+        ext[meses] += s[meses] - s.loc[str(meses[0].year)].drop(meses).median()
+    df["aif_hist_extraordinarios"] = ext
+    print(f"  {'(AIF historica)':24} proporcion genuina de las rentas sin BCRA (2015-16): {genuina:.3f}")
+    return df
+
+
 @lru_cache(maxsize=1)  # un solo CSV para las 5 columnas
 def imig_hist() -> pd.DataFrame:
     r = requests.get(IMIG_CSV, timeout=60)
@@ -238,6 +294,8 @@ def main():
     for col in ["imig_resultado_primario", "imig_intereses_netos", "imig_ingresos_totales",
                 "imig_iva", "imig_debitos_creditos"]:
         tareas[col] = lambda c=col: imig_hist()[c]
+    for col in ["aif_hist_primario", "aif_hist_intereses", "aif_hist_ingresos", "aif_hist_extraordinarios"]:
+        tareas[col] = lambda c=col: aif_historica()[c]
 
     cols, fallas = {}, []
     for col, fn in tareas.items():

@@ -10,7 +10,7 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | v6 (2026-10-06): saldo comercial en % del PIB; v5: **reservas netas** en el pilar Externo; tres revisiones previas; **v6 verificada en Colab (2026-10-06): identica a local** en las 8 hojas (dif 0); ZIP = Excel 8 hojas + 4 PNG |
+| Notebook 03 (indice macro) | v7 (2026-10-06): **pilar fiscal desde 2004**; v6: saldo comercial % PIB; v5: reservas netas; v6 verificada en Colab (identica a local); **v7 verificada solo local** (falta Colab); ZIP = Excel 8 hojas + 4 PNG |
 | Series macro externas | `data/reference/macro_mensual.csv` (28 series + 4 columnas de reservas netas, 2003 a oct-2026) + `reservas_pasivos_manual.csv` |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
@@ -38,14 +38,22 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 
   | Ago-2026 | Valor | Hace 12 meses |
   |---|---|---|
-  | Indice | **+0,14** | +0,37 |
-  | Indice sin fiscal (comparable 2004-hoy) | −0,06 | +0,18 |
-  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,09 | +0,13 |
+  | Indice (6 pilares, comparable 2004-hoy desde la v7) | **+0,00** | +0,23 |
+  | Indice sin fiscal (referencia) | −0,06 | +0,18 |
+  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,24 | −0,01 |
 
-  Pilares ago-2026: Actividad −0,55 · Empleo −0,40 · Precios +0,33 (vs meta: −1,11) · Fiscal +1,18 ·
-  Externo −0,19 · Financiero +0,50. Promedio por gestion (indice sin fiscal): N. Kirchner −0,00 ·
-  C. Fernandez +0,12 · C. Fernandez II −0,02 · Macri −0,20 · A. Fernandez −0,71 · Milei −0,35.
-  Correlacion con el indice de miseria: −0,54.
+  Pilares ago-2026: Actividad −0,55 · Empleo −0,40 · Precios +0,33 (vs meta: −1,11) · Fiscal +0,33 ·
+  Externo −0,19 · Financiero +0,50. Promedio por gestion (indice completo): N. Kirchner +0,05 ·
+  C. Fernandez +0,20 · C. Fernandez II +0,03 · Macri −0,32 · A. Fernandez −0,74 · Milei −0,27
+  (sin fiscal: −0,00 · +0,12 · −0,02 · −0,20 · −0,71 · −0,35). Pilar Fiscal por gestion: NK +0,27 ·
+  CFK +0,57 · CFK II +0,32 · Macri −0,90 · AF −0,89 · Milei +0,13. Spearman con miseria: −0,56.
+- **v7: pilar fiscal desde 2004** (antes dic-2016). AIF historica de Hacienda (datos.gob.ar, dataset 379)
+  llevada a la metodologia 2017: sin utilidades del BCRA (var 50) ni rentas intra-sector publico del FGS
+  (proporcion 2015-16), ingresos 2003-06 sin coparticipacion, DEG 2009 y 4G 2014 como extraordinarios.
+  Primario % PIB: 2004 +3,3 · 2008 +2,2 · 2010 −0,2 · 2014 −3,3 · 2015 −3,8 (empalma con la IMIG).
+  Ahora el indice completo compara todas las gestiones; el superavit actual se mide contra 2004-2026
+  (Fiscal ago-2026 +1,18 → +0,33). Ojo: intereses/ingresos premia 2010-15 (deuda en manos del propio
+  sector publico). Detalle en CONTEXTO.md §4b "Fiscal 2003-2015".
 - **v6: saldo comercial en % del PIB en dolares** (`saldo_comercial_pib`; antes MM USD corrientes, que
   premiaba los anios recientes porque la economia en dolares crecio ~3 veces). Ago-2026: 3,4% del PIB
   (z +1,64 → +0,52) vs 7,4% en 2004 y 5,9% en 2005. PIB nominal: serie `4.4_OGP_2004_T_17` (desde
@@ -104,6 +112,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 ## 3. Proximos pasos
 
 1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
+   Correr el notebook 03 v7 en Colab y comparar con la corrida local (deberia dar identico).
    Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
 2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
    NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
