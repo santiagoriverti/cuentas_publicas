@@ -52,6 +52,17 @@
 - Docs nuevos: ESTADO.md, CONTEXTO.md, CLAUDE.md; README reescrito.
 - Usuario ejecuto NB02 en Colab: resultados identicos a la corrida local (11 hojas, 0 diferencias).
 
+## Sesion 2026-10-06: indice macroeconomico
+- Nuevo `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (16 series: datos.gob.ar,
+  BCRA API v4, BCRA ITCRMSerie.xlsx, argentinadatos). Nuevo `notebooks/03_indice_macro.ipynb`
+  (10 celdas: 0 md · 1 params · 2 carga + IPC empalmado + PIB mensual · 3 variables · 4 z/pilares ·
+  5-8 graficos 01-04 + promedio por gestion · 9 export). Agregado "03" a run_notebooks_local.
+- Normalizacion IQR (no MAD: rompia con la brecha); reservas en meses de importaciones.
+- BUG PIB_B NB02: valores 2020-2023/2025 erroneos; la serie INDEC es trimestral anualizada (/4).
+- Resultado ago-2026: IMA −0,01, sin fiscal −0,17. Promedio por gestion (sin fiscal): NK −0,22 ·
+  CFK +0,19 · CFK2 −0,06 · Macri −0,43 · AF −0,70 · Milei −0,40.
+- Fiscal del NB03 viene de la IMIG (2019+). Idea: extender a 2016 con series 452.2_* de datos.gob.ar.
+
 ## Notas sueltas utiles
 - Mensualizacion: cada IMIG 2026+ trae ene..mes actual → si falta el IMIG de un mes, el del mes
   siguiente lo cubre automaticamente.

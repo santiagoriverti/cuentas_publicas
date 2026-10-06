@@ -14,7 +14,8 @@
   ninguna atribucion a Claude en commits o PRs.
 - Idioma: espanol (rioplatense) en respuestas, commits y documentacion.
 - El usuario usa los notebooks en **Google Colab**; lo que importa es que el **notebook 02** corra y
-  descargue `analisis_fiscal.zip` (Excel + 7 graficos). El notebook 01 es opcional.
+  descargue `analisis_fiscal.zip` (Excel + 7 graficos). El notebook 01 es opcional. El **notebook 03**
+  (indice macro) descarga `indice_macro.zip` y lee `data/reference/macro_mensual.csv`.
 - El informe LaTeX de prensa esta **en pausa** por pedido del usuario: no reactivar exports `.tex`
   sin que lo pida.
 - Graficos 05 y 06 van **sin titulo** a proposito (pedido previo).
@@ -34,6 +35,8 @@
   Agregar meses nuevos como archivos sueltos; no hace falta tocar el ZIP.
 - Al cambiar el IPC cambia la base de todos los valores reales: los numeros en B cambian, los % no.
 - Verificar siempre: primario nominal 2024 = 10,41 B y 2025 = 11,77 B (ver CONTEXTO.md §5).
+- PIB nominal de datos.gob.ar (`166.2_PPIB_0_0_3`) viene trimestral **anualizado**: anual = suma / 4.
+- API del BCRA (`api.bcra.gob.ar`): usar `verify=False` (el certificado no valida en algunas PCs).
 
 ## Cierre de sesion
 

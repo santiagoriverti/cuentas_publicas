@@ -78,9 +78,34 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   `Transf_corrientes_provincias`, `Salarios`, `Jubilaciones_pensiones`, `Transf_universidades`,
   `Pensiones_no_contributivas`, `INSSJP_PAMI`, `Otros_prog_sociales`, `AUH` (nivel de jerarquia en
   la lista `rubros` de la celda 8).
-- **% PIB**: PIB nominal aproximado hardcodeado en la celda 9 (`PIB_B`, billones: 2020 44,9 · 2021 72,0 ·
-  2022 115,0 · 2023 143,2 · 2024 586,7 · 2025 725,0). Solo orden de magnitud; 2026 = n/d.
-  Actualizar cuando haya PIB 2026.
+- **% PIB**: PIB nominal INDEC hardcodeado en la celda 9 del NB02 (`PIB_B`, billones: 2020 27,2 ·
+  2021 46,2 · 2022 82,8 · 2023 193,9 · 2024 584,4 · 2025 850,2). Fuente: serie `166.2_PPIB_0_0_3`
+  de datos.gob.ar, que viene **trimestral anualizada** → anual = suma de los 4 trimestres / 4
+  (sumarlos sin dividir da 4 veces el PIB). Hasta oct-2026 habia valores aproximados erroneos
+  (2023 = 143,2). 2026 = n/d hasta que INDEC lo publique.
+
+## 4b. Indice Macroeconomico (notebook 03)
+
+- **Datos**: `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (crudos, mensuales).
+  Diarios → promedio mensual (reservas: ultimo dato); trimestrales → mismo valor en los 3 meses.
+  Si una API falla, se conserva la columna anterior. Del repo: IPC (inflacion, deflactor) e IMIG
+  (recaudacion IVA + Deb./Cred., resultado primario, intereses netos, ingresos totales).
+- **16 variables, 6 pilares** (detalle y signos en la celda 3 del NB03 / hoja `Metodologia`).
+- **Normalizacion**: z = (x − mediana) / (IQR/1,349) sobre 2004-hoy, signo "mas alto = mejor",
+  recorte ±3. Se probo MAD y se descarto: la brecha tiene ~95 meses en 0 (sin cepo) y el MAD
+  quedaba ~0,8 pp → cualquier brecha > 3% saturaba en −3.
+- **Agregacion**: pilar = promedio de sus variables disponibles; indice = promedio de pilares
+  (minimo 4). `indice_sin_fiscal` = sin el pilar fiscal, que arranca en dic-2019 (IMIG desde 2019,
+  sumas de 12 meses): es la serie comparable para toda la historia.
+- **Borde de la serie**: el ultimo dato de cada variable se arrastra hasta 3 meses; el ultimo mes
+  del indice es el ultimo con ≥ 60% de las variables con dato propio.
+- **Decisiones**: reservas en meses de importaciones (no USD nominales); brecha = 0 antes de
+  nov-2011; TCRM penaliza el desalineamiento simetrico (log) respecto de su mediana 2004-hoy;
+  tasa real ex-ante = BADLAR efectiva vs REM 12 m, se penaliza la distancia a +2%; inflacion en
+  log; PIB mensual = EMAE x IPC calibrado trimestre a trimestre al PIB nominal INDEC.
+- **Cautelas**: IPC 2007-2015 (intervencion INDEC) empalmado con la serie del BCRA; varias series
+  arrancan despues de 2004 (SIPA 2013, salarios 2016, CCL 2013, recaudacion 2020): el pilar se
+  promedia con lo disponible. Validacion: correlacion de Spearman con el indice de miseria ≈ −0,6.
 
 ## 5. Validaciones de referencia
 

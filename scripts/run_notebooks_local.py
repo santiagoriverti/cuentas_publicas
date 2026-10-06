@@ -2,7 +2,7 @@
 Ejecuta los notebooks contra los archivos LOCALES del repo (sin push ni Colab).
 
 Uso:
-    python scripts/run_notebooks_local.py            # NB01 y NB02
+    python scripts/run_notebooks_local.py            # NB01, NB02 y NB03
     python scripts/run_notebooks_local.py 02         # solo NB02
 
 Los notebooks leen los datos desde GitHub (raw.githubusercontent.com). Este script copia
@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_local_run"
-NOTEBOOKS = {"01": "01_consolidar", "02": "02_analisis_fiscal"}
+NOTEBOOKS = {"01": "01_consolidar", "02": "02_analisis_fiscal", "03": "03_indice_macro"}
 
 PATCH = f'''
 import requests, pandas as _pd
