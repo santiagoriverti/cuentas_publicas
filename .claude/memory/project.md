@@ -115,6 +115,9 @@
   (− coparticipacion + leyes especiales en 1993-2006). Extraordinarios: DEG nov-dic 2009, 4G dic-2014.
   NB03: `imig_serie(..., col_aif)`; graf. 01 y validacion con el indice completo. Ago-2026: IMA +0,00
   (antes +0,14), Fiscal +0,33 (antes +1,18), ancla −0,24; Spearman −0,56.
+- v8 (2026-10-06): `emae_vs_maximo` = EMAE desest. / max(36 meses previos, min 12) − 1, en Actividad
+  (nivel vs ritmo; se evaluaron incluir el mes [20% de ceros] y maximo historico; elegido 36m previo).
+  Ago-2026 −4,5% (z −0,87), IMA −0,02, Actividad −0,66. Efecto max 0,20 (may-2021). Spearman −0,56.
 
 ## Notas sueltas utiles
 - Mensualizacion: cada IMIG 2026+ trae ene..mes actual → si falta el IMIG de un mes, el del mes
@@ -135,6 +138,8 @@
 - [x] NB03 v5 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v6 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] Pilar fiscal desde 2004 (v7, 2026-10-06).
+- [x] Nivel de actividad: EMAE vs maximo 36m (v8).
+- [ ] Correr NB03 v8 en Colab y comparar con local.
 - [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
 - [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.
