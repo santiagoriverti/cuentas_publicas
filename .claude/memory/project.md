@@ -101,7 +101,7 @@
 - v6 (2026-10-06): `saldo_comercial` (MM USD corrientes) → `saldo_comercial_pib` = (expo − impo) 12 m
   / suma 12 m (pib_mensual / A3500) × 100. El nominal en USD premiaba 2026 (z +1,64) aunque en % PIB
   (3,4%) es la mitad que 2004-05. PIB nominal pasa a la serie 4.4_OGP_2004_T_17 (desde 2004; = 166.2)
-  → credito_pib arranca dic-2004. Ago-2026: IMA +0,19 → +0,14, sin fiscal −0,06, ancla −0,10,
+  → credito_pib arranca dic-2004. Ago-2026: IMA +0,19 → +0,14, sin fiscal −0,06, ancla −0,09 (−0,095),
   Externo −0,19; Spearman miseria −0,54. En el CSV solo se agregaron meses nuevos del PIB (los
   existentes se dejaron con el texto original: la API devuelve ruido de 1e-6).
   Evaluados y pendientes de decision: extender el pilar fiscal a 2004 (restando utilidades BCRA y
@@ -124,7 +124,7 @@
 - [ ] Consolidacion intra-sector para % provincias.
 - [ ] Revocar PAT viejo de jun-2026 si sigue activo.
 - [x] NB03 v5 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [ ] Correr NB03 v6 en Colab y comparar con local.
+- [x] NB03 v6 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] (propuesto) Pilar fiscal desde 2004 para que el indice principal compare gestiones.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
 - [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.
