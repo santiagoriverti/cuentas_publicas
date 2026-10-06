@@ -67,7 +67,8 @@ SERIES_DATOS_GOB = {
     "desocupacion":        ("42.3_EPH_PUNTUATAL_0_M_30", True),    # tasa de desocupacion EPH (la API la da en fraccion -> se guarda en %)
     "expo_usd":            ("74.3_IET_0_M_16", False),             # exportaciones (M USD)
     "impo_usd":            ("74.3_IIT_0_M_25", False),             # importaciones (M USD)
-    "pib_nominal_anualizado": ("166.2_PPIB_0_0_3", True),          # PIB precios corrientes (M$), trimestre ANUALIZADO (x4)
+    "pib_nominal_anualizado": ("4.4_OGP_2004_T_17", True),         # PIB precios corrientes (M$), trimestre ANUALIZADO (x4);
+                                                                    # desde 2004 (la 166.2_PPIB_0_0_3 es la misma serie desde 2006)
     "ipc_neuquen":         ("196.1_NIVEL_GENERAL_2014_0_13", False),  # IPC Prov. Neuquen, ene-2007=100
     "expectativa_utdt":    ("431.1_EXPECTATIVDIO_M_0_0_30_56", False),  # UTDT: PROMEDIO inflacion esperada 12 m (%)
 }

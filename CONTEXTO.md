@@ -80,7 +80,7 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   la lista `rubros` de la celda 8).
 - **% PIB**: PIB nominal INDEC hardcodeado en la celda 9 del NB02 (`PIB_B`, billones: 2020 27,2 ·
   2021 46,2 · 2022 82,8 · 2023 193,9 · 2024 584,4 · 2025 850,2). Fuente: serie `166.2_PPIB_0_0_3`
-  de datos.gob.ar, que viene **trimestral anualizada** → anual = suma de los 4 trimestres / 4
+  de datos.gob.ar (= `4.4_OGP_2004_T_17`, que arranca en 2004), que viene **trimestral anualizada** → anual = suma de los 4 trimestres / 4
   (sumarlos sin dividir da 4 veces el PIB). Hasta oct-2026 habia valores aproximados erroneos
   (2023 = 143,2). 2026 = n/d hasta que INDEC lo publique.
 
@@ -116,12 +116,12 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 | Fiscal | `primario_pib` primario 12 m sin extraordinarios / PIB 12 m | + | desde dic-2016 |
 | Fiscal | `intereses_ingresos` intereses netos / ingresos sin extraordinarios, 12 m | − | desde dic-2016 |
 | Externo | `reservas_netas_meses_impo` reservas netas / importaciones mensuales promedio 12 m | + | ver "Reservas netas" |
-| Externo | `saldo_comercial` expo − impo 12 m (MM USD) | + | |
+| Externo | `saldo_comercial_pib` (expo − impo) 12 m / PIB 12 m en USD (a A3500), % | + | desde dic-2004 (v6) |
 | Externo | `brecha` CCL / A3500 − 1 | − | 0 antes de nov-2011 |
 | Externo | `tcrm_desalineado` \|ln(ITCRM / mediana)\| | − | simetrico |
 | Financiero | `riesgo_pais` | − | |
 | Financiero | `credito_real_ia` prestamos EN PESOS / IPC, var. i.a. | + | var 117 |
-| Financiero | `credito_pib` prestamos totales ($ + USD) / PIB 12 m | + | var 26 |
+| Financiero | `credito_pib` prestamos totales ($ + USD) / PIB 12 m | + | var 26; desde dic-2004 (v6) |
 | Financiero | `tasa_real_desvio` \|tasa real ex-ante − 2%\| (BADLAR efectiva vs expectativas) | − | |
 
 ### Empalmes y correcciones de datos (revisados en dos auditorias, oct-2026)
@@ -145,7 +145,14 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   dolares valuados al oficial y cada devaluacion inflaba el "crecimiento" (dic-2023: +11% con +81% de
   devaluacion). Credito/PIB usa el total (ahi la valuacion corresponde).
 - **PIB mensual**: EMAE × IPC calibrado trimestre a trimestre al PIB nominal INDEC (serie trimestral
-  anualizada / 4); trimestres sin PIB usan el ultimo factor.
+  anualizada / 4); trimestres sin PIB usan el ultimo factor. Serie `4.4_OGP_2004_T_17` (2004-T1 en
+  adelante; identica a la `166.2_PPIB_0_0_3`, que arranca en 2006 y llega un trimestre menos). Como el
+  EMAE empieza en 2004, las variables con PIB de 12 meses arrancan en dic-2004.
+- **Saldo comercial en % del PIB (v6)**: antes iba en MM USD corrientes y la economia en dolares es ~3
+  veces la de 2004 → el superavit de 2026 (24,5 MM) daba z +1,64, el mejor del pilar, aunque en % del
+  PIB (3,4%) es la mitad que en 2004-05 (7,4% / 5,9%). PIB en USD = suma 12 m de PIB mensual / A3500.
+  Con cepo el oficial esta sobrevaluado → PIB en USD alto → saldo % PIB algo subestimado en 2011-15 y
+  2019-23 (convencion del FMI/INDEC: tipo de cambio oficial).
 
 ### Normalizacion y agregacion
 - z = (x − mediana) / (IQR/1,349) sobre toda la historia disponible de cada variable, signo "mas
@@ -205,7 +212,7 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 - Desocupacion 2004-T1 = 14,28% en la API vs 14,4% publicado entonces (revision de la serie).
 - TCRM penaliza igual atraso y adelanto; tasa real neutral fijada en 2%; pesos iguales por pilar
   (PCA evaluado y descartado, ver "Normalizacion y agregacion").
-- Validacion: correlacion de Spearman con el indice de miseria ≈ −0,56; episodios (2009, 2014,
+- Validacion: correlacion de Spearman con el indice de miseria ≈ −0,54 (−0,56 hasta la v5); episodios (2009, 2014,
   2018-19, 2020, fines de 2023 - inicio 2024) ubicados correctamente.
 
 ## 5. Validaciones de referencia

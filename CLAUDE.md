@@ -35,7 +35,8 @@
   Agregar meses nuevos como archivos sueltos; no hace falta tocar el ZIP.
 - Al cambiar el IPC cambia la base de todos los valores reales: los numeros en B cambian, los % no.
 - Verificar siempre: primario nominal 2024 = 10,41 B y 2025 = 11,77 B (ver CONTEXTO.md §5).
-- PIB nominal de datos.gob.ar (`166.2_PPIB_0_0_3`) viene trimestral **anualizado**: anual = suma / 4.
+- PIB nominal de datos.gob.ar (`4.4_OGP_2004_T_17`, = `166.2_PPIB_0_0_3` desde 2006) viene trimestral
+  **anualizado**: anual = suma / 4.
 - API del BCRA (`api.bcra.gob.ar`): usar `verify=False` (el certificado no valida en algunas PCs).
 - **Notebook 03**: celdas 0 md · 1 parametros · 2 carga (IPC empalmado, IMIG + extraordinarios, PIB
   mensual) · 3 variables (lista `VARS`: codigo, nombre, pilar, signo, unidad, origen, serie) · 4 z,
