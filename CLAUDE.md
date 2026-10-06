@@ -29,7 +29,9 @@
   f-strings → escribir el script de edicion a un archivo `.py` y ejecutarlo.
 - Los notebooks leen de GitHub (`raw.githubusercontent.com/.../main`). Para probar cambios antes
   del push: `python scripts/run_notebooks_local.py [01|02]` (redirige las URLs a disco).
-- Robustez del indice macro: `python scripts/sensibilidad_indice.py` (lee `_local_run/indice_macro.xlsx`).
+- Antes de publicar el indice: `python scripts/control_calidad.py` (0 ALERTAS o justificarlas) y
+  `--guardar` para actualizar `output/indice_macro.csv`. Robustez: `python scripts/sensibilidad_indice.py`.
+- La nota metodologica del indice esta en el README (circula): si cambia la metodologia, actualizarla.
   El indice circula: comunicar el ultimo mes como "en baja / cerca de lo tipico" (su signo no es robusto).
 - Despues de cambiar parsers: correr `python src/consolidate.py` y comparar contra los CSV
   versionados (cambios inesperados en meses viejos = regresion). Revisar el resumen de cobertura.

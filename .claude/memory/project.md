@@ -126,6 +126,11 @@
   0,001) y corre 33 variantes; cronologia de recesiones = regla UTDT (6+ caidas del EMAE tendencia-ciclo
   143.3_NO_PR_2004_A_28) → 7 episodios 2008-2024, AUC 0,67. No robustos: signo del ultimo mes, NK vs CFK II,
   Macri vs Milei. El indice VA A CIRCULAR (usuario); pagina interactiva no por ahora.
+- Para circular (2026-10-06): nota metodologica en README (pedido del usuario: ahi, no en un doc aparte);
+  banda de sensibilidad en NB03 celda 4 (`_variante()`, 12 variantes, = rango de sensibilidad_indice.py);
+  `scripts/control_calidad.py` (umbrales arriba del archivo; `--macro` para probar otro CSV, `--contra` otra
+  version de git) + `output/indice_macro.csv`. OJO: escribir/editar scripts con la herramienta de edicion,
+  no con heredocs de bash (convierten "\\n" en saltos reales).
 
 ## Notas sueltas utiles
 - Cifras titulares del NB03: tomar las que IMPRIME el notebook (redondeo del valor exacto), NO
@@ -154,6 +159,8 @@
 - [x] NB03 v9 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] Sensibilidad + validacion vs recesiones (`scripts/sensibilidad_indice.py`, 2026-10-06).
 - [ ] (no por ahora, pedido del usuario) dashboard / pagina interactiva.
+- [x] Nota metodologica en README + banda de sensibilidad en NB03 + control_calidad.py + output/indice_macro.csv.
+- [ ] Correr NB03 (version con banda) en Colab y comparar con local.
 - [x] NB03 v8 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)

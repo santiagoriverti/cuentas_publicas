@@ -10,7 +10,7 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | **v9 congelada** (2026-10-06): salario real vs su maximo; v8: EMAE vs su maximo; v7: fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; **v9 verificada en Colab (2026-10-06): identica a local** en las 8 hojas (dif 0); ZIP = Excel 8 hojas + 4 PNG |
+| Notebook 03 (indice macro) | **v9 congelada** (2026-10-06): salario real vs su maximo; v8: EMAE vs su maximo; v7: fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; v9 verificada en Colab; **banda de sensibilidad verificada solo local** (falta Colab); ZIP = Excel 8 hojas + 4 PNG |
 | Series macro externas | `data/reference/macro_mensual.csv` (28 series + 4 columnas de reservas netas, 2003 a oct-2026) + `reservas_pasivos_manual.csv` |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
@@ -52,6 +52,12 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
   Efecto max 0,07, promedio 0,01; Empleo ago-2026 −0,40 → −0,37; Macri Empleo −0,37 → −0,16 (2016-17
   con el salario en su maximo). **Metodologia congelada en la v9**: proximos cambios solo ante un sesgo
   verificado en los datos.
+- **Para circular** (2026-10-06): nota metodologica en el **README** (como leerlo, variables, calculo,
+  que es firme, validacion, limitaciones); **rango de sensibilidad** en el NB03 (columnas `banda_min`/
+  `banda_max`, banda gris del grafico 01, impresion "signo NO concluyente" + cambio en 12 meses por
+  variante); **`scripts/control_calidad.py`** (revisiones, saltos, series que pierden meses, revision del
+  indice publicado) e indice publicado versionado en **`output/indice_macro.csv`**. Ago-2026: −0,01, rango
+  −0,11 a +0,34; cambio en 12 meses −0,24 (−0,35 a −0,13).
 - **Robustez y validacion** (`scripts/sensibilidad_indice.py`, 33 variantes + 7 recesiones fechadas con
   la regla de la UTDT): forma historica robusta (corr. 0,90-1,00); el **signo de ago-2026 no es robusto**
   (−0,11 a +0,34) pero la **caida del ultimo anio si**; A. Fernandez ultimo en todas; los tres gobiernos
@@ -127,6 +133,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 ## 3. Proximos pasos
 
 1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
+   Correr el notebook 03 en Colab (version con banda) y comparar con la corrida local.
    Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
 2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
    NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
@@ -151,7 +158,9 @@ python scripts/actualizar_macro.py        # 2b. series del indice macro (BCRA, I
                                           #     si el BCRA tomo/cancelo un REPO o swap: data/reference/reservas_pasivos_manual.csv
 python src/consolidate.py                 # 3. revisar "RESUMEN DE COBERTURA" al final
 python scripts/run_notebooks_local.py 02 03  # 4. verificar (salidas en _local_run/)
-python scripts/sensibilidad_indice.py        # 4b. (opcional) robustez del indice: _local_run/sensibilidad_indice.xlsx
+python scripts/control_calidad.py            # 4b. control antes de publicar: debe dar 0 ALERTAS (o justificarlas)
+python scripts/control_calidad.py --guardar  #     actualiza output/indice_macro.csv (indice publicado)
+python scripts/sensibilidad_indice.py        # 4c. (opcional) robustez del indice: _local_run/sensibilidad_indice.xlsx
 git add data/raw data/reference output && git commit -m "datos: YYYY-MM" && git push
 # 5. Colab: abrir notebook 02 -> Ejecutar todas -> descarga analisis_fiscal.zip (idem 03 -> indice_macro.zip)
 ```

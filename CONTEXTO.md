@@ -281,6 +281,15 @@ cada variable (19): 33 variantes. Salida `_local_run/sensibilidad_indice.xlsx`.
   segun la variante; 0,63 sin el pilar Actividad, para que no sea circular). Sin Actividad, las recesiones
   suaves de 2008-09 y 2011-12 casi no se ven (minimo +0,05 y +0,11): ahi el resto de la macro no se
   deterioro. AUC moderado es esperable: el indice mide condiciones macro amplias, no solo el ciclo.
+- **En el NB03** (celda 4): rango de sensibilidad con las 12 variantes principales (las metodologicas + sin
+  cada pilar; sin el ancla ni las de "sin 1 variable") → `banda_min`/`banda_max` en la hoja Indice, banda
+  gris en el grafico 01 e impresion del rango y del cambio en 12 meses por variante. Debe coincidir con el
+  rango de `sensibilidad_indice.py` (ago-2026: −0,11 a +0,34).
+- **Control de calidad mensual** (`scripts/control_calidad.py`): series vs su version en git (columnas,
+  meses perdidos, revisiones: ALERTA > 5% en datos de mas de 2 anios o > 25% en recientes; saltos: z robusto
+  de la variacion mensual > 6 en meses nuevos o en el ultimo mes anterior si cambio; flujos con negativos se
+  miden relativos al nivel de 12 meses) e indice vs `output/indice_macro.csv` (ALERTA si se revisa > 0,10).
+  Probado con datos reales (0 alertas) y con errores inyectados (los detecta). `--guardar` actualiza el CSV.
 
 ## 5. Validaciones de referencia
 
