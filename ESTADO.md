@@ -51,8 +51,12 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
   el EMAE de la v8. Ene-2025: +11,9% i.a. (z +2,17, casi record) pero −12,4% vs el pico (z +0,01).
   Efecto max 0,07, promedio 0,01; Empleo ago-2026 −0,40 → −0,37; Macri Empleo −0,37 → −0,16 (2016-17
   con el salario en su maximo). **Metodologia congelada en la v9**: proximos cambios solo ante un sesgo
-  verificado en los datos; lo siguiente es analisis de sensibilidad (antes de publicar) y validacion
-  contra una cronologia de recesiones.
+  verificado en los datos.
+- **Robustez y validacion** (`scripts/sensibilidad_indice.py`, 33 variantes + 7 recesiones fechadas con
+  la regla de la UTDT): forma historica robusta (corr. 0,90-1,00); el **signo de ago-2026 no es robusto**
+  (−0,11 a +0,34) pero la **caida del ultimo anio si**; A. Fernandez ultimo en todas; los tres gobiernos
+  kirchneristas por encima de Macri, Milei y A. Fernandez en todas (NK vs Milei 97%); **no robustos: NK vs
+  CFK II y Macri vs Milei**. Recesiones: el indice cae en las 7, AUC 0,67. Detalle en CONTEXTO.md §4b.
 - **v8: nivel de actividad** (`emae_vs_maximo`, 18va variable, pilar Actividad): EMAE vs su maximo de
   los 36 meses previos, para que un rebote post-crisis no cuente como bonanza (jun-2021: +13,9% i.a. pero
   −3,6% vs el pico). Ago-2026: −4,5% vs el pico (dato de julio), Actividad −0,55 → −0,66, IMA +0,00 →
@@ -147,6 +151,7 @@ python scripts/actualizar_macro.py        # 2b. series del indice macro (BCRA, I
                                           #     si el BCRA tomo/cancelo un REPO o swap: data/reference/reservas_pasivos_manual.csv
 python src/consolidate.py                 # 3. revisar "RESUMEN DE COBERTURA" al final
 python scripts/run_notebooks_local.py 02 03  # 4. verificar (salidas en _local_run/)
+python scripts/sensibilidad_indice.py        # 4b. (opcional) robustez del indice: _local_run/sensibilidad_indice.xlsx
 git add data/raw data/reference output && git commit -m "datos: YYYY-MM" && git push
 # 5. Colab: abrir notebook 02 -> Ejecutar todas -> descarga analisis_fiscal.zip (idem 03 -> indice_macro.zip)
 ```

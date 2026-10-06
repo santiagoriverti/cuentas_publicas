@@ -255,6 +255,33 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   −0,54); episodios (2009, 2014,
   2018-19, 2020, fines de 2023 - inicio 2024) ubicados correctamente.
 
+### Robustez y validacion (v9; `python scripts/sensibilidad_indice.py [indice_macro.xlsx]`)
+El script reproduce el indice desde las hojas Variables/Arrastrados/Metodologia (dif ≤ 0,001) y lo recalcula
+cambiando una decision por vez: pesos por variable, normalizacion 2017-hoy para todas, sin tope, tope ±2,
+media y desvio, sin las 4 variables que empiezan despues de 2012, Precios vs meta, sin cada pilar (6) y sin
+cada variable (19): 33 variantes. Salida `_local_run/sensibilidad_indice.xlsx`.
+- **Forma historica: robusta** (correlacion de cada variante con la base 0,90-1,00).
+- **Ultimo mes: el signo NO es robusto.** Ago-2026 va de −0,11 a +0,34 segun la variante (−0,25 con la
+  meta de inflacion). Si es robusto que **cayo en el ultimo anio**: todas las variantes dan menos que hace
+  12 meses (base +0,23 → −0,01). Comunicar como "cerca de lo tipico y en baja", no como "negativo".
+- **Por gestion** (indice completo; % de las 33 variantes en que A supera a B):
+  - Robusto (100%): N. Kirchner, C. Fernandez y C. Fernandez II por encima de Macri y de A. Fernandez;
+    C. Fernandez y C. Fernandez II por encima de Milei; Macri y Milei por encima de A. Fernandez.
+    A. Fernandez es ultimo en todas las variantes.
+  - Casi robusto: N. Kirchner > Milei (97%); C. Fernandez > C. Fernandez II (97%); C. Fernandez >
+    N. Kirchner (94%).
+  - **No robusto**: N. Kirchner vs C. Fernandez II (33/67) y **Macri vs Milei** (Milei arriba en 76%).
+  - Lectura: es un promedio de condiciones macro, no una evaluacion de gestion (no separa contexto
+    externo — precios de commodities, sequias, pandemia — ni condiciones heredadas).
+- **Recesiones** (cronologia externa: regla del Indice Lider UTDT = 6+ caidas mensuales seguidas del
+  EMAE tendencia-ciclo de INDEC, `143.3_NO_PR_2004_A_28`): 7 episodios — 2008-04/2009-05,
+  2011-08/2012-05, 2013-06/2014-08, 2015-08/2016-08, 2017-10/2019-01, 2019-06/2020-08, 2022-07/2024-03.
+  En los 7 el indice cae del pico a un minimo en el valle o cerca (2009-05 −0,33; 2016-06 −0,46; 2018-11
+  −0,87; 2020-05 −1,50; 2024-02 −1,29). Media en recesion −0,38 vs −0,07 en expansion; AUC 0,67 (0,62-0,74
+  segun la variante; 0,63 sin el pilar Actividad, para que no sea circular). Sin Actividad, las recesiones
+  suaves de 2008-09 y 2011-12 casi no se ven (minimo +0,05 y +0,11): ahi el resto de la macro no se
+  deterioro. AUC moderado es esperable: el indice mide condiciones macro amplias, no solo el ciclo.
+
 ## 5. Validaciones de referencia
 
 | Chequeo | Resultado esperado |

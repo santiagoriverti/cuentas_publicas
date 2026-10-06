@@ -122,6 +122,10 @@
   `emae_vs_maximo`, sin cambios). Mediana −12,4% (salario en caida desde 2017). Ago-2026 IMA −0,01 (NB),
   Empleo −0,37. **Metodologia congelada en v9** (pedido: no seguir ajustando sin sesgo verificado).
   Proximo posible: sensibilidad (pesos por variable, ventana fija, sin tope) y validacion vs recesiones.
+- Sensibilidad (2026-10-06): `scripts/sensibilidad_indice.py` reproduce el indice desde el Excel (dif ≤
+  0,001) y corre 33 variantes; cronologia de recesiones = regla UTDT (6+ caidas del EMAE tendencia-ciclo
+  143.3_NO_PR_2004_A_28) → 7 episodios 2008-2024, AUC 0,67. No robustos: signo del ultimo mes, NK vs CFK II,
+  Macri vs Milei. El indice VA A CIRCULAR (usuario); pagina interactiva no por ahora.
 
 ## Notas sueltas utiles
 - Cifras titulares del NB03: tomar las que IMPRIME el notebook (redondeo del valor exacto), NO
@@ -148,7 +152,8 @@
 - [x] Nivel de actividad: EMAE vs maximo 36m (v8).
 - [x] Nivel del salario real (v9; metodologia congelada).
 - [x] NB03 v9 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
-- [ ] (opcional) Sensibilidad + validacion vs cronologia de recesiones; dashboard.
+- [x] Sensibilidad + validacion vs recesiones (`scripts/sensibilidad_indice.py`, 2026-10-06).
+- [ ] (no por ahora, pedido del usuario) dashboard / pagina interactiva.
 - [x] NB03 v8 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)

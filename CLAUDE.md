@@ -29,6 +29,8 @@
   f-strings → escribir el script de edicion a un archivo `.py` y ejecutarlo.
 - Los notebooks leen de GitHub (`raw.githubusercontent.com/.../main`). Para probar cambios antes
   del push: `python scripts/run_notebooks_local.py [01|02]` (redirige las URLs a disco).
+- Robustez del indice macro: `python scripts/sensibilidad_indice.py` (lee `_local_run/indice_macro.xlsx`).
+  El indice circula: comunicar el ultimo mes como "en baja / cerca de lo tipico" (su signo no es robusto).
 - Despues de cambiar parsers: correr `python src/consolidate.py` y comparar contra los CSV
   versionados (cambios inesperados en meses viejos = regresion). Revisar el resumen de cobertura.
 - `data/raw/` esta versionado (fuentes de Hacienda). `data/raw/_duplicados/` es local e ignorado.
