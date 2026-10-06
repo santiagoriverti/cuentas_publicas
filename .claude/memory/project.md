@@ -135,6 +135,6 @@
 - [x] NB03 v5 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v6 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] Pilar fiscal desde 2004 (v7, 2026-10-06).
-- [ ] Correr NB03 v7 en Colab y comparar con local.
+- [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
 - [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.
