@@ -115,6 +115,6 @@
 - [ ] Datos provinciales MECON por jurisdiccion.
 - [ ] Consolidacion intra-sector para % provincias.
 - [ ] Revocar PAT viejo de jun-2026 si sigue activo.
-- [ ] Correr NB03 v5 en Colab y confirmar identico a local.
+- [x] NB03 v5 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
 - [ ] Cada mes: revisar si hubo REPO/swap nuevo del BCRA → `reservas_pasivos_manual.csv`.
