@@ -10,8 +10,8 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | 2026-10-06, revisado y corregido; verificado local: ZIP = Excel 8 hojas + 4 PNG |
-| Series macro externas | `data/reference/macro_mensual.csv` (24 series, 2003 a oct-2026) |
+| Notebook 03 (indice macro) | v3 (2026-10-06), dos revisiones exhaustivas aplicadas; verificado local: ZIP = Excel 8 hojas + 4 PNG. v2 verificada en Colab (identica a local) |
+| Series macro externas | `data/reference/macro_mensual.csv` (25 series, 2003 a oct-2026) |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
 | Ultimo mes publicado por Hacienda revisado | agosto 2026 (julio 2026 NO publicado → derivado) |
@@ -34,9 +34,25 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 
 - **Indice Macroeconomico (IMA)**: notebook 03 + `scripts/actualizar_macro.py`. 17 variables en 6
   pilares (actividad, empleo e ingresos, precios, fiscal, externo, financiero), z robusto, mensual
-  desde 2004. Metodologia en CONTEXTO.md §4b. Ago-2026: indice +0,22 (sin fiscal +0,03); hace 12
-  meses +0,37. Correlacion con el indice de miseria: −0,56.
-- Revision exhaustiva del Excel (v1) y correcciones (v2): inflacion 2007-2015 con IPC Neuquen (la
+  desde 2004. Metodologia completa en CONTEXTO.md §4b.
+
+  | Ago-2026 | Valor | Hace 12 meses |
+  |---|---|---|
+  | Indice | **+0,20** | +0,37 |
+  | Indice sin fiscal (comparable 2004-hoy) | +0,00 | +0,18 |
+  | Indice con Precios vs meta 10% (`indice_ancla`) | −0,04 | +0,13 |
+
+  Pilares ago-2026: Actividad −0,55 · Empleo −0,39 · Precios +0,33 (vs meta: −1,11) · Fiscal +1,18 ·
+  Externo +0,11 · Financiero +0,51. Promedio por gestion (indice sin fiscal): N. Kirchner +0,01 ·
+  C. Fernandez +0,06 · C. Fernandez II −0,09 · Macri −0,23 · A. Fernandez −0,72 · Milei −0,35.
+  Correlacion con el indice de miseria: −0,56.
+- **v3 (2da revision, de datos)**: fiscal sin ingresos extraordinarios (DEG sep-2021 428 mil M$,
+  rentas por emision 2022 295 mil M$, recursos extraordinarios ene-2026 1,04 billones) → primario %
+  PIB ahora coincide con el oficial (2021 −3,05 vs −3,0; 2022 −2,36 vs −2,4); credito real solo en
+  pesos (BCRA var 117; la var 26 suma dolares y las devaluaciones inflaban el crecimiento); blue
+  2011-12 de Ambito con centavos (argentinadatos/bluelytics redondean a $1); expectativas UTDT con
+  el promedio ajustado al nivel del REM (la mediana venia redondeada a 5 pp); `indice_ancla`.
+- **v2 (1ra revision, de estructura)**: inflacion 2007-2015 con IPC Neuquen (la
   serie del BCRA repetia el IPC intervenido), expectativas 2006-2016 UTDT, brecha 2011-12 con blue,
   fiscal extendido a 2016 (IMIG datos.gob.ar, identica a la del repo), credito/PIB, hoja
   Arrastrados, Por_gobierno con asignacion por mayoria del mes y minimo 12 meses por pilar.
@@ -64,7 +80,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 ## 3. Proximos pasos
 
 1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
-   Probar el notebook 03 en Colab.
+   Correr el notebook 03 v3 en Colab y comparar con la corrida local (deberia dar identico).
    Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
 2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
    NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
@@ -73,6 +89,9 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
    valores redondeados (difieren en 0,1 B).
 3. Ideas no iniciadas: datos provinciales MECON por jurisdiccion; consolidacion intra-sector para
    medir mejor el peso de las provincias en el ajuste.
+   Indice macro: reservas netas (requiere armarlas a mano: brutas − swap China − encajes − otros
+   pasivos de corto plazo; el BCRA no las publica por API); pesos por PCA como sensibilidad;
+   publicar el indice como Artifact/dashboard.
 4. Seguridad: el remote usa Git Credential Manager (push funciona). Si quedo algun PAT viejo en
    GitHub (usado en jun-2026), revocarlo en Settings → Developer settings → Tokens.
 
@@ -82,7 +101,8 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 # 0. en PC nueva:  git clone ... && pip install -r requirements.txt   (Windows: set PYTHONUTF8=1)
 # 1. copiar los Excel nuevos de Hacienda a data/raw/ (sin renombrar)
 python scripts/actualizar_ipc.py          # 2. IPC nuevo (API datos.gob.ar)
-python scripts/actualizar_macro.py        # 2b. series del indice macro (BCRA, INDEC, argentinadatos)
+python scripts/actualizar_macro.py        # 2b. series del indice macro (BCRA, INDEC, argentinadatos, Ambito)
+                                          #     revisar que no diga "FALLO" (si falla conserva la version anterior)
 python src/consolidate.py                 # 3. revisar "RESUMEN DE COBERTURA" al final
 python scripts/run_notebooks_local.py 02 03  # 4. verificar (salidas en _local_run/)
 git add data/raw data/reference output && git commit -m "datos: YYYY-MM" && git push
@@ -103,3 +123,7 @@ Que revisar en el paso 3:
   mayo 2022 → no se puede derivar. Los graficos lo saltean (`GAP_DATE` en celda 1 del NB02).
 - IMIG antes de 2019: no disponible.
 - Divisiones del IPC: solo informativas (los notebooks usan solo "Nivel general").
+- Indice macro: desocupacion 2015-T4/2016-T1 no publicada (emergencia estadistica); REM ene-2005
+  vacio; UTDT termina ene-2026 (solo se usa hasta may-2016); IPC Neuquen termina ene-2026 (solo se
+  usa 2007-2015). Primario % PIB 2018 (−2,3 vs −2,6 oficial) y 2023 (−2,7 vs −2,9): diferencia
+  no atribuida a ninguna partida de la IMIG (probablemente base de PIB del dato oficial).

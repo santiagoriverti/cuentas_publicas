@@ -15,7 +15,7 @@ tidy, con graficos y un Excel de resultados en pesos constantes.
 | Notebook | Descripcion | Link |
 |---|---|---|
 | **02 - Analisis Fiscal** (principal) | 7 graficos en pesos constantes + Excel con resultados y datos consolidados, todo en un ZIP descargable | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb) |
-| **03 - Indice Macroeconomico** | Indice mensual 2004-hoy (16 variables, 6 pilares) + 4 graficos + Excel, en un ZIP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/03_indice_macro.ipynb) |
+| **03 - Indice Macroeconomico** | Indice mensual 2004-hoy (17 variables, 6 pilares) + 4 graficos + Excel de 8 hojas, en un ZIP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/03_indice_macro.ipynb) |
 | 01 - Consolidacion (opcional) | Exporta solo los datos consolidados a un Excel (ya incluidos en el Excel del 02) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb) |
 
 Los notebooks son independientes: leen los CSV e `IPC.xlsx` directamente desde GitHub.
@@ -74,7 +74,8 @@ En Windows conviene definir `PYTHONUTF8=1` (algunos prints usan caracteres unico
    ```
    Agrega los meses nuevos del Nivel General desde la API de datos.gob.ar. Opcional:
    `--divisiones RUTA/IPC.xlsx` para completar tambien las divisiones.
-   Para el indice macro (notebook 03): `python scripts/actualizar_macro.py` (BCRA, INDEC, argentinadatos).
+   Para el indice macro (notebook 03): `python scripts/actualizar_macro.py` (BCRA, INDEC, datos.gob.ar,
+   argentinadatos, Ambito). Metodologia del indice: [`CONTEXTO.md`](CONTEXTO.md) §4b.
 3. **Consolidar**:
    ```bash
    python src/consolidate.py

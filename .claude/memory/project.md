@@ -8,6 +8,7 @@
 - Local (PC INECO): `C:\Users\sriverti\Desktop\INECO\Repositorios\cuentas_publicas`
 - Colab NB02: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/02_analisis_fiscal.ipynb
 - Colab NB01: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/01_consolidar.ipynb
+- Colab NB03: https://colab.research.google.com/github/santiagoriverti/cuentas_publicas/blob/main/notebooks/03_indice_macro.ipynb
 
 ## Snapshot al cierre 2026-09-22
 - Datos hasta ago-2026; base deflactor ago-2026 (IPC 12.276,766).
@@ -68,6 +69,16 @@
   AF −0,73 · Milei −0,32.
 - OJO: en datos.gob.ar los IDs 452.2_* son TRIMESTRALES y 452.1_* anuales; la IMIG mensual solo esta
   como CSV de la distribucion 452.3.
+- v2 corrida por el usuario en Colab: identica a la local (8 hojas, dif 0).
+- Revision v3 (de datos, benchmarks vs cifras oficiales): primario sin extraordinarios (DEG sep-2021
+  = exceso de 'Transferencias corrientes' nivel 2; rentas PFE 2022; recursos extraordinarios 2026),
+  credito real en pesos (BCRA var 117), blue de Ambito (centavos), UTDT promedio con ajuste de nivel
+  (−5,4 pts log vs REM), `indice_ancla` (Precios vs meta 10%). Ago-2026: IMA +0,20, sin fiscal +0,00,
+  ancla −0,04. Por gestion (sin fiscal): NK +0,01 · CFK +0,06 · CFK2 −0,09 · Macri −0,23 · AF −0,72 ·
+  Milei −0,35.
+- Las auditorias usaron scripts descartables (scratchpad): recalcular Z/pilares/indice desde el
+  Excel, comparar Colab vs local hoja por hoja, benchmarks (inflacion oficial, EMAE, reservas,
+  desocupacion, primario % PIB), tramos congelados y saltos en crudos. Repetirlas si se cambia el NB03.
 
 ## Notas sueltas utiles
 - Mensualizacion: cada IMIG 2026+ trae ene..mes actual → si falta el IMIG de un mes, el del mes
@@ -85,3 +96,5 @@
 - [ ] Datos provinciales MECON por jurisdiccion.
 - [ ] Consolidacion intra-sector para % provincias.
 - [ ] Revocar PAT viejo de jun-2026 si sigue activo.
+- [ ] Correr NB03 v3 en Colab y confirmar identico a local.
+- [ ] Indice macro: reservas netas; pesos por PCA (sensibilidad); dashboard/Artifact.

@@ -8,14 +8,18 @@ Uso:
 Fuentes (todas publicas, sin clave):
 - datos.gob.ar (API Series de Tiempo): EMAE, SIPA, indice de salarios, desocupacion EPH,
   exportaciones/importaciones, PIB nominal trimestral, IPC Neuquen (inflacion alternativa
-  2007-2016, periodo de intervencion del INDEC), expectativas de inflacion UTDT.
+  2007-2016, periodo de intervencion del INDEC), expectativas de inflacion UTDT (promedio: la
+  mediana viene redondeada a 5 pp).
 - datos.gob.ar (CSV IMIG mensual 2016+, dataset 452.3): resultado primario, intereses netos,
   ingresos totales, IVA y Debitos y creditos. Extiende hacia atras la IMIG del repo (2019+);
   coincide exacto con ella en 2019-2026.
 - BCRA API v4 (estadisticas/monetarias): reservas, tipo de cambio A3500, BADLAR, prestamos al
-  sector privado, expectativa de inflacion REM, inflacion mensual (historica, pre-2017).
+  sector privado (total pesos + dolares, y solo pesos), expectativa de inflacion REM, inflacion
+  mensual (historica, pre-2017).
 - BCRA ITCRMSerie.xlsx: tipo de cambio real multilateral (promedio mensual).
-- argentinadatos.com: riesgo pais (EMBI), dolar contado con liquidacion y dolar blue (2011+).
+- argentinadatos.com: riesgo pais (EMBI) y dolar contado con liquidacion.
+- Ambito (mercados.ambito.com): dolar blue 2011+ con centavos (argentinadatos y bluelytics lo
+  traen redondeado a $1 en 2011-2012).
 
 Si una fuente falla se conserva la columna que ya estaba en el CSV (aviso por pantalla), asi una
 caida puntual de una API no borra datos.
@@ -42,6 +46,7 @@ DATOS_GOB = "https://apis.datos.gob.ar/series/api/series/"
 BCRA = "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias"
 ITCRM_XLSX = "https://www.bcra.gob.ar/Pdfs/PublicacionesEstadisticas/ITCRMSerie.xlsx"
 ARG_DATOS = "https://api.argentinadatos.com/v1"
+AMBITO_BLUE = "https://mercados.ambito.com//dolar/informal/historico-general/01-01-2011/{hasta}"
 IMIG_CSV = "https://infra.datos.gob.ar/catalog/sspm/dataset/452/distribution/452.3/download/imig-mensual.csv"
 
 # columna -> (id serie datos.gob.ar, trimestral?)
@@ -54,7 +59,7 @@ SERIES_DATOS_GOB = {
     "impo_usd":            ("74.3_IIT_0_M_25", False),             # importaciones (M USD)
     "pib_nominal_anualizado": ("166.2_PPIB_0_0_3", True),          # PIB precios corrientes (M$), trimestre ANUALIZADO (x4)
     "ipc_neuquen":         ("196.1_NIVEL_GENERAL_2014_0_13", False),  # IPC Prov. Neuquen, ene-2007=100
-    "expectativa_utdt":    ("431.1_EXPECTATIVANA_M_0_0_29_85", False),  # UTDT: mediana inflacion esperada 12 m (%)
+    "expectativa_utdt":    ("431.1_EXPECTATIVDIO_M_0_0_30_56", False),  # UTDT: PROMEDIO inflacion esperada 12 m (%)
 }
 
 # columna -> (idVariable BCRA, agregacion mensual)
@@ -62,7 +67,8 @@ SERIES_BCRA = {
     "reservas_usd":      (1, "last"),   # reservas internacionales brutas (M USD)
     "a3500":             (5, "mean"),   # tipo de cambio mayorista de referencia ($/USD)
     "badlar":            (7, "mean"),   # BADLAR bancos privados (% TNA)
-    "prestamos_privados": (26, "mean"), # prestamos al sector privado (M$)
+    "prestamos_privados": (26, "mean"), # prestamos al sector privado, pesos + dolares valuados en $ (M$)
+    "prestamos_pesos":   (117, "mean"), # prestamos al sector privado solo en pesos (M$)
     "rem_12m":           (29, "last"),  # mediana inflacion esperada 12 m (%); REM desde jun-2016 (antes, otra
                                         # serie anclada al IPC oficial: el NB03 usa UTDT 2006-08 a 2016-05)
     "inflacion_mensual": (27, "last"),  # inflacion mensual oficial (%); el NB03 la usa antes de 2007 y may-dic 2016
@@ -121,6 +127,16 @@ def arg_datos(path: str, campo: str) -> pd.Series:
     return _mensual(s[s.index >= DESDE], "mean")
 
 
+def ambito_blue() -> pd.Series:
+    hasta = pd.Timestamp.today().strftime("%d-%m-%Y")
+    r = requests.get(AMBITO_BLUE.format(hasta=hasta), timeout=60, headers={"User-Agent": "Mozilla/5.0"})
+    r.raise_for_status()
+    filas = r.json()[1:]  # la primera fila es el encabezado [Fecha, Compra, Venta]
+    s = pd.Series({pd.to_datetime(f[0], dayfirst=True): float(f[2].replace(".", "").replace(",", "."))
+                   for f in filas})
+    return _mensual(s, "mean")
+
+
 @lru_cache(maxsize=1)  # un solo CSV para las 5 columnas
 def imig_hist() -> pd.DataFrame:
     r = requests.get(IMIG_CSV, timeout=60)
@@ -145,7 +161,7 @@ def main():
     tareas["itcrm"] = itcrm
     tareas["riesgo_pais"] = lambda: arg_datos("finanzas/indices/riesgo-pais", "valor")
     tareas["ccl"] = lambda: arg_datos("cotizaciones/dolares/contadoconliqui", "venta")
-    tareas["blue"] = lambda: arg_datos("cotizaciones/dolares/blue", "venta")
+    tareas["blue"] = ambito_blue
     for col in ["imig_resultado_primario", "imig_intereses_netos", "imig_ingresos_totales",
                 "imig_iva", "imig_debitos_creditos"]:
         tareas[col] = lambda c=col: imig_hist()[c]

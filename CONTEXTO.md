@@ -86,42 +86,89 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 
 ## 4b. Indice Macroeconomico (notebook 03)
 
-- **Datos**: `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (crudos, mensuales,
-  desocupacion en %). Diarios → promedio mensual (reservas: ultimo dato); trimestrales → mismo valor
-  en los 3 meses. Si una API falla, se conserva la columna anterior. Del repo: IPC (inflacion,
-  deflactor) e IMIG (recaudacion IVA + Deb./Cred., resultado primario, intereses netos, ingresos
-  totales), completada 2016-2018 con el CSV IMIG mensual de datos.gob.ar (dataset 452.3; coincide
-  0,00% con la del repo en los 92 meses 2019-2026).
-- **17 variables, 6 pilares** (detalle y signos en la celda 3 del NB03 / hoja `Metodologia`).
-- **Empalmes** (revisados oct-2026):
-  - Inflacion: INDEC 2017+; 2016 y pre-2007 serie BCRA; **2007-01 a 2015-12 IPC Neuquen** (la serie
-    del BCRA repite el IPC intervenido: 2010 10,5% vs Neuquen 26,7%; 2013 10,7% vs 28,3%).
-  - Expectativas: REM jun-2016+; **ago-2006 a may-2016 UTDT** (mediana, redondeada a 5 pp; sin
-    ajuste de nivel: diferencia mediana con el REM en la superposicion 0,25 pts log). La serie del
-    BCRA 2007-2012 seguia al IPC oficial (~11%) y tiene hueco 2012-10 a 2016-05.
-  - Brecha: CCL 2013+; **nov-2011 a dic-2012 dolar blue** (corr. 0,98 con el CCL, dif. 1,9 pp).
-  - Credito / PIB: prestamos al sector privado / PIB 12 m (agregado para que el rebote del credito
-    desde una base baja no domine el pilar financiero).
-- **Normalizacion**: z = (x − mediana) / (IQR/1,349) sobre 2004-hoy, signo "mas alto = mejor",
-  recorte ±3. Se probo MAD y se descarto: la brecha tiene ~95 meses en 0 (sin cepo) y el MAD
-  quedaba ~0,8 pp → cualquier brecha > 3% saturaba en −3.
-- **Agregacion**: pilar = promedio de sus variables disponibles; indice = promedio de pilares
-  (minimo 4). `indice_sin_fiscal` = sin el pilar fiscal, que arranca en dic-2016 (IMIG desde 2016,
-  sumas de 12 meses): es la serie comparable para toda la historia.
-- **Por gestion**: cada mes va a quien gobierno la mayor parte (asuncion hasta el dia 15 → mes
-  propio); pilar vacio si tiene < 12 meses con dato en la gestion.
-- **Ventanas de normalizacion distintas**: cada variable se normaliza con su propia historia
-  (recaudacion 2017+, fiscal dic-2016+, salario 2016+, SIPA 2013+): 0 = tipico de ESE periodo.
-  Ver `normalizado_desde` en la hoja Metodologia.
-- **Borde de la serie**: el ultimo dato de cada variable se arrastra hasta 3 meses; el ultimo mes
-  del indice es el ultimo con ≥ 60% de las variables con dato propio.
-- **Decisiones**: reservas en meses de importaciones (no USD nominales); brecha = 0 antes de
-  nov-2011; TCRM penaliza el desalineamiento simetrico (log) respecto de su mediana 2004-hoy;
-  tasa real ex-ante = BADLAR efectiva vs REM 12 m, se penaliza la distancia a +2%; inflacion en
-  log; PIB mensual = EMAE x IPC calibrado trimestre a trimestre al PIB nominal INDEC.
-- **Cautelas**: IPC Neuquen es provincial (no nacional); UTDT es encuesta a hogares; desocupacion
-  2015-Q4/2016-Q1 no publicada (emergencia estadistica). Validacion: correlacion de Spearman con el
-  indice de miseria ≈ −0,56.
+### Datos
+- `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (25 series crudas, mensuales).
+  Diarios → promedio del mes (reservas: ultimo dato del mes); trimestrales → mismo valor en los 3
+  meses. Si una API falla, conserva la columna anterior e imprime "FALLO".
+- Fuentes: datos.gob.ar (EMAE, SIPA, salarios, desocupacion EPH [la API da fraccion → se guarda en
+  %], expo/impo, PIB nominal, IPC Neuquen, UTDT promedio, CSV IMIG mensual 2016+), BCRA API v4
+  (`verify=False`; reservas, A3500, BADLAR, prestamos totales var 26 y en pesos var 117, REM var 29,
+  inflacion var 27), BCRA ITCRMSerie.xlsx (columna "ITCRM " con espacio), argentinadatos (riesgo
+  pais, CCL), Ambito (blue con centavos, `/dolar/informal/historico-general/dd-mm-aaaa/dd-mm-aaaa`).
+- Del repo: IPC (`IPC.xlsx`) e IMIG (`output/imig_consolidado.csv`). La IMIG se completa 2016-2018
+  con el CSV de datos.gob.ar (distribucion 452.3; coincide 0,00% con la del repo en 2019-2026).
+  OJO: los IDs `452.2_*` de la API son trimestrales y `452.1_*` anuales.
+
+### Variables (17) y pilares (celda 3 del NB03; hoja `Metodologia`)
+| Pilar | Variable | Signo | Nota |
+|---|---|---|---|
+| Actividad | `emae_ia` EMAE desest. var. i.a. | + | |
+| Actividad | `recaudacion_ia` IVA + Deb./Cred. reales, trim. movil, var. i.a. | + | repo IMIG, desde 2017-03 |
+| Empleo | `sipa_ia` asalariados privados registrados var. i.a. | + | desde 2013 |
+| Empleo | `salario_real_ia` indice de salarios registrados / IPC, var. i.a. | + | desde 2016-10 |
+| Empleo | `desocupacion` | − | trimestral |
+| Precios | `inflacion_3m` 400·ln(IPC/IPC₋₃) | − | log |
+| Precios | `inflacion_esperada` 100·ln(1+exp) | − | log |
+| Fiscal | `primario_pib` primario 12 m sin extraordinarios / PIB 12 m | + | desde dic-2016 |
+| Fiscal | `intereses_ingresos` intereses netos / ingresos sin extraordinarios, 12 m | − | desde dic-2016 |
+| Externo | `reservas_meses_impo` reservas brutas / importaciones mensuales promedio 12 m | + | |
+| Externo | `saldo_comercial` expo − impo 12 m (MM USD) | + | |
+| Externo | `brecha` CCL / A3500 − 1 | − | 0 antes de nov-2011 |
+| Externo | `tcrm_desalineado` \|ln(ITCRM / mediana)\| | − | simetrico |
+| Financiero | `riesgo_pais` | − | |
+| Financiero | `credito_real_ia` prestamos EN PESOS / IPC, var. i.a. | + | var 117 |
+| Financiero | `credito_pib` prestamos totales ($ + USD) / PIB 12 m | + | var 26 |
+| Financiero | `tasa_real_desvio` \|tasa real ex-ante − 2%\| (BADLAR efectiva vs expectativas) | − | |
+
+### Empalmes y correcciones de datos (revisados en dos auditorias, oct-2026)
+- **Inflacion**: INDEC 2017+; serie BCRA 2016 (ene-abr completado por el BCRA) y antes de 2007;
+  **IPC Neuquen 2007-01 a 2015-12** (la serie del BCRA repite el IPC intervenido: 2010 10,5% vs
+  Neuquen 26,7%; 2013 10,7% vs 28,3%). Inflacion oficial 2018-2024 verificada (±0,2 pp).
+- **Expectativas**: REM jun-2016+; **ago-2006 a may-2016 UTDT promedio** llevado al nivel del REM
+  restando la diferencia mediana en log de la superposicion (≈ 5,4 pts; se calcula en el notebook).
+  La mediana UTDT viene redondeada a 5 pp (descartada); la serie BCRA 2007-2012 seguia al IPC
+  oficial (~11%) y tiene hueco 2012-10 a 2016-05.
+- **Brecha**: CCL 2013+; **nov-2011 a dic-2012 dolar blue de Ambito** (con centavos; corr. 0,98 con
+  el CCL). argentinadatos y bluelytics traen el blue 2011-2012 redondeado a $1 (descartados).
+- **Fiscal sin ingresos extraordinarios**: se restan del primario y de los ingresos: rentas por
+  emision primaria sobre el limite del PFE (may-dic 2022), "Recursos extraordinarios (*)" (2026),
+  licitacion 5G (dic-2023, 0) — son partidas informativas ya incluidas en los totales de la IMIG — y
+  el **DEG del FMI de sep-2021**, que no tiene linea propia: exceso de "Transferencias corrientes"
+  (nivel 2) sobre la mediana de 2021 (≈ 428 mil M$; Hacienda informo ≈ 427 mil M$). Con esto el
+  primario coincide con el oficial: 2017 −3,79 · 2019 −0,44 · 2020 −6,43 · 2021 −3,05 · 2022 −2,36 ·
+  2024 +1,78. No se ajusta 2016-2017 (blanqueo dentro de tributarios).
+- **Credito**: crecimiento real con prestamos solo en pesos (var 117): la var 26 incluye prestamos en
+  dolares valuados al oficial y cada devaluacion inflaba el "crecimiento" (dic-2023: +11% con +81% de
+  devaluacion). Credito/PIB usa el total (ahi la valuacion corresponde).
+- **PIB mensual**: EMAE × IPC calibrado trimestre a trimestre al PIB nominal INDEC (serie trimestral
+  anualizada / 4); trimestres sin PIB usan el ultimo factor.
+
+### Normalizacion y agregacion
+- z = (x − mediana) / (IQR/1,349) sobre toda la historia disponible de cada variable, signo "mas
+  alto = mejor", recorte ±3. Se descarto MAD: la brecha tiene ~95 meses en 0 y el MAD quedaba ~0,8 pp
+  → cualquier brecha > 3% saturaba.
+- **Ventanas distintas**: cada variable se normaliza con su historia (recaudacion 2017+, fiscal
+  dic-2016+, salario 2016+, SIPA 2013+): 0 = tipico de ESE periodo (`normalizado_desde` en Metodologia).
+- Pilar = promedio de sus variables con dato; indice = promedio de pilares (minimo 4).
+  `indice_sin_fiscal` = sin el pilar fiscal (arranca dic-2016): comparable en toda la serie.
+- **Vara de Precios**: el indice principal compara con la historia argentina (mediana de inflacion
+  ~26% anual → 20% cuenta como "mejor que lo tipico"; nov-2008 da +0,03 en plena crisis global).
+  Como referencia, `indice_ancla` mide Precios contra una **meta de 10% anual** (`Precios_ancla`,
+  misma escala). Se mantiene el historico como principal por consistencia metodologica con el resto.
+- Borde: el ultimo dato de cada variable se arrastra hasta 3 meses (hoja `Arrastrados`); ultimo mes
+  del indice = ultimo con ≥ 60% de variables con dato propio.
+- Por gestion: el mes va a quien gobierno la mayor parte (asuncion hasta el dia 15 → mes propio);
+  pilar vacio si tiene < 12 meses con dato.
+
+### Limitaciones conocidas (documentadas, no resolubles con datos publicos por API)
+- Reservas **brutas** (incluyen swap con China y encajes) y a **fin de mes** (pico diario 2019:
+  77,5 MM USD el 9-abr; fin de mes max 71,7). El BCRA no publica reservas netas por API.
+- IPC Neuquen es provincial; UTDT es encuesta a hogares (por eso se ajusta el nivel).
+- `inflacion_3m` e `inflacion_esperada` correlacionan 0,81: el pilar Precios es casi una sola senal.
+- Desocupacion 2004-T1 = 14,28% en la API vs 14,4% publicado entonces (revision de la serie).
+- TCRM penaliza igual atraso y adelanto; tasa real neutral fijada en 2%; pesos iguales por pilar.
+- Validacion: correlacion de Spearman con el indice de miseria ≈ −0,56; episodios (2009, 2014,
+  2018-19, 2020, fines de 2023 - inicio 2024) ubicados correctamente.
 
 ## 5. Validaciones de referencia
 
