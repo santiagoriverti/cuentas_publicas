@@ -160,7 +160,7 @@
 - [x] Sensibilidad + validacion vs recesiones (`scripts/sensibilidad_indice.py`, 2026-10-06).
 - [ ] (no por ahora, pedido del usuario) dashboard / pagina interactiva.
 - [x] Nota metodologica en README + banda de sensibilidad en NB03 + control_calidad.py + output/indice_macro.csv.
-- [ ] Correr NB03 (version con banda) en Colab y comparar con local.
+- [x] NB03 con banda corrido en Colab (2026-10-06): identico a local; control_calidad sobre el Excel de Colab: 0 ALERTAS, revision 0,000.
 - [x] NB03 v8 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [x] NB03 v7 corrido en Colab (2026-10-06): identico a local en las 8 hojas.
 - [ ] Indice macro: dashboard/Artifact; SEDESA en netas si aparece serie. (PCA descartado v4; netas hechas v5.)
