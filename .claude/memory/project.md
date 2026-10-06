@@ -61,7 +61,13 @@
 - BUG PIB_B NB02: valores 2020-2023/2025 erroneos; la serie INDEC es trimestral anualizada (/4).
 - Resultado ago-2026: IMA −0,01, sin fiscal −0,17. Promedio por gestion (sin fiscal): NK −0,22 ·
   CFK +0,19 · CFK2 −0,06 · Macri −0,43 · AF −0,70 · Milei −0,40.
-- Fiscal del NB03 viene de la IMIG (2019+). Idea: extender a 2016 con series 452.2_* de datos.gob.ar.
+- Revision v2 (mismo dia): IPC 2007-2015 Neuquen, expectativas UTDT 2006-2016, brecha blue 2011-12,
+  fiscal 2016+ (CSV infra.datos.gob.ar .../452.3/download/imig-mensual.csv, identico al repo),
+  credito/PIB, hoja Arrastrados, Por_gobierno (mes por mayoria, min 12 meses). Ago-2026: IMA +0,22,
+  sin fiscal +0,03. Por gestion (sin fiscal): NK +0,02 · CFK +0,07 · CFK2 −0,12 · Macri −0,20 ·
+  AF −0,73 · Milei −0,32.
+- OJO: en datos.gob.ar los IDs 452.2_* son TRIMESTRALES y 452.1_* anuales; la IMIG mensual solo esta
+  como CSV de la distribucion 452.3.
 
 ## Notas sueltas utiles
 - Mensualizacion: cada IMIG 2026+ trae ene..mes actual → si falta el IMIG de un mes, el del mes

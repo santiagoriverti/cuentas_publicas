@@ -86,26 +86,42 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
 
 ## 4b. Indice Macroeconomico (notebook 03)
 
-- **Datos**: `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (crudos, mensuales).
-  Diarios → promedio mensual (reservas: ultimo dato); trimestrales → mismo valor en los 3 meses.
-  Si una API falla, se conserva la columna anterior. Del repo: IPC (inflacion, deflactor) e IMIG
-  (recaudacion IVA + Deb./Cred., resultado primario, intereses netos, ingresos totales).
-- **16 variables, 6 pilares** (detalle y signos en la celda 3 del NB03 / hoja `Metodologia`).
+- **Datos**: `scripts/actualizar_macro.py` → `data/reference/macro_mensual.csv` (crudos, mensuales,
+  desocupacion en %). Diarios → promedio mensual (reservas: ultimo dato); trimestrales → mismo valor
+  en los 3 meses. Si una API falla, se conserva la columna anterior. Del repo: IPC (inflacion,
+  deflactor) e IMIG (recaudacion IVA + Deb./Cred., resultado primario, intereses netos, ingresos
+  totales), completada 2016-2018 con el CSV IMIG mensual de datos.gob.ar (dataset 452.3; coincide
+  0,00% con la del repo en los 92 meses 2019-2026).
+- **17 variables, 6 pilares** (detalle y signos en la celda 3 del NB03 / hoja `Metodologia`).
+- **Empalmes** (revisados oct-2026):
+  - Inflacion: INDEC 2017+; 2016 y pre-2007 serie BCRA; **2007-01 a 2015-12 IPC Neuquen** (la serie
+    del BCRA repite el IPC intervenido: 2010 10,5% vs Neuquen 26,7%; 2013 10,7% vs 28,3%).
+  - Expectativas: REM jun-2016+; **ago-2006 a may-2016 UTDT** (mediana, redondeada a 5 pp; sin
+    ajuste de nivel: diferencia mediana con el REM en la superposicion 0,25 pts log). La serie del
+    BCRA 2007-2012 seguia al IPC oficial (~11%) y tiene hueco 2012-10 a 2016-05.
+  - Brecha: CCL 2013+; **nov-2011 a dic-2012 dolar blue** (corr. 0,98 con el CCL, dif. 1,9 pp).
+  - Credito / PIB: prestamos al sector privado / PIB 12 m (agregado para que el rebote del credito
+    desde una base baja no domine el pilar financiero).
 - **Normalizacion**: z = (x − mediana) / (IQR/1,349) sobre 2004-hoy, signo "mas alto = mejor",
   recorte ±3. Se probo MAD y se descarto: la brecha tiene ~95 meses en 0 (sin cepo) y el MAD
   quedaba ~0,8 pp → cualquier brecha > 3% saturaba en −3.
 - **Agregacion**: pilar = promedio de sus variables disponibles; indice = promedio de pilares
-  (minimo 4). `indice_sin_fiscal` = sin el pilar fiscal, que arranca en dic-2019 (IMIG desde 2019,
+  (minimo 4). `indice_sin_fiscal` = sin el pilar fiscal, que arranca en dic-2016 (IMIG desde 2016,
   sumas de 12 meses): es la serie comparable para toda la historia.
+- **Por gestion**: cada mes va a quien gobierno la mayor parte (asuncion hasta el dia 15 → mes
+  propio); pilar vacio si tiene < 12 meses con dato en la gestion.
+- **Ventanas de normalizacion distintas**: cada variable se normaliza con su propia historia
+  (recaudacion 2017+, fiscal dic-2016+, salario 2016+, SIPA 2013+): 0 = tipico de ESE periodo.
+  Ver `normalizado_desde` en la hoja Metodologia.
 - **Borde de la serie**: el ultimo dato de cada variable se arrastra hasta 3 meses; el ultimo mes
   del indice es el ultimo con ≥ 60% de las variables con dato propio.
 - **Decisiones**: reservas en meses de importaciones (no USD nominales); brecha = 0 antes de
   nov-2011; TCRM penaliza el desalineamiento simetrico (log) respecto de su mediana 2004-hoy;
   tasa real ex-ante = BADLAR efectiva vs REM 12 m, se penaliza la distancia a +2%; inflacion en
   log; PIB mensual = EMAE x IPC calibrado trimestre a trimestre al PIB nominal INDEC.
-- **Cautelas**: IPC 2007-2015 (intervencion INDEC) empalmado con la serie del BCRA; varias series
-  arrancan despues de 2004 (SIPA 2013, salarios 2016, CCL 2013, recaudacion 2020): el pilar se
-  promedia con lo disponible. Validacion: correlacion de Spearman con el indice de miseria ≈ −0,6.
+- **Cautelas**: IPC Neuquen es provincial (no nacional); UTDT es encuesta a hogares; desocupacion
+  2015-Q4/2016-Q1 no publicada (emergencia estadistica). Validacion: correlacion de Spearman con el
+  indice de miseria ≈ −0,56.
 
 ## 5. Validaciones de referencia
 

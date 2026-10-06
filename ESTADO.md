@@ -10,8 +10,8 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | Nuevo (2026-10-06), verificado local: ZIP = Excel 7 hojas + 4 PNG. Falta probar en Colab |
-| Series macro externas | `data/reference/macro_mensual.csv` (16 series, 2003 a oct-2026) |
+| Notebook 03 (indice macro) | 2026-10-06, revisado y corregido; verificado local: ZIP = Excel 8 hojas + 4 PNG |
+| Series macro externas | `data/reference/macro_mensual.csv` (24 series, 2003 a oct-2026) |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
 | Ultimo mes publicado por Hacienda revisado | agosto 2026 (julio 2026 NO publicado → derivado) |
@@ -32,10 +32,14 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 
 ## 2. Que se hizo en el ultimo ciclo (oct-2026)
 
-- **Indice Macroeconomico (IMA)**: notebook 03 + `scripts/actualizar_macro.py`. 16 variables en 6
+- **Indice Macroeconomico (IMA)**: notebook 03 + `scripts/actualizar_macro.py`. 17 variables en 6
   pilares (actividad, empleo e ingresos, precios, fiscal, externo, financiero), z robusto, mensual
-  desde 2004. Metodologia en CONTEXTO.md §4b. Ago-2026: indice −0,01 (sin fiscal −0,17); hace 12
-  meses +0,17. Correlacion con el indice de miseria: −0,60.
+  desde 2004. Metodologia en CONTEXTO.md §4b. Ago-2026: indice +0,22 (sin fiscal +0,03); hace 12
+  meses +0,37. Correlacion con el indice de miseria: −0,56.
+- Revision exhaustiva del Excel (v1) y correcciones (v2): inflacion 2007-2015 con IPC Neuquen (la
+  serie del BCRA repetia el IPC intervenido), expectativas 2006-2016 UTDT, brecha 2011-12 con blue,
+  fiscal extendido a 2016 (IMIG datos.gob.ar, identica a la del repo), credito/PIB, hoja
+  Arrastrados, Por_gobierno con asignacion por mayoria del mes y minimo 12 meses por pilar.
 - **Bug corregido: PIB del NB02** (`PIB_B`, celda 9). Los valores 2020-2023 y 2025 estaban mal
   (ej. 2023 = 143,2 B en vez de 193,9 B). Ahora salen de la serie INDEC (trimestral anualizada /4).
   Cambian los % PIB: primario 2023 −3,6% → −2,7%; 2025 +1,6% → +1,4%; 2020 −3,9% → −6,4%.
