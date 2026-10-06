@@ -184,7 +184,7 @@ data/raw/ (ZIP + sueltos) --src/consolidate.py--> output/aif_consolidado.csv
   (sin incluir el mes: si se incluye, 20% de los meses quedan en 0 exacto y el IQR se deforma; 36 meses =
   posicion en el ciclo, no estancamiento estructural). Corr. con `emae_ia` 0,77. Ej.: jun-2021 var. i.a.
   +13,9% pero −3,6% vs el pico; dic-2019 −1,4% i.a. pero −8,3% vs el pico; jul-2026 −4,5% vs el pico.
-  Efecto: max 0,20 (may-2021), promedio 0,03; ago-2026 +0,00 → −0,02.
+  Efecto: max 0,20 (may-2021), promedio 0,03; ago-2026 +0,00 → −0,01.
 
 ### Normalizacion y agregacion
 - z = (x − mediana) / (IQR/1,349) sobre toda la historia disponible de cada variable, signo "mas

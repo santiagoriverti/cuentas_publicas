@@ -10,7 +10,7 @@
 | Datos AIF + IMIG | **hasta agosto 2026** (79 meses AIF mensuales; IMIG completo 2019-01 a 2026-08) |
 | IPC (deflactor) | hasta agosto 2026 → base de todos los valores reales: **ago-2026** (IPC 12.276,766) |
 | Notebook 02 | Verificado en Colab (2026-09-22): 0 errores, ZIP = Excel 11 hojas + 7 PNG |
-| Notebook 03 (indice macro) | v8 (2026-10-06): **EMAE vs su maximo** (nivel); v7: pilar fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; v7 verificada en Colab (identica a local); **v8 verificada solo local** (falta Colab); ZIP = Excel 8 hojas + 4 PNG |
+| Notebook 03 (indice macro) | v8 (2026-10-06): **EMAE vs su maximo** (nivel); v7: pilar fiscal desde 2004; v6: saldo comercial % PIB; v5: reservas netas; **v8 verificada en Colab (2026-10-06): identica a local** en las 8 hojas (dif 0); ZIP = Excel 8 hojas + 4 PNG |
 | Series macro externas | `data/reference/macro_mensual.csv` (28 series + 4 columnas de reservas netas, 2003 a oct-2026) + `reservas_pasivos_manual.csv` |
 | Validacion vs Hacienda | Primario 2024 = 10,41 B y 2025 = 11,77 B nominales (0% dif.); financiero 1,76 / 1,45 B |
 | Repo | Autocontenido: fuentes crudas en `data/raw/`, `consolidate.py` reproduce los CSV byte a byte |
@@ -38,7 +38,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 
   | Ago-2026 | Valor | Hace 12 meses |
   |---|---|---|
-  | Indice (6 pilares, comparable 2004-hoy desde la v7) | **−0,02** | +0,24 |
+  | Indice (6 pilares, comparable 2004-hoy desde la v7) | **−0,01** | +0,25 |
   | Indice sin fiscal (referencia) | −0,08 | +0,20 |
   | Indice con Precios vs meta 10% (`indice_ancla`) | −0,25 | +0,01 |
 
@@ -50,7 +50,7 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 - **v8: nivel de actividad** (`emae_vs_maximo`, 18va variable, pilar Actividad): EMAE vs su maximo de
   los 36 meses previos, para que un rebote post-crisis no cuente como bonanza (jun-2021: +13,9% i.a. pero
   −3,6% vs el pico). Ago-2026: −4,5% vs el pico (dato de julio), Actividad −0,55 → −0,66, IMA +0,00 →
-  −0,02. Actividad por gestion: NK +0,95 → +0,87 · CFK +0,19 → +0,01 · CFK II −0,31 → −0,16 · Macri −0,33
+  −0,01. Actividad por gestion: NK +0,95 → +0,87 · CFK +0,19 → +0,01 · CFK II −0,31 → −0,16 · Macri −0,33
   → −0,40 · AF −0,01 → −0,34 · Milei −0,30 → −0,32. Spearman con miseria −0,56 (sin cambio).
 - **v7: pilar fiscal desde 2004** (antes dic-2016). AIF historica de Hacienda (datos.gob.ar, dataset 379)
   llevada a la metodologia 2017: sin utilidades del BCRA (var 50) ni rentas intra-sector publico del FGS
@@ -117,7 +117,6 @@ salarios −8,1; transf. provincias −4,9); unica suba AUH +3,4 B.
 ## 3. Proximos pasos
 
 1. **Cuando Hacienda publique septiembre 2026** → rutina mensual (seccion 4).
-   Correr el notebook 03 v8 en Colab y comparar con la corrida local (deberia dar identico).
    Cuando INDEC publique el PIB de 2026, agregarlo a `PIB_B` del NB02 (el NB03 lo toma solo).
 2. *(En pausa por pedido del usuario)* Informe LaTeX de prensa: rebasear a la base vigente. El `.tex`
    NO esta en el repo (lo tiene el usuario). La celda 9 del NB02 sigue calculando `Informe_valores` y
