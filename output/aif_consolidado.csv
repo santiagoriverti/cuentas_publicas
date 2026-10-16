@@ -30413,3 +30413,702 @@
 2026-08-01,2026,8,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_general,16851616.9,Agosto 26.xlsx
 2026-08-01,2026,8,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_general,635528.5999999981,Agosto 26.xlsx
 2026-08-01,2026,8,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_general,1824459.5000000002,Agosto 26.xlsx
+2026-09-01,2026,9,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,2709486.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,inst_seg_social,10000000.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS,. Otras,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,inst_seg_social,20442109.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,inst_seg_social,39316056.099999994,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,inst_seg_social,62986.200000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,946498.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,810560.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,inst_seg_social,685872.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,inst_seg_social,124688.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,inst_seg_social,50980629.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,inst_seg_social,11492258.299999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,inst_seg_social,161166.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,inst_seg_social,161166.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,inst_seg_social,-2676964.400000006,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,inst_seg_social,63444614.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,inst_seg_social,12709486.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,inst_seg_social,60767650.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,inst_seg_social,4380.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,inst_seg_social,-2681344.8000000045,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,inst_seg_social,63448995.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,inst_seg_social,60767650.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,inst_seg_social,4380.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,inst_seg_social,71858151.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,inst_seg_social,71858151.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,inst_seg_social,1618985.599999994,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,73477136.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,inst_seg_social,1618985.599999994,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,8409156.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,104.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,org_descentralizados,178462.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,org_descentralizados,24733.800000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,org_descentralizados,1860265.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,org_descentralizados,109792.99999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,org_descentralizados,6016.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS,. Otras,subdetalle,org_descentralizados,3861.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,org_descentralizados,2524.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,org_descentralizados,41.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. RESTO,. Resto,subdetalle,org_descentralizados,2706.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,org_descentralizados,1093360.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,org_descentralizados,69092.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,org_descentralizados,1227359.9000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,5376.799999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,2668999.3000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,org_descentralizados,2043135.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,org_descentralizados,625823.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,org_descentralizados,3600.7000000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,org_descentralizados,440.90000000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,org_descentralizados,110318.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,org_descentralizados,22965.699999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,org_descentralizados,22.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,org_descentralizados,22988.499999999996,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,org_descentralizados,-309718.50000000093,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,org_descentralizados,2815142.0000000005,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,org_descentralizados,802.5999999999958,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,org_descentralizados,2063565.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,org_descentralizados,2505423.4999999995,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,org_descentralizados,426882.19999999995,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,org_descentralizados,7539.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,org_descentralizados,3678.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,org_descentralizados,2706.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,org_descentralizados,-746044.2000000007,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,org_descentralizados,3252270.3000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,org_descentralizados,2506226.0999999996,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,org_descentralizados,437128.29999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,org_descentralizados,3386002.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,org_descentralizados,3384926.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,org_descentralizados,1184865.2999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,4569791.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,org_descentralizados,1183788.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,133732.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,1896006.2999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,3.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,pami_fdos_otros,73160.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,pami_fdos_otros,119999.29999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,pami_fdos_otros,4120047.1999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,pami_fdos_otros,471566.79999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,1507079.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,pami_fdos_otros,821.5999999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS,. Otras,subdetalle,pami_fdos_otros,264413.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,pami_fdos_otros,7848.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,pami_fdos_otros,6930.200000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,3141.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,pami_fdos_otros,4062765.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,pami_fdos_otros,5915446.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,pami_fdos_otros,1195210.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,1538154.3000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,3776125.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,pami_fdos_otros,2411652.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,pami_fdos_otros,1357542.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,pami_fdos_otros,28970.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,pami_fdos_otros,12598.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,pami_fdos_otros,9024564.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,pami_fdos_otros,357277.69999999995,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,pami_fdos_otros,360419.29999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,2365215.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,pami_fdos_otros,-976577.4999999981,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,pami_fdos_otros,15679398.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,pami_fdos_otros,9491.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,pami_fdos_otros,6209217.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,pami_fdos_otros,14702821.300000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,pami_fdos_otros,1104566.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,pami_fdos_otros,409481.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,pami_fdos_otros,145068.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,pami_fdos_otros,-2481133.6999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,pami_fdos_otros,17193446.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,pami_fdos_otros,14712312.400000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,pami_fdos_otros,1514047.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,17445068.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,17423946.400000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,pami_fdos_otros,3497583.3000000007,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,20921529.700000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,pami_fdos_otros,3476460.9000000022,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,251622.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,3803663.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,2374.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,rec_afectados,10566.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,rec_afectados,112052.70000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,rec_afectados,84221.79999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS,. Otras,subdetalle,rec_afectados,20980.200000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,rec_afectados,1076.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,rec_afectados,8.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. RESTO,. Resto,subdetalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,.. OTRAS,.. Otras,subdetalle,rec_afectados,13831.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,rec_afectados,3171637.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,rec_afectados,4717.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,rec_afectados,1147217.2999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,5370.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,2162544.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,rec_afectados,1781783.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,rec_afectados,380752.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,rec_afectados,1076.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,rec_afectados,2972054.9000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,rec_afectados,2035.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,rec_afectados,933386.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,rec_afectados,200490.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,rec_afectados,3.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,rec_afectados,214325.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,rec_afectados,-2035869.9000000013,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,rec_afectados,6478900.300000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,rec_afectados,2247.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,rec_afectados,3816604.0999999996,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,rec_afectados,4443030.399999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,rec_afectados,122085.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,rec_afectados,69461.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,rec_afectados,48481.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,rec_afectados,-2225169.8000000007,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,rec_afectados,6670447.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,rec_afectados,4445278.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,rec_afectados,191547.59999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,rec_afectados,6863247.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,rec_afectados,6863247.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,rec_afectados,1398634.6999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,8261882.199999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,rec_afectados,1398634.6999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,192799.59999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,131250.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,tesoro_nacional,37500.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,tesoro_nacional,144.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,tesoro_nacional,3327.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS,. Otras,subdetalle,tesoro_nacional,6172.800000000014,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,tesoro_nacional,646.9000000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,tesoro_nacional,78.69999999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. RESTO,. Resto,subdetalle,tesoro_nacional,272146.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,656340.4000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,tesoro_nacional,43245603.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,tesoro_nacional,168690.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,1118191.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,9801382.299999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,tesoro_nacional,7882875.399999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,tesoro_nacional,1918428.2000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,tesoro_nacional,10369978.600000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,tesoro_nacional,40901.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,tesoro_nacional,7816651.200000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,tesoro_nacional,1107299.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,tesoro_nacional,4136168.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,tesoro_nacional,5899808.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,tesoro_nacional,10679309.70000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,tesoro_nacional,33894221.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,tesoro_nacional,1255053.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,tesoro_nacional,168750.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,tesoro_nacional,44573531.00000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,tesoro_nacional,164693.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,tesoro_nacional,50037.80000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,tesoro_nacional,43865.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,tesoro_nacional,272146.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,tesoro_nacional,11447485.70000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,tesoro_nacional,34381099.099999994,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,tesoro_nacional,45828584.800000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,tesoro_nacional,486877.80000000005,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,tesoro_nacional,50361411.699999996,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,tesoro_nacional,39992079.99999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,tesoro_nacional,6005254.800000012,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,45997334.800000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,tesoro_nacional,-4364076.899999991,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,15980312.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,6513149.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,133728.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_adm_nacional,178462.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_adm_nacional,72800.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_adm_nacional,11860265.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_adm_nacional,221989.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_adm_nacional,93566.19999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS,. Otras,subdetalle,total_adm_nacional,31014.00000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_adm_nacional,4248.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,total_adm_nacional,128.29999999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. RESTO,. Resto,subdetalle,total_adm_nacional,274853.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,670171.7000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_adm_nacional,67952710.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_adm_nacional,39389866.099999994,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_adm_nacional,2606253.9000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,2075437.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,15443486.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_adm_nacional,12393665.699999997,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_adm_nacional,3049692.4000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_adm_nacional,10374656.200000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_adm_nacional,53952684.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_adm_nacional,43376.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_adm_nacional,20352615.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_adm_nacional,1491922.2999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_adm_nacional,4136195.0999999996,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_adm_nacional,6298289.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_adm_nacional,5656756.900000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_adm_nacional,106632878.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_adm_nacional,1258104.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_adm_nacional,18758406.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_adm_nacional,112289635.2,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_adm_nacional,718041.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_adm_nacional,127039.00000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_adm_nacional,96025.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_adm_nacional,274853.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_adm_nacional,5794926.900000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_adm_nacional,107752812.39999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_adm_nacional,113547739.30000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_adm_nacional,1119934.0999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_adm_nacional,132468813.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_adm_nacional,122098404.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_adm_nacional,10207740.400000006,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,132306145.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_adm_nacional,-162667.69999999786,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,24716000.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_general,8409156.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_general,133732.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_general,251622.7,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_general,192799.59999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_general,15980312.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_general,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS GASTOS,- OTROS GASTOS,detalle,total_general,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_general,471566.79999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,1507079.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_general,221989.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_general,94387.79999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS,. Otras,subdetalle,total_general,295427.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_general,12096.6,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. OTROS GASTOS,. Otros Gastos,subdetalle,total_general,7058.500000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,. RESTO,. Resto,subdetalle,total_general,274853.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,.. OTRAS,.. Otras,subdetalle,total_general,673313.3000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_general,72015475.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_general,45305312.99999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_general,3801463.9000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_general,3613592.1000000006,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_general,19219612.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_general,14805318.199999997,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_general,4407235.300000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_general,10403627.100000001,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_general,53952684.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_general,55975.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_general,29377179.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_general,1849199.9999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_general,4136195.0999999996,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_general,6658708.399999999,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,2365215.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_general,4680179.400000003,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_general,122312277.1,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_general,1267595.2000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_general,24967623.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_general,126992456.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_general,1822607.9,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_general,536520.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_general,241093.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_general,274853.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_general,3313793.200000005,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_general,124946258.5,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_general,128260051.70000002,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_general,2633981.4,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_general,149913881.8,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_general,139522351.3,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_general,13705323.700000007,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_general,153227675.0,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_general,3313793.2000000044,Septiembre 26.xlsx
+2026-09-01,2026,9,acumulado,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_general,24967623.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,inst_seg_social,614584.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,inst_seg_social,1600000.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS,. Otras,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. RESTO,. Resto,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,.. OTRAS,.. Otras,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,inst_seg_social,2547029.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,inst_seg_social,4432626.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,inst_seg_social,5493.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,inst_seg_social,128606.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,inst_seg_social,79369.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,inst_seg_social,59601.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,inst_seg_social,19768.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,inst_seg_social,6233701.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,inst_seg_social,1286320.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,inst_seg_social,13000.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,inst_seg_social,13000.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,inst_seg_social,-498635.39999999944,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,inst_seg_social,7612392.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,inst_seg_social,2214584.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,inst_seg_social,7113756.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,inst_seg_social,2760.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,inst_seg_social,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,inst_seg_social,-501395.99999999907,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,inst_seg_social,7615152.699999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,inst_seg_social,7113756.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,inst_seg_social,2760.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,inst_seg_social,8883950.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,inst_seg_social,8883950.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,inst_seg_social,444390.80000000075,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,inst_seg_social,9328341.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,inst_seg_social,444390.80000000075,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,inst_seg_social,1268797.5000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,org_descentralizados,5.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,org_descentralizados,34281.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,org_descentralizados,3983.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,org_descentralizados,232272.69999999995,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,org_descentralizados,13014.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,org_descentralizados,906.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS,. Otras,subdetalle,org_descentralizados,614.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,org_descentralizados,440.09999999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. RESTO,. Resto,subdetalle,org_descentralizados,244.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,.. OTRAS,.. Otras,subdetalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,org_descentralizados,141119.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,org_descentralizados,6680.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,org_descentralizados,121940.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,org_descentralizados,16.700000000000045,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,org_descentralizados,312004.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,org_descentralizados,225763.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,org_descentralizados,86240.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,org_descentralizados,455.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,org_descentralizados,12217.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,org_descentralizados,1681.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,org_descentralizados,2.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,org_descentralizados,1684.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,org_descentralizados,-44696.90000000008,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,org_descentralizados,327468.60000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,org_descentralizados,98.09999999999854,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,org_descentralizados,270542.49999999994,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,org_descentralizados,282771.69999999995,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,org_descentralizados,81128.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,org_descentralizados,614.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,org_descentralizados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,org_descentralizados,244.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,org_descentralizados,-126585.6000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,org_descentralizados,409455.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,org_descentralizados,282869.79999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,org_descentralizados,81986.79999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,org_descentralizados,453210.60000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,org_descentralizados,453195.30000000005,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,org_descentralizados,100216.99999999977,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,org_descentralizados,553412.2999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,org_descentralizados,100201.69999999978,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,org_descentralizados,43755.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,pami_fdos_otros,218359.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,pami_fdos_otros,20569.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,pami_fdos_otros,11148.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,pami_fdos_otros,451383.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,pami_fdos_otros,272424.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,292547.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,pami_fdos_otros,65.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS,. Otras,subdetalle,pami_fdos_otros,74583.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,pami_fdos_otros,23.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,pami_fdos_otros,528.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. RESTO,. Resto,subdetalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,.. OTRAS,.. Otras,subdetalle,pami_fdos_otros,274.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,pami_fdos_otros,514028.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,pami_fdos_otros,670666.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,pami_fdos_otros,187673.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,pami_fdos_otros,225193.40000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,pami_fdos_otros,423106.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,pami_fdos_otros,278816.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,pami_fdos_otros,143762.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,pami_fdos_otros,474.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,pami_fdos_otros,1066.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,pami_fdos_otros,990931.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,pami_fdos_otros,63074.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,pami_fdos_otros,63349.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,pami_fdos_otros,444686.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,pami_fdos_otros,227081.99999999953,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,pami_fdos_otros,1936518.2000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,pami_fdos_otros,8.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,pami_fdos_otros,701460.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,pami_fdos_otros,2163600.1999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,pami_fdos_otros,120061.39999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,pami_fdos_otros,100380.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,pami_fdos_otros,25797.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,pami_fdos_otros,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,pami_fdos_otros,6648.799999999814,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,pami_fdos_otros,2156959.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,pami_fdos_otros,2163608.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,pami_fdos_otros,220441.39999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,2211809.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,2211358.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,pami_fdos_otros,653710.4999999995,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,pami_fdos_otros,2865069.0999999996,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,pami_fdos_otros,653259.1999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,pami_fdos_otros,54850.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,rec_afectados,435853.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,rec_afectados,1903.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,rec_afectados,13094.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,rec_afectados,25658.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS,. Otras,subdetalle,rec_afectados,814.2000000000007,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,rec_afectados,62.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. RESTO,. Resto,subdetalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,.. OTRAS,.. Otras,subdetalle,rec_afectados,4420.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,rec_afectados,398612.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,rec_afectados,538.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,rec_afectados,106160.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,rec_afectados,1003.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,rec_afectados,262538.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,rec_afectados,194170.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,rec_afectados,68367.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,rec_afectados,62.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,rec_afectados,343221.19999999995,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,rec_afectados,101791.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,rec_afectados,38265.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,rec_afectados,3.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,rec_afectados,42689.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,rec_afectados,-333948.79999999993,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,rec_afectados,853358.2999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,rec_afectados,437756.60000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,rec_afectados,519409.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,rec_afectados,57735.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,rec_afectados,16978.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,rec_afectados,16164.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,rec_afectados,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,rec_afectados,-408662.59999999986,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,rec_afectados,928072.0999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,rec_afectados,519409.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,rec_afectados,74713.79999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,rec_afectados,957607.0999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,rec_afectados,957607.0999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,rec_afectados,-440.99999999976717,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,rec_afectados,957166.1000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,rec_afectados,-440.99999999976717,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,rec_afectados,29535.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,tesoro_nacional,43750.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,tesoro_nacional,12500.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,tesoro_nacional,90.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,tesoro_nacional,78.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS,. Otras,subdetalle,tesoro_nacional,374.6000000000058,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,tesoro_nacional,1.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. RESTO,. Resto,subdetalle,tesoro_nacional,147485.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,.. OTRAS,.. Otras,subdetalle,tesoro_nacional,79280.70000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,tesoro_nacional,5623901.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,tesoro_nacional,12170.499999999989,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,tesoro_nacional,161519.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,tesoro_nacional,1324584.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,tesoro_nacional,910409.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,tesoro_nacional,414172.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,tesoro_nacional,450000.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,tesoro_nacional,5011.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,tesoro_nacional,1026745.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,tesoro_nacional,196927.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,tesoro_nacional,538766.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,tesoro_nacional,814974.2000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,tesoro_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,tesoro_nacional,2186043.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,tesoro_nacional,3616649.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,tesoro_nacional,2247.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,tesoro_nacional,56250.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,tesoro_nacional,5802693.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,tesoro_nacional,26687.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,tesoro_nacional,6949.800000000006,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,tesoro_nacional,6575.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,tesoro_nacional,147485.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,tesoro_nacional,2007168.8000000003,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,tesoro_nacional,3797771.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,tesoro_nacional,5804940.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,tesoro_nacional,181122.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,tesoro_nacional,6081427.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,tesoro_nacional,5631427.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,tesoro_nacional,229762.7000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,tesoro_nacional,5861190.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,tesoro_nacional,-220237.2999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,tesoro_nacional,2283656.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_adm_nacional,1050437.7000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_adm_nacional,43755.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_adm_nacional,34281.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_adm_nacional,18386.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_adm_nacional,1832272.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_adm_nacional,26199.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_adm_nacional,26642.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS,. Otras,subdetalle,total_adm_nacional,1802.8000000000065,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_adm_nacional,502.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,total_adm_nacional,1.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. RESTO,. Resto,subdetalle,total_adm_nacional,147729.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,.. OTRAS,.. Otras,subdetalle,total_adm_nacional,83701.20000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_adm_nacional,8710661.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_adm_nacional,4439846.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_adm_nacional,245764.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_adm_nacional,291146.80000000005,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_adm_nacional,1978496.3999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_adm_nacional,1389945.0999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_adm_nacional,588549.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_adm_nacional,450517.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_adm_nacional,6576923.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_adm_nacional,5011.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_adm_nacional,2427075.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_adm_nacional,249874.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_adm_nacional,538772.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_adm_nacional,872347.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_adm_nacional,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_adm_nacional,1308762.8000000005,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_adm_nacional,12409868.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_adm_nacional,2345.2999999999984,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_adm_nacional,2979133.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_adm_nacional,13718630.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_adm_nacional,168311.69999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_adm_nacional,24542.400000000005,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_adm_nacional,22739.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_adm_nacional,147729.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_adm_nacional,970524.6000000013,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_adm_nacional,12750451.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_adm_nacional,13720976.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_adm_nacional,340583.49999999994,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_adm_nacional,16376195.399999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_adm_nacional,15926180.099999998,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_adm_nacional,773929.5000000009,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_adm_nacional,16700109.600000001,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_adm_nacional,323914.20000000094,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_adm_nacional,3625743.8000000007,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE INSTITUCIONES DE SEGURIDAD SOCIAL,- De Instituciones de Seguridad Social,detalle,total_general,1268797.5000000002,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE ORGANISMOS DESCENTRALIZADOS,- De Organismos Descentralizados,detalle,total_general,43755.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,"- DE PAMI, FDOS. FIDUCIARIOS Y OTROS","- De PAMI, Fdos. Fiduciarios y Otros",detalle,total_general,54850.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DE RECURSOS AFECTADOS,- De Recursos Afectados,detalle,total_general,29535.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- DEL TESORO NACIONAL,- Del Tesoro Nacional,detalle,total_general,2283656.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- INGRESOS DE OPERACION,- INGRESOS DE OPERACION,detalle,total_general,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS GASTOS,- OTROS GASTOS,detalle,total_general,0.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- OTROS INGRESOS,- OTROS INGRESOS,detalle,total_general,272424.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),- SUPERAVIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,292547.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,- VENTAS DE BS.Y SERV.DE LAS ADM.PUB.,detalle,total_general,26199.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. AL SECTOR EXTERNO,. Al sector externo,subdetalle,total_general,26707.899999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS,. Otras,subdetalle,total_general,76385.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTRAS RENTAS,. Otras Rentas,subdetalle,total_general,525.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. OTROS GASTOS,. Otros Gastos,subdetalle,total_general,530.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,. RESTO,. Resto,subdetalle,total_general,147729.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,.. OTRAS,.. Otras,subdetalle,total_general,83975.70000000004,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I1_INGRESOS_TRIBUTARIOS,- INGRESOS IMPOSITIVOS,detalle,total_general,9224690.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I2_APORTES_SEG_SOCIAL,- APORTES Y CONTRIB. A LA SEG. SOCIAL,detalle,total_general,5110512.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I3_INGRESOS_NO_TRIBUTARIOS,- INGRESOS NO IMPOSITIVOS,detalle,total_general,433438.5,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I4_RENTAS_PROPIEDAD,- RENTAS DE LA PROPIEDAD NETAS (1),detalle,total_general,516340.20000000007,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1_CONSUMO_OPERACION,- GASTOS DE CONSUMO Y OPERACION,detalle,total_general,2401603.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1a_REMUNERACIONES,. Remuneraciones,subdetalle,total_general,1668761.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II1b_BIENES_SERVICIOS,. Bienes y Servicios,subdetalle,total_general,732311.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II2_INTERESES,- INTERESES Y OTRAS RENTAS DE LA PROP.,detalle,total_general,450992.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II3_PRESTACIONES_SEG_SOCIAL,- PRESTACIONES DE LA SEGURIDAD SOCIAL,detalle,total_general,6576923.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4_TRANSF_CORRIENTES_GASTO,- TRANSFERENCIAS CORRIENTES,detalle,total_general,6077.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4a_TRANSF_SECTOR_PRIVADO,. Al sector privado,subdetalle,total_general,3418006.6999999997,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b1_TRANSF_PROVINCIAS_CABA,.. Provincias y CABA,subdetalle,total_general,312948.9,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b2_TRANSF_UNIVERSIDADES,.. Universidades,subdetalle,total_general,538772.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II4b_TRANSF_SECTOR_PUBLICO,. Al sector público,subdetalle,total_general,935697.0,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II5_DEFICIT_EMPRESAS_PUB,- DEFICIT OPERATIVO EMPRESAS PUB. (3),detalle,total_general,444686.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,III_RESULTADO_ECONOMICO,III) RESULT.ECON.: AHORRO/DESAHORRO (I-II),principal,total_general,1535844.8,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,II_GASTOS_CORRIENTES,II) GASTOS CORRIENTES,principal,total_general,14346386.3,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IV_RECURSOS_CAPITAL,IV) RECURSOS DE CAPITAL (4),principal,total_general,2353.499999999998,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,IX_CONTRIBUCIONES_FIGURATIVAS,IX) CONTRIBUCIONES FIGURATIVAS,principal,total_general,3680594.0999999996,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,I_INGRESOS_CORRIENTES,I) INGRESOS CORRIENTES,principal,total_general,15882231.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V1_INV_REAL_DIRECTA,- INVERSION REAL DIRECTA,detalle,total_general,288373.1,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2_TRANSF_CAPITAL,- TRANSFERENCIAS DE CAPITAL,detalle,total_general,124922.40000000001,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V2a_TRANSF_CAPITAL_PROVINCIAS,. A Provincias y CABA,subdetalle,total_general,48536.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V3_INV_FINANCIERA,- INVERSION FINANCIERA,detalle,total_general,147729.4,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VIII_RESULT_FINANCIERO_ANTES_FIGURAT,VIII) RESULT.FINANC.ANTES DE FIGURAT.(VI-VII),principal,total_general,977173.4000000011,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VII_GASTOS_ANTES_FIGURAT,VII) GASTOS ANTES DE FIGURAT.(II+V),principal,total_general,14907411.2,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,VI_INGRESOS_ANTES_FIGURAT,VI) INGRESOS ANTES DE FIGURAT.(I+IV),principal,total_general,15884584.6,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,V_GASTOS_CAPITAL,V) GASTOS DE CAPITAL,principal,total_general,561024.8999999999,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIII_GASTOS_DESPUES_FIGURAT,XIII) GASTOS DESPUES DE FIGURAT.,principal,total_general,18588005.299999997,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XII_GASTOS_PRIMARIOS_DESPUES_FIGURAT,XII) GASTOS PRIMARIOS DESPUES DE FIGURAT.,principal,total_general,18137538.7,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XIV_RESULTADO_PRIMARIO,XIV) RESULTADO PRIMARIO  (XI-XII),principal,total_general,1427640.0000000005,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XI_INGRESOS_DESPUES_FIGURAT,XI) INGRESOS DESPUES DE FIGURAT.,principal,total_general,19565178.700000003,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,XV_RESULTADO_FINANCIERO,XV) RESULTADO FINANCIERO  (XI-XIII),principal,total_general,977173.4000000006,Septiembre 26.xlsx
+2026-09-01,2026,9,mensual,X_GASTOS_FIGURATIVOS,X) GASTOS FIGURATIVOS,principal,total_general,3680594.1000000006,Septiembre 26.xlsx
